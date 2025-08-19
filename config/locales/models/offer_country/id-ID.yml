@@ -1,0 +1,11 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        offer_country:
+          attributes:
+            offer_id:
+              blank: "Offer is missing."
+              taken: "Offer exists with the specified country."
+            country_id:
+              blank: "Country is missing."

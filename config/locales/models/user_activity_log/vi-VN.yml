@@ -1,0 +1,14 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        user_activity_log:
+          attributes:
+            user_id:
+              blank: "Please specify User"
+            target_id:
+              blank: "Please specify Target"
+            target_type:
+              blank: "Please specify Target Type"
+            verb:
+              blank: "Please specify the Verb"

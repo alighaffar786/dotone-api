@@ -1,0 +1,20 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        upcoming_event:
+          attributes:
+            title:
+              blank: "Please specify the title of the event."
+            location:
+              blank: "Please specify location of the event."
+            language_id:
+              blank: "Please specify the language of the event."
+            start_at:
+              blank: "Please specify the start date of this event."
+              not_a_number: "Start dates does not form a valid date range."
+              before_or_equal_to: "Start date needs to be before or equal to the end date."
+            end_at:
+              blank: "Please specify the end date of this event."
+              not_a_number: "End dates does not form a valid date range."
+              after_or_equal_to: "End date needs to be after or equal to the start date."

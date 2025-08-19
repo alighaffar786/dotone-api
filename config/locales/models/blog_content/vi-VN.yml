@@ -1,0 +1,11 @@
+vi-VN:
+
+  will_paginate:
+
+    models:
+
+      blog_content:
+        zero: "Blog Contents"
+        one: "Blog Content"
+        few: "Blog Contents"
+        other: "Blog Contents"

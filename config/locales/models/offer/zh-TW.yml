@@ -1,0 +1,56 @@
+zh-TW:
+  predefined:
+    models:
+      offer:
+        approval_method:
+          As It Occurs: 成效確認後
+          Payment Received: 獎金確認後
+        attribution_type:
+          First Click: 首次點擊
+          Last Click: 最終點擊
+          Both Click: 首次點擊 & 最終點擊
+
+        conversion_time_info:
+          "N/A": "N/A"
+          "Instant": "即時"
+          "Within N Days": "%{n} 天內"
+          "Within N Minutes": "%{n} 分鐘內"
+
+        track_device:
+          Desktop: 桌機
+          Mobile Web: 行動網頁
+          iOS: iOS
+          Android: 安卓
+
+  download_columns:
+    models:
+      network_offer:
+        affiliate_logs: 筆記
+        affiliate_pay: 會員獎金
+        affiliate_share: 分潤獎金%
+        attribution_type: 成效歸屬類型
+        brand_image_small_url: 縮圖
+        brand_image_url: 品牌商標
+        categories: 產業
+        click_volume: 點擊量
+        conversion_point: 成效點
+        conversion_type: 成效類型
+        countries: 國家
+        destination_url: 終點網址URL
+        detail_views_last_month: 品牌閱覽數
+        earning_meter: 熱銷商品
+        group_tags: 組標籤
+        has_product_api: 提供商品應用API
+        id: 品牌/電商ID
+        media_restrictions: 禁止媒體/推廣模式
+        name: 品牌/電商
+        network: 廠商名稱
+        original_currency: 原有幣別
+        published_date: 刊登日期
+        request_count: 申請數
+        status: 狀態
+        track_device: 可追蹤裝置
+        translation_stats: 翻譯已完成
+        true_conv_type: 成效類型
+        true_pay: 廠商佣金
+        true_share: 分潤佣金%

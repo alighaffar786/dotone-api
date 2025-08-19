@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Prevent any favicon requests -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="https://cdn.adotone.com/adslots/slot-reset.css">
+  <link rel="stylesheet" href="https://cdn.adotone.com/adslots/slot.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/textfit/2.3.1/textFit.min.js"></script>
+  <script src="https://cdn.adotone.com/adslots/va.adinventories.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="feed-creative" id="canvas">
+    <div class="cell-group">
+    </div>
+    <div class="signature"><a href="http://www.affiliates.one" target="_blank">Affiliates.One</a></div>
+  </div>
+
+  <script class="banner" type="text/x-mustache">
+    <a href="{{tracking_url}}" target="_top">
+      <img src="{{image_url}}">
+    </a>
+  </script>
+
+  <script class="d300x250" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator"><br></span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d180x280" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="promo-text">{{promo_text_1}}</div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator">&nbsp;&nbsp;</span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d468x60" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="content-left-panel">
+              <div class="title">{{title}}</div>
+              <div class="promo-text">
+                {{promo_text_1}}
+              </div>
+            </div>
+            <div class="content-right-panel">
+              <div class="coupon-panel">
+                {{use_coupon_text}}:
+                <div class="coupon-code">{{coupon_code}}</div>
+              </div>
+              <div class="price">
+                <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+                <span class="info-separator"><br></span>
+                <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d728x90" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="promo-text">
+              {{promo_text_1}}
+            </div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator">&nbsp;&nbsp;</span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d120x600" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="promo-text">
+              {{promo_text_1}}
+            </div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator"><br></span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+          <div class="promo-button">
+            <span>{{button_text}}</span>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+
+  <script class="d160x600" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="promo-text">
+              {{promo_text_1}}
+            </div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator">&nbsp;&nbsp;</span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+          <div class="promo-button">
+            <span>{{button_text}}</span>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d750x300" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator">&nbsp;&nbsp;</span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+          <div class="promo-button">
+            <span>{{button_text}}</span>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script class="d364x90" type="text/x-mustache">
+
+    <div class="cell">
+      <div class="image-content">
+        <div class="image">
+          <a href="{{tracking_url}}" target="_top">
+            <img src="{{image_url}}">
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <a href="{{tracking_url}}" target="_top">
+          <div class="offer-name">{{offer_name}}</div>
+          <div class="content-text textfitable">
+            <div class="title">{{title}}</div>
+            <div class="promo-text">
+              {{promo_text_1}}
+            </div>
+            <div class="coupon-panel">
+              {{use_coupon_text}}:
+              <div class="coupon-code">{{coupon_code}}</div>
+            </div>
+            <div class="price">
+              <span class="info-label">{{original_price_text}}:</span> <span class="original">{{original_price}}</span>
+              <span class="info-separator">&nbsp;&nbsp;</span>
+              <span class="info-label">{{discount_price_text}}:</span> <span class="discount">{{discount_price}}</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <img style="width: 0px; height: 0px;" src="{{impression_url}}">
+    </div>
+
+  </script>
+
+  <script>
+    $(function() {
+      ADSERVER.start();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+th-TH:
+  
+  activerecord:
+
+    models:
+
+      network_offer:
+        one: "Offer"
+        other: "Offers"
+        
+    errors:
+    
+      models:
+    
+        network_offer:
+          attributes:
+            user_id:
+              blank: "Please specify the user for this offer."
+            network_id:
+              blank: "Please specify the network for this offer."
+            category_ids:
+              blank: "Please specify the category for this offer."
+            country_ids:
+              blank: "Please specify country for this offer."
+            conversion_requirement_id:
+              blank: "Please specify the conversion requirement for this offer."
+            destination_url:
+              blank: "Please specify the destination url for this offer."
+            need_approval:
+              inclusion: "Please specify if this offer need approval or not."
+            tracking_type:
+              blank: "Please specify the tracking type for this offer."
+
+
+  will_paginate:
+    
+    models:
+    
+      network_offer:
+        zero: "Offers"
+        one: "Offer"
+        few: "Offers"
+        other: "Offers"

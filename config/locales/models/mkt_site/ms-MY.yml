@@ -1,0 +1,9 @@
+ms-MY:
+
+  will_paginate:
+    models:
+      mkt_site:
+        zero: "Sites"
+        one: "Site"
+        few: "Sites"
+        other: "Sites"

@@ -1,0 +1,11 @@
+zh-Hans:
+
+  predefined:
+
+    models:
+
+      contact_list:
+
+        status:
+          Active: Active
+          Archived: Archived

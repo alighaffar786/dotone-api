@@ -1,0 +1,697 @@
+/** Feed Creatives / Ad Slot **/
+
+
+/* DEFAULTS */
+
+div.feed-creative {
+  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", sans-serif;
+}
+
+div.feed-creative div.cell-group {
+  display: block;
+}
+
+div.feed-creative .cell {
+  border: 1px solid #ccc;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #333;
+  position: relative;
+  float: left;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+div.feed-creative .cell>div {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+div.feed-creative div.cell div.offer-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  color: #a0a0a0;
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}
+
+div.feed-creative div.cell .image-content {
+  display: inline-block;
+  background-color: #f7f3ea;
+}
+
+div.feed-creative div.cell .image-content .image {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.feed-creative div.cell .image-content .image img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.feed-creative div.cell .content {
+  position: relative;
+  padding: 10px 6px 4px 4px;
+}
+
+div.feed-creative div.cell .content .content-text {
+  white-space: normal;
+}
+
+div.feed-creative div.cell .content .price .info-label {
+  display: none;
+}
+
+div.feed-creative div.cell .content .price .strike {
+  text-decoration: line-through;
+}
+
+div.feed-creative div.cell .content a {
+  text-decoration: none;
+}
+
+div.feed-creative div.cell .content .promo-button {
+  width: 100%;
+}
+
+div.feed-creative div.cell .content .promo-button span {
+  display: block;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+div.feed-creative div.signature {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  text-align: right;
+  display: block;
+  color: #2472cc;
+  padding: 0;
+  line-height: 100%;
+}
+
+div.feed-creative div.content-text .hidden {
+  display: none;
+}
+
+div.feed-creative div.content-text .coupon-code {
+  display: inline;
+}
+
+
+/* END DEFAULTS */
+
+
+/* Color Sets */
+
+div.feed-creative div.cell .content .price .original {
+  color: #a0a0a0;
+}
+
+div.feed-creative div.cell .content .price .discount {
+  color: #fd9e08;
+}
+
+div.feed-creative div.cell .content .title {
+  color: #fd9e08;
+}
+
+div.feed-creative div.cell .content .promo-text,
+div.feed-creative div.cell .content .info-label,
+div.feed-creative div.cell .content .info-label:hover,
+div.feed-creative div.cell .content .coupon-panel,
+div.feed-creative div.cell .content .coupon-code,
+div.feed-creative div.cell .content .coupon-code:hover {
+  color: #4b4b4b;
+}
+
+div.feed-creative div.cell .content .promo-button span {
+  background-color: #fd9e08;
+  color: #FFF;
+}
+
+
+/* End Color Sets */
+
+
+/* 728x90 */
+
+div.d728x90 .cell-group {
+  width: 728px;
+  height: 90px;
+  display: block;
+}
+
+div.d728x90 .cell {
+  width: 362px;
+  height: 90px;
+  margin-right: 4px;
+}
+
+div.d728x90 .cell:last-child {
+  margin-right: 0px;
+}
+
+div.d728x90 .cell .image-content .image {
+  width: 88px;
+  height: 88px;
+}
+
+div.d728x90 .cell .image-content .image img {
+  width: 88px;
+  height: 88px;
+}
+
+div.d728x90 .cell .content {
+  width: 265px;
+  height: 90px;
+}
+
+div.d728x90 .cell .content .offer-name {
+  width: 260px;
+}
+
+div.d728x90 .cell .content .content-text {
+  width: 250px;
+  height: 75px;
+}
+
+div.d728x90 .cell .content .title {
+  font-size: 13px;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+div.d728x90 .cell .content .promo-text {
+  font-size: 11px;
+  line-height: 120%;
+  margin-top: 4px;
+}
+
+div.d728x90 .cell .content .coupon-panel {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+div.d728x90 .cell .content .price {
+  font-size: 11px;
+  line-height: 150%;
+  margin-top: 4px;
+}
+
+div.d728x90 .signature {
+  width: 728px;
+}
+
+
+/* 468x60 */
+
+div.d468x60 .cell-group {
+  width: 468px;
+  height: 60px;
+}
+
+div.d468x60 .cell {
+  width: 466px;
+  height: 60px;
+  margin-right: 4px;
+}
+
+div.d468x60 .cell:last-child {
+  margin-right: 0px;
+}
+
+div.d468x60 .cell .image-content .image {
+  width: 58px;
+  height: 58px;
+}
+
+div.d468x60 .cell .image-content .image img {
+  width: 58px;
+  height: 58px;
+}
+
+div.d468x60 .cell .content {
+  width: 400px;
+  height: 60px;
+}
+
+div.d468x60 .cell .content .offer-name {
+  width: 395px;
+}
+
+div.d468x60 .cell .content .content-text {
+  width: 392px;
+  height: 45px;
+}
+
+div.d468x60 .cell .content .content-left-panel {
+  width: 250px;
+  float: left;
+  margin-right: 15px;
+}
+
+div.d468x60 .cell .content .title {
+  font-size: 12px;
+  line-height: 120%;
+  margin-top: 4px;
+}
+
+div.d468x60 .cell .content .promo-text {
+  font-size: 10px;
+  line-height: 200%;
+}
+
+div.d468x60 .cell .content .content-right-panel {
+  width: 100px;
+  float: left;
+  margin-top: 3px;
+}
+
+div.d468x60 .cell .content .coupon-panel {
+  font-size: 10px;
+}
+
+div.d468x60 .cell .content .coupon-code {
+  font-size: 10px;
+  display: block;
+}
+
+div.d468x60 .cell .content .price {
+  line-height: 100%;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+div.d468x60 .signature {
+  width: 468px;
+}
+
+
+/* 364x90 */
+
+div.d364x90 .cell-group {
+  width: 364px;
+  height: 90px;
+  display: block;
+}
+
+div.d364x90 .cell {
+  width: 362px;
+  height: 90px;
+  margin-right: 4px;
+}
+
+div.d364x90 .cell:last-child {
+  margin-right: 0px;
+}
+
+div.d364x90 .cell .image-content .image {
+  width: 88px;
+  height: 88px;
+}
+
+div.d364x90 .cell .image-content .image img {
+  width: 88px;
+  height: 88px;
+}
+
+div.d364x90 .cell .content {
+  width: 265px;
+  height: 90px;
+}
+
+div.d364x90 .cell .content .offer-name {
+  width: 260px;
+}
+
+div.d364x90 .cell .content .content-text {
+  width: 250px;
+  height: 75px;
+}
+
+div.d364x90 .cell .content .title {
+  font-size: 12px;
+  line-height: 120%;
+  margin-top: 10px;
+}
+
+div.d364x90 .cell .content .promo-text {
+  font-size: 10px;
+  line-height: 120%;
+  margin-top: 4px;
+}
+
+div.d364x90 .cell .content .coupon-panel {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+div.d364x90 .cell .content .price {
+  font-size: 12px;
+  line-height: 150%;
+  margin-top: 4px;
+}
+
+div.d364x90 .signature {
+  width: 364px;
+}
+
+
+/* 300x250 */
+
+div.d300x250 .cell-group {
+  width: 300px;
+  height: 250px;
+}
+
+div.d300x250 .cell {
+  width: 148px;
+  height: 250px;
+  margin-right: 4px;
+}
+
+div.d300x250 .cell:last-child {
+  margin-right: 0px;
+}
+
+div.d300x250 .cell .image-content .image {
+  width: 146px;
+  height: 146px;
+}
+
+div.d300x250 .cell .image-content .image img {
+  width: 146px;
+  height: 146px;
+}
+
+div.d300x250 .cell .content {
+  width: 148px;
+}
+
+div.d300x250 .cell .content .offer-name {
+  width: 143px;
+}
+
+div.d300x250 .cell .content .content-text {
+  width: 128px;
+  height: 90px;
+}
+
+div.d300x250 .cell .content .title {
+  font-size: 13px;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+div.d300x250 .cell .content .coupon-panel {
+  font-size: 12px;
+}
+
+div.d300x250 .cell .content .price {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+div.d300x250 .signature {
+  width: 300px;
+}
+
+
+/* 160x600 */
+
+div.d160x600 .cell-group {
+  width: 160px;
+  height: 600px;
+}
+
+div.d160x600 .cell {
+  width: 160px;
+  height: 298px;
+}
+
+div.d160x600 .cell:last-child {
+  margin-top: 4px;
+}
+
+div.d160x600 .cell .image-content .image {
+  width: 158px;
+  height: 158px;
+}
+
+div.d160x600 .cell .image-content .image img {
+  width: 158px;
+  height: 158px;
+}
+
+div.d160x600 .cell .content {
+  width: 160px;
+}
+
+div.d160x600 .cell .content .offer-name {
+  width: 155px;
+}
+
+div.d160x600 .cell .content .content-text {
+  width: 149px;
+  height: 85px;
+}
+
+div.d160x600 .cell .content .title {
+  font-size: 12px;
+  line-height: 120%;
+  margin-top: 10px;
+}
+
+div.d160x600 .cell .content .promo-text {
+  font-size: 10px;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+div.d160x600 .cell .content .price {
+  font-size: 12px;
+}
+
+div.d160x600 .cell .content .coupon-panel {
+  font-size: 10px;
+}
+
+div.d160x600 .cell .content .promo-button {
+  width: 140px;
+  font-size: 12px;
+  line-height: 235%;
+  margin-top: 7px;
+}
+
+div.d160x600 .signature {
+  width: 160px;
+}
+
+
+/* 120x600 */
+
+div.d120x600 .cell-group {
+  width: 120px;
+  height: 600px;
+}
+
+div.d120x600 .cell {
+  width: 120px;
+  height: 297px;
+  margin-bottom: 4px;
+}
+
+div.d120x600 .cell:last-child {
+  margin-bottom: 0px;
+}
+
+div.d120x600 .cell .image-content .image {
+  width: 118px;
+  height: 118px;
+}
+
+div.d120x600 .cell .image-content .image img {
+  width: 118px;
+  height: 118px;
+}
+
+div.d120x600 .cell .content {
+  width: 120px;
+}
+
+div.d120x600 .cell .content .offer-name {
+  width: 115px;
+}
+
+div.d120x600 .cell .content .content-text {
+  width: 110px;
+  height: 140px;
+}
+
+div.d120x600 .cell .content .title {
+  font-size: 12px;
+  line-height: 120%;
+  margin-top: 10px;
+}
+
+div.d120x600 .cell .content .promo-text {
+  font-size: 10px;
+  line-height: 120%;
+  margin-top: 4px;
+}
+
+div.d120x600 .cell .content .coupon-panel {
+  font-size: 12px;
+}
+
+div.d120x600 .cell .content .price {
+  font-size: 12px;
+}
+
+div.d120x600 .cell .content .promo-button {
+  font-size: 10px;
+  line-height: 235%;
+}
+
+div.d120x600 .signature {
+  width: 120px;
+}
+
+
+/* 180x280 */
+
+div.d180x280 .cell-group {
+  width: 180px;
+  height: 280px;
+}
+
+div.d180x280 .cell {
+  width: 180px;
+  height: 280px;
+}
+
+div.d180x280 .cell .image-content .image {
+  width: 178px;
+  height: 178px;
+}
+
+div.d180x280 .cell .image-content .image img {
+  width: 178px;
+  height: 178px;
+}
+
+div.d180x280 .cell .content {
+  width: 180px;
+}
+
+div.d180x280 .cell .content .offer-name {
+  width: 175px;
+}
+
+div.d180x280 .cell .content .content-text {
+  width: 160px;
+  height: 85px;
+}
+
+div.d180x280 .cell .content .title {
+  font-size: 12px;
+  margin: 8px auto;
+  line-height: 120%;
+}
+
+div.d180x280 .cell .content .promo-text {
+  font-size: 10px;
+  line-height: 120%;
+  margin: auto;
+}
+
+div.d180x280 .cell .content .coupon-panel {
+  font-size: 10px;
+}
+
+div.d180x280 .cell .content .price {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+div.d180x280 .signature {
+  width: 180px;
+}
+
+
+/* 750x300 */
+
+div.d750x300 .cell-group {
+  width: 750px;
+  height: 300px;
+}
+
+div.d750x300 .cell {
+  width: 184px;
+  height: 300px;
+  margin-right: 4px;
+}
+
+div.d750x300 .cell:last-child {
+  margin-right: 0px;
+}
+
+div.d750x300 .cell .image-content .image {
+  width: 182px;
+  height: 182px;
+}
+
+div.d750x300 .cell .image-content .image img {
+  width: 182px;
+  height: 182px;
+}
+
+div.d750x300 .cell .content {
+  width: 184px;
+}
+
+div.d750x300 .cell .content .offer-name {
+  width: 179px;
+}
+
+div.d750x300 .cell .content .content-text {
+  width: 174px;
+  height: 70px;
+}
+
+div.d750x300 .cell .content .title {
+  font-size: 14px;
+  line-height: 125%;
+  margin-top: 10px;
+}
+
+div.d750x300 .cell .content .price {
+  font-size: 13px;
+  line-height: 120%;
+  margin-top: 5px;
+}
+
+div.d750x300 .cell .content .coupon-panel {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+div.d750x300 .cell .content .promo-button {
+  font-size: 13px;
+  line-height: 235%;
+  margin-top: 3px;
+}
+
+div.d750x300 .signature {
+  width: 750px;
+}

@@ -1,0 +1,16 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        press_release:
+          attributes:
+            title:
+              blank: "Please specify the title of the press release."
+            content:
+              blank: "Please specify the press release content."
+            language_id:
+              blank: "Please specify the language of the press release."
+            posted_at:
+              blank: "Please specify the date this press release is posted."
+            status:
+              blank: "Please specify the status of the press release."

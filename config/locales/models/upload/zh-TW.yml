@@ -1,0 +1,23 @@
+zh-TW:
+
+  predefined:
+
+    models:
+    
+      upload:
+
+        status:
+          "Error": "錯誤"
+          "In Progress": "進行中"
+          "Ready": "已完成"
+          "Warning": "注意"
+
+  will_paginate:
+
+    models:
+
+      upload:
+        zero: "上傳"
+        one: "上傳"
+        few: "上傳"
+        other: "上傳"

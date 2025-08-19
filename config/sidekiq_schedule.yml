@@ -1,0 +1,226 @@
+# every 5 minutes
+reset_max_updated_at:
+  cron: "*/30 * * * *"
+  class: Cache::ResetMaxUpdatedAtJob
+  queue: entity_management
+# every hour
+expire_offer:
+  cron: "0 * * * *"
+  class: NetworkOffers::ExpireJob
+  queue: maintenance
+# every hour
+notify_upcoming_pause_offer:
+  cron: "0 * * * *"
+  class: NetworkOffers::NotifyUpcomingPauseJob
+  queue: email_notification
+# every 30 minutes
+alternative_domain_check_validation:
+  cron: "*/30 * * * *"
+  class: AlternativeDomains::CheckValidationJob
+  queue: maintenance
+# every hour
+maintenance_kinesis:
+  cron: "0 * * * *"
+  class: ServiceMaintenanceJob
+  queue: tracking
+# every hour
+suspend_expired_creatives:
+  cron: 0 * * * *
+  class: Creatives::SuspendExpiredJob
+  queue: maintenance
+# every hour
+sync_legacy_feeds:
+  cron: 0 * * * *
+  class: AffiliateFeeds::SyncLegacyJob
+  queue: maintenance
+# every hour
+sync_stat_order_numbers:
+  cron: "0 * * * *"
+  class: AffiliateStats::SyncOrderNumberJob
+  queue: maintenance
+# every hour
+newsletter_restructure_attributes:
+  cron: "0 * * * *"
+  class: Newsletters::RestructureJob
+  queue: maintenance
+# every 3 hours
+populate_conversion_so_far:
+  cron: "0 */3 * * *"
+  class: OfferCaps::PopulateConversionSoFarJob
+  queue: maintenance
+# every day at 10:20am (2:20am UTC)
+download_cleanup:
+  cron: 20 2 * * *
+  class: Downloads::CleanupJob
+  queue: maintenance
+# every day at 11am (3am UTC)
+missing_order_notify_waiting:
+  cron: 0 3 * * *
+  class: MissingOrders::NotifyWaitingJob
+  queue: email_notification
+# every day at 11am (3am UTC)
+missing_order_auto_approve_waiting:
+  cron: 0 3 * * *
+  class: MissingOrders::AutoApproveWaitingJob
+  queue: maintenance
+# every day at 1pm (5am UTC)
+cleanup_inactive_engagements:
+  cron: 0 5 * * *
+  class: Networks::CleanupInactiveEngagementsJob
+  queue: maintenance
+  # every day at 1am (5pm UTC)
+publish_affiliate_feed:
+  cron: 0 17 * * *
+  class: AffiliateFeeds::PublishJob
+  queue: maintenance
+# every day at 2am (6pm UTC)
+finalize_past_due:
+  cron: 0 18 * * *
+  class: AffiliateStats::FinalizePastDueJob
+  queue: maintenance
+# every day at 3am (7pm UTC)
+missing_order_close:
+  cron: 0 19 * * *
+  class: MissingOrders::CloseJob
+  queue: maintenance
+# every day at 7am (11pm UTC)
+missing_order_notify_new:
+  cron: 0 23 * * *
+  class: MissingOrders::NotifyNewJob
+  queue: email_notification
+# every day at 10pm (2pm UTC)
+order_api_pull:
+  cron: 0 14 * * *
+  class: ClientApis::OrderApi::PullJob
+  queue: api_pull
+# every day at 11pm (3pm UTC)
+sync_sales_pipeline_job:
+  cron: 0 15 * * *
+  class: Networks::SyncSalesPipelineJob
+  queue: maintenance
+# every day at 12pm (4pm UTC)
+sync_category_job:
+  cron: 0 16 * * *
+  class: EventOffers::SyncCategoryJob
+  queue: maintenance
+# every day at 1am (5pm UTC)
+expire_pay_schedule_job:
+  cron: 0 17 * * *
+  class: PaySchedules::ExpireJob
+  queue: maintenance
+# every day at 1am (5pm UTC)
+affiliate_populate_conversion_count:
+  cron: 0 17 * * *
+  class: Affiliates::PopulateConversionCountJob
+  queue: maintenance
+affiliate_populate_top_offers:
+  cron: 0 17 * * *
+  class: Affiliates::PopulateTopOffersJob
+  queue: maintenance
+# every Monday at 10am (2am UTC)
+notify_negative_balances:
+  cron: 0 2 * * 1
+  class: Notifiers::NegativeBalancesJob
+  queue: email_notification
+# every Tuesday at 10am (2am UTC)
+product_api_clear_download:
+  cron: 0 2 * * 2
+  class: ClientApis::ProductApi::ClearDownloadJob
+  queue: maintenance
+# every Friday at 9am (1am UTC)
+report_admin_performance:
+  cron: 0 1 * * 5
+  class: AffiliateUsers::WeeklyPerformanceReportEmailJob
+  queue: email_notification
+# every Saturday at 1pm (5am UTC)
+orders_cleanup:
+  cron: 0 5 * * 6
+  class: Orders::CleanupJob
+  queue: maintenance
+# every Saturday at 9pm (1pm UTC)
+stat_sync:
+  cron: 0 13 * * 6
+  class: AffiliateStats::SyncJob
+  queue: maintenance
+# every Sunday at 8am (0am UTC)
+refresh_site_info_metrics:
+  cron: 0 0 * * 0
+  class: SiteInfos::RefreshMetricsJob
+  queue: maintenance
+# every Sunday at 9am (1am UTC)
+product_api_pull:
+  cron: 0 1 * * 0
+  class: ClientApis::ProductApi::PullJob
+  queue: api_pull
+# every Sunday at 10am (2am UTC)
+archive_logs:
+  cron: 0 2 * * 0
+  class: Archive::BackupLogJob
+  queue: maintenance
+# every Sunday at 11am (3am UTC)
+order_api_clear_cache:
+  cron: 0 3 * * 0
+  class: ClientApis::OrderApi::ClearCacheJob
+  queue: maintenance
+# every Sunday at 12pm (4pm UTC)
+clear_server_log:
+  cron: 0 16 * * 0
+  class: Archive::ClearServerLogJob
+  queue: maintenance
+# every Sunday at 11pm (3pm UTC)
+stat_duplicate_cleanup:
+  cron: 0 15 * * 0
+  class: Stats::CleanupDuplicateJob
+  queue: maintenance
+# every 30 days at 2pm (6am UTC)
+cleanup_no_engagements:
+  cron: 0 6 */30 * *
+  class: Networks::CleanupNoEngagementsJob
+  queue: maintenance
+# every month on 1st at 8am (0am UTC)
+monthly_notify_stat_summary:
+  cron: 0 0 1 * *
+  class: Networks::NotifyStatSummaryJob
+  queue: email_notification
+# every month on 1st at 9am (1am UTC)
+archive_stats:
+  cron: 0 1 1 * *
+  class: Stats::ArchiveJob
+  queue: maintenance
+# every month on 5th at 8am (0am UTC)
+monthly_reports_to_networks:
+  cron: 0 0 5 * *
+  class: Networks::MonthlyPerformanceReportEmailJob
+  queue: email_notification
+# every month on 6th at 8am (0am UTC)
+archive_cdn_logs:
+  cron: 0 0 6 * *
+  class: Cdn::ArchiveJob
+  queue: maintenance
+# every month on 9th at 8am (0am UTC)
+alternative_domain_expire:
+  cron: 0 0 9 * *
+  class: AlternativeDomains::ExpireJob
+  queue: maintenance
+# every month on 20th at 8am (0am UTC)
+monthly_claimable_balance_affiliates:
+  cron: 0 0 20 * *
+  class: AffiliateUsers::ClaimableAffiliateBalanceJob
+  queue: email_notification
+# every month on 25th at 8am (0am UTC)
+cleanup_impression_stats:
+  cron: 0 0 25 * *
+  class: Cdn::CleanupStatsJob
+  queue: maintenance
+#TODO: Uncomment this when making it live
+#network_payment:
+#  cron: "0 8 * * *"
+#  class: "Stripe::NetworkPaymentJob"
+# every 30 minutes
+kill_db_sleep_connection:
+  cron: "*/30 * * * *"
+  class: KillDbSleepConnectionJob
+  queue: maintenance
+  args:
+    - 1200
+    - ["10.0.0.101", "10.0.0.229"] # upgrade instance ips

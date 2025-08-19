@@ -1,0 +1,9 @@
+th-TH:
+  
+  activerecord:
+  
+    models:
+
+      user:
+        one: "User"
+        other: "Users"

@@ -1,0 +1,37 @@
+th-TH:
+    
+  address:
+    formats:
+      html: |
+        %{state}%{city}<br/>%{address}
+
+  date:
+    formats:
+      default_with_day: ! "%b %d, %Y (%A)"
+      long_date: ! "%Y/%m/%d"
+      short_month: ! "%b %d, %Y"
+      global: ! "%Y-%m-%d"
+      global_month_only: ! "%Y-%m"
+      javascripts:
+        default: "MM-DD-YYYY"
+        momentjs: "MMM DD, YYYY"
+      on_global: ! on %Y-%m-%d
+      up_to_global: ! up %Y-%m-%d
+
+  number:
+    currency:
+      formats:
+        no_unit_format: '%n'
+        plain_format: '%u%n'
+
+  person:
+    formats:
+      full_name: "%{first_name} %{last_name}"
+
+  time:
+    formats:
+      default_with_day: ! "%b %d, %Y (%A)"
+      default_with_time: ! "%b %d, %Y %I:%M %p"
+      short_month: ! "%b %d, %Y %I:%M %p"
+      global: ! "%Y-%m-%d %H:%M:%S"
+      time: ! "%I:%M %p"

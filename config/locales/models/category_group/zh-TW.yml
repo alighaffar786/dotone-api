@@ -1,0 +1,23 @@
+zh-TW:
+
+  predefined:
+    models:
+      category_group:
+        name:
+          "Adult": "成人娛樂"
+          "Beauty & Skincare": "美妝保養"
+          "Clothing & Apparel": "服飾配件"
+          "Cooking & DIY": "料理烹飪"
+          "Education & Knowledge": "教育學習"
+          "Electronic & Tech": "3C科技"
+          "Family & Kid": "親子休閒"
+          "Food & Drinks": "食物飲品"
+          "General Merchandise": "綜合電商"
+          "Gifts & Flowers": "鮮花禮品"
+          "Health & Wellness": "醫療保健"
+          "Home & Garden": "居家生活"
+          "Pets & Aquarium": "寵物水族"
+          "Professional Services": "專業服務"
+          "Recreation & Leisure": "休閒娛樂"
+          "Sport & Fitness": "運動健身"
+          "Travel & Lodging": "旅遊訂房"

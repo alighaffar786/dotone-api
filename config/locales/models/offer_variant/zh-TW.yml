@@ -1,0 +1,39 @@
+zh-TW:
+  activerecord:
+    models:
+      offer_variant:
+        one: "活動登陸頁"
+        other: "活動登陸頁"
+
+    errors:
+      models:
+        offer_variant:
+          attributes:
+            destination_url:
+              not_match: "Host not match" # TODO
+
+  predefined:
+    models:
+      offer_variant:
+        status:
+          Active: 使用中
+          Active Public: 公開
+          Active Private: 受限
+          Completed: 已完成
+          Draft: 草稿
+          Fulfilled: 名額已滿
+          Paused: 已暫停
+          Suspended: 已終止
+
+        variant_type:
+          Home Page: 官網首頁
+          Designated Page: 指定頁面
+          Registration Page: 註冊頁面
+
+  will_paginate:
+    models:
+      offer_variant:
+        zero: "活動登陸頁"
+        one: "活動登陸頁"
+        few: "活動登陸頁"
+        other: "活動登陸頁"

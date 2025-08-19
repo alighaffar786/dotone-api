@@ -1,0 +1,9 @@
+zh-TW:
+  will_paginate:
+    models:
+      #TODO add translations below
+      site_info:
+        zero: "Assets"
+        one: "Asset"
+        few: "Assets"
+        other: "Assets"

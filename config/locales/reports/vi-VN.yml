@@ -1,0 +1,59 @@
+vi-VN:
+  reports:
+    weekly_performance:
+      top_headers:
+        publishers: "聯盟會員 (Publishers)"
+        advertisers: "廣告商 (Advertisers)"
+        offers: "品牌/電商 (Offers)"
+        revenues: "營業額 (Revenue)"
+
+      week: "周期 (Week)"
+
+      publishers:
+        new_member: "新註冊會員\n(New Member)"
+        new_member_logins: "新會員登入數\n(New Member Login)"
+        member_login_ratio: "新會員登入率\n(Member Login Ratio)"
+        total_members: "總會員數\n(Total Members)"
+        total_member_logins: "登入人數\n(Total Login)"
+        total_member_logins_ratio: "登入率\n(Login Ratio)"
+        total_active_members: "操作會員數\n(Active Member)"
+        active_member_ratio: "操作率\n(Active Ratio)"
+        member_with_transaction: "有訂單會員數（本週\n(Member w/Transaction)"
+        member_with_all_week_transaction: "有訂單會員數（四周）\n(w/Transaction all 4 weeks)"
+        conversion_rate: "成效率\n(Conversion Rate)"
+        member_with_offers: "品牌申請數\n(w/Offer Application)"
+
+      advertisers:
+        new_entry: "新開發廠商\n(New Entry)"
+        organic_entry: "自來客\n(Organic Entry)"
+        total_advertisers: "總廠商數\n(Total Advertiser)"
+        active_advertisers: "總使用中數\n(Active Advertiser)"
+        paused_advertisers: "總暫停數\n(Paused Advertiser)"
+        suspended_advertisers: "總終止數\n(Suspended Advertiser)"
+        have_order_captured: "有訂單廠商數\n(Have Order Captured)"
+        advertiser_with_captured_ratio: "廠商/訂單成功率\n(Advertiser w/Capture Ratio)"
+        have_uploaded_creative_count: "有上傳素材廠商\n(Have Uploaded Creative)"
+        have_uploaded_nsa_count: "有上傳優惠廠商\n(Have Added NSA)"
+
+      offers:
+        total_clicks: "總點擊數\n(Total Clicks)"
+        pending_transactions: "未確認交易\n(Pending Transaction)"
+        published_transactions: "確認交易\n(Published Transaction)"
+        approved_transactions: "批准交易\n(Approved Transaction)"
+        rejected_transactions: "否決交易\n(Rejected Transaction)"
+        inconclusive: "待處理\n(Inconclusive)"
+        total_captured_transactions: "總交易數\n(Total Captured Transactions)"
+        offer_conversion_rate: "交易轉換率\n(Conversion Rate)"
+        total_active_offers: "可推廣品牌數\n(Total Active Offers)"
+        converted_offers: "有交易品牌\n(Converted Offers)"
+        new_active: "當周上架品牌\n(New Active)"
+        new_suspended: "當周下架品牌\n(New Suspended)"
+
+      revenues:
+        confirmed_revenue: "已確認營收\n(Confirmed Revenue)"
+        pending_revenue: "未確認營收\n(Pending Revenue)"
+        average_confirmed_revenue: "平均確認交易營收\n(Avg Confirmed Revenue)"
+        estimation_revenue: "預估營收\n(Est. Revenue)"
+        estimation_payable: "預估分潤金額\n(Est. Payable)"
+        estimation_margin: "預估盈收\n(Est. Margin)"
+        margin_ratio: "利潤率\n(Margin Ratio)"

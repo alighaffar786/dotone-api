@@ -1,0 +1,21 @@
+vi-VN:
+  track:
+    ad_slots:
+      index:
+        discount_price: Sale
+        original_price: Original
+        use_coupon: Use Code
+
+    clicks:
+      geo_filter:
+        details: |
+          <p>Please note this offer may not be available to you due to geo restriction or publisher eligibility.</p>
+        if_preview_url_exist: |
+          <p>
+            This page will be redirected momentarily. If not, please click the link below:
+          </p>
+          <p><a href="%{url}">Continue Here</a></p>
+        intro: |
+          <h4>is geo restricted or currently not available</h4>
+        page_title: |
+          Offer Is Not Available in Your Country

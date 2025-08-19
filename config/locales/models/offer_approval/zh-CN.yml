@@ -1,0 +1,13 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        offer_approval:
+          attributes:
+            status:
+              blank: "Please specify the approval status."
+            user_id:
+              blank: "Please specify the user."
+            offer_id:
+              blank: "Please specify the offer."
+              taken: "The offer is already in the user's approval list."

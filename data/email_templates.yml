@@ -1,0 +1,1326 @@
+advertiser_monthly_report:
+  subject: "{{company_name}} - Advertiser Monthly Report"
+  sender: "{{company_name}} - <{{sender_email}}>"
+  email_type: "Advertiser Monthly Report"
+  content: "<body style='font-family: Roboto'>
+     <div>
+       <div style='font-weight: 700; font-size: 36px; margin-top: 50px; text-align: center'>
+         {{last_month}} Performance Report
+       </div>
+       <div style='font-weight: 700; font-size: 24px; margin-top: 30px; text-align: center;'>
+         {{company_name}}
+       </div>
+       <div style='font-weight: 700; font-size: 24px; margin-top: 30px; text-align: center;'>
+         Total Orders as of {{last_month}} {{end_of_last_month}}
+       </div>
+       <div style='font-weight: 700; font-size: 20px; margin-top: 10px; color: #d1d1d1; text-align: center'>
+         We are looking at pending and confirmed orders
+       </div>
+       <div style='width: 90%; border: 1px solid #000; padding: 10px 20px; margin-top: 30px; background-color: #efefef;'>
+         <div style='display: flex;'>
+           <div style='margin-right: auto;'>This month, total orders increased by {{orders_difference}}
+             orders
+           </div>
+           <div>
+             <div style='font-weight: 700; text-align: right;'>{{orders_difference}}</div>
+             <div>orders</div>
+           </div>
+         </div>
+
+         <div style='display: flex; margin-top: 10px;'>
+           <div style='font-weight: bold; font-size: 18px; margin-right: auto;'>{{last_two_month}}</div>
+           <div>
+             <div style='font-weight: 700; text-align: right;'>{{last_month_orders}}</div>
+             <div>orders</div>
+           </div>
+         </div>
+
+         <div style='display: flex; margin-top: 10px;'>
+           <div style='font-weight: bold; font-size: 18px; margin-right: auto;'>{{last_month}}</div>
+           <div>
+             <div style='font-weight: 700; text-align: right;'>{{present_month_orders}}</div>
+             <div>orders</div>
+           </div>
+         </div>
+       </div>
+
+       <div style='font-weight: 700; font-size: 24px; margin-top: 50px; text-align: center;'>
+         Your Campaign Exposure Summary
+       </div>
+       <div style='font-weight: 700; font-size: 20px; margin-top: 10px; color: #d1d1d1; text-align: center'>
+         Take a look at how well affiliates are willing to run your campaigns
+       </div>
+
+       <div style='display: flex; margin-top: 30px; margin-right: auto; text-align: center; margin-left: 10%'>
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Active Affiliates</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{detail_views_count}}</div>
+         </div>
+
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Detail Views</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{detail_views_count}}</div>
+         </div>
+
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Clicks</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{click_count}}</div>
+         </div>
+       </div>
+
+       <div style='font-weight: 700; font-size: 24px; margin-top: 50px; text-align: center;'>
+         Your Creative Display Summary
+       </div>
+       <div style='font-weight: 700; font-size: 20px; margin-top: 10px; color: #d1d1d1; text-align: center'>
+         Take a look at how well your brand coverage is in our network
+       </div>
+
+       <div style='display: flex; margin-top: 30px; margin-right: auto; text-align: center; margin-left: 10%'>
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Banners</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{banners_count}}</div>
+         </div>
+
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Native Ads</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{native_ad_count}}</div>
+         </div>
+
+         <div style='border: 1px solid #d1d1d1; width: 170px; margin: 0px 20px'>
+           <div style='border-bottom: 1px solid #d1d1d1; padding: 7px; font-weight: 600'>Impressions</div>
+           <div style='text-align: center; padding: 20px; font-weight: 700; font-size: 16px'>{{impression_count}}</div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+   </body>"
+
+advertiser_email_verification:
+  email_type: "Advertiser Email Verification"
+  subject: "-company_name- Email Verification"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Welcome to -company_name-. Please verify your email account:
+    <br><br>
+    -email_verification_url-
+    <br><br>
+    If the above link does not work, please copy and paste it to your browser.
+    If you continue to have problem, please feel free to contact us.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because email verification is being requested.
+    If you did not request this activity, please email us at -company_general_contact_email-.
+
+weekly_performance_report:
+  email_type: "Weekly Performance Report"
+  subject: "{{company_name}} - Weekly Performance Report - {{local_time}}"
+  sender: "{{company_name}} - <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: |
+    <p>Attached is Weekly CSV Report - {{local_time}}</p>
+    <p>Each column represents the following data:</p>
+
+    <p><strong>PUBLISHERS</strong></p>
+
+    <table class="bordered">
+      <thead style="background-color: #51AD4C;">
+        <tr>
+          <th>Columns</th>
+          <th>Descriptions</th>
+          <th>Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B</td>
+          <td>The number of new affiliates created/signed up within the date range</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>The number of affiliates from column A who logged-in</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Percentage ratio of logged-in new affiliate to the total new affiliates</td>
+          <td>(C / B) * 100</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>
+            Overall total logged-in affiliates regardless of date range.
+            Last login time threshold is 12 months ago
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>
+            Total affiliates that logged-in within the date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>
+            Percentage ratio of logged-in affiliates within this date range to total logged-in
+            affiliates
+          </td>
+          <td>(F / E) * 100</td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td>
+            Total affiliates that have generated 10+ clicks within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>
+            Percentage ratio of active affiliates to logged-in affiliates
+          </td>
+          <td>(H / E) * 100</td>
+        </tr>
+        <tr>
+          <td>J</td>
+          <td>
+            Total affiliates with 1+ captured transactions where captured time is within the date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>K</td>
+          <td>
+            Total affiliates with 1+ captured transactions on each consecutive week for the past 4 weeks
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>L</td>
+          <td>
+            Percentage ratio of affiliates who generated captured transactions 
+            to affiliates who generated clicks
+          </td>
+          <td>(J / H) * 100</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>
+            Total Affiliates who applied for at least one offer within the date range 
+            regardless of new or existing affiliates. Affiliate who applies to multiple offers
+            within the date range will be counted as 1
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>ADVERTISERS</strong></p>
+
+    <table class="bordered">
+      <thead style="background-color: #EEACDF;">
+        <tr>
+          <th>Columns</th>
+          <th>Descriptions</th>
+          <th>Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>N</td>
+          <td>
+            Number of advertisers who are recruited within this date range by our internal team
+          </td>
+          <td>
+            created_at within date range<br>
+            recruiter is present
+          </td>
+        </tr>
+        <tr>
+          <td>O</td>
+          <td>Number of advertisers who signup directly / organic signup</td>
+          <td>
+            created_at within date range<br>
+            recruiter is not present
+          </td>
+        </tr>
+        <tr>
+          <td>P</td>
+          <td>
+            Total count of all advertisers, regardless of date range.
+          </td>
+          <td>
+            created_at is <= end time of its respected date range
+          </td>
+        </tr>
+        <tr>
+          <td>Q</td>
+          <td>
+            Total count of all Active advertisers, regardless of date range.
+          </td>
+          <td>
+            created_at is <= end time of its respected date range<br>
+            status = Active
+          </td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>
+            Total count of all Paused advertisers, regardless of date range.
+          </td>
+          <td>
+            created_at is <= end time of its respected date range<br>
+            status = Paused
+          </td>
+        </tr>
+        <tr>
+          <td>S</td>
+          <td>
+            Total count of all Suspended advertisers, regardless of date range.
+          </td>
+          <td>
+            created_at is <= end time of its respected date range<br>
+            status = Suspended
+          </td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>
+            Number of advertisers that have captured transactions within the date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>U</td>
+          <td>
+            Percentage ratio of advertisers who have captured transactions 
+            to number of active advertisers
+          </td>
+          <td>
+            T / Q * 100
+          </td>
+        </tr>
+        <tr>
+          <td>V</td>
+          <td>
+            Number of advertisers who have uploaded banners within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>W</td>
+          <td>
+            Number of advertisers who have uploaded promo and deals within this date range
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>OFFERS</strong></p>
+
+    <table class="bordered">
+      <thead style="background-color: #B0CAE2;">
+        <tr>
+          <th>Columns</th>
+          <th>Descriptions</th>
+          <th>Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>X</td>
+          <td>
+            Total clicks ocurred within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Y</td>
+          <td>
+            Total pending transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Z</td>
+          <td>
+            Total published transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AA</td>
+          <td>
+            Total confirmed and approved transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AB</td>
+          <td>
+            Total confirmed and rejected transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AC</td>
+          <td>
+            Total inconclusive transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AD</td>
+          <td>
+            Total captured transactions within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AE</td>
+          <td>
+            Percentage ratio of total captured conversions to clicks
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AF</td>
+          <td>
+            Total number of active public offers up to the end of this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AG</td>
+          <td>
+            Total number of active public offers that have captured transactions 
+            within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AH</td>
+          <td>
+            Total number of active public offers that is published
+            within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AI</td>
+          <td>
+            Total number of active public offers that is suspended
+            within this date range
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>REVENUE</strong></p>
+
+    <table class="bordered">
+      <thead style="background-color: #FFF3CC;">
+        <tr>
+          <th>Columns</th>
+          <th>Descriptions</th>
+          <th>Formula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AJ</td>
+          <td>
+            Total published payout based on conversion time within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AK</td>
+          <td>
+            Total pending payout based on captured time within this date range
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>AL</td>
+          <td>
+            Percentage ratio of confirmed payout to total published transactions
+          </td>
+          <td>
+            (AL / Z) * 100
+          </td>
+        </tr>
+        <tr>
+          <td>AM</td>
+          <td>
+            The sum of confirmed & pending payouts. It reflects the potential payouts within this date range
+          </td>
+          <td>
+            AJ + AK
+          </td>
+        </tr>
+        <tr>
+          <td>AN</td>
+          <td>
+            The sum of confirmed & pending commissions. It reflects the potential commissions within this date range
+          </td>
+          <td>
+            Published Commission (on conversion time) + Pending Commission (on captured time)
+          </td>
+        </tr>
+        <tr>
+          <td>AO</td>
+          <td>
+            Estimated margin within this date range
+          </td>
+          <td>
+            AM - AN
+          </td>
+        </tr>
+        <tr>
+          <td>AQ</td>
+          <td>
+            Ratio percentage of estimated margin to estimated payouts
+          </td>
+          <td>
+            AO / AM (in percentage, two decimal point)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+claimable_balance_report:
+  email_type: "Claimable Balance Report"
+  subject: "Claimable Balance Report - {{local_time}}"
+  sender: "{{company_name}} - <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: <p> Attached is Claimable Balance CSV Report - {{local_time}} </p>
+
+advertiser_password_reset:
+  email_type: "Advertiser Password Reset"
+  subject: "-company_name- - Password Reset Request"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Our system indicates that you have requested to reset your password.
+    If you did not make this request, simply ignore this email.
+    If you did make a request, just click the link below:
+    <br><br>
+    -password_reset_url-
+    <br><br>
+    If the above URL does not work, try copying and pasting it into your browser.
+    If you continue to have problem, please feel free to contact us.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are requesting to reset your password.
+    If you did not request this activity, please email us at -company_general_contact_email-.
+
+advertiser_status_pending:
+  email_type: "Advertiser Status Pending"
+  subject: "Thank you for your application!"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Thank you for your interest to become an advertiser on Affiliates.One.
+    Our client account representative will contact you within 1~3 days.
+    Please be patience as we look forward in meeting and working with you shortly.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Client Account Team
+  footer: |
+    You are receiving this email because you registered as an advertiser to -company_name-.
+
+advertiser_status_active:
+  email_type: "Advertiser Status Active"
+  subject: "-company_name- - Your account is active"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Your account is now active. Please login to your account.
+    <br><br>
+    Your account information:<br>
+    Email: -adv_email-<br>
+    Password: ******<br>
+    Login URL: <a href="-login_url-">-login_url-</a><br>
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an advertiser to -company_name-.
+
+advertiser_status_suspended:
+  email_type: "Advertiser Status Suspended"
+  subject: "-company_name- - Your account is suspended"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Your account has been suspended. If you have any question, please
+    contact us at -company_general_contact_email-.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an advertiser to -company_name-.
+
+advertiser_status_suspended_due_to_gdpr:
+  email_type: "Advertiser Status Suspended Due To GDPR"
+  subject: "-company_name- - Your account is suspended due to GDPR request"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Your account has been suspended due to GDPR request. If you have any question, please
+    contact us at -company_general_contact_email-.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an advertiser to -company_name-.
+
+advertiser_gdpr_data_ready:
+  email_type: "Advertiser GDPR Data Ready"
+  subject: "-company_name- - Data requested is ready"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_full_name-,
+    <br><br>
+    Please click the link below to download the data requested.
+    <br><br>
+    -data_url-
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an advertiser to -company_name-.
+
+affiliate_email_verification:
+  email_type: "Affiliate Email Verification"
+  subject: "-company_name- Email Verification"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Welcome to -company_name-. Please verify your email account:
+    <br><br>
+    -email_verification_url-
+    <br><br>
+    If the above link does not work, please copy and paste it to your browser.
+    If you continue to have problem, please feel free to contact us.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because email verification is being requested.
+    If you did not request this activity, please email us at -company_affiliate_contact_email-.
+
+affiliate_password_reset:
+  email_type: "Affiliate Password Reset"
+  subject: "-company_name- - Password Reset Request"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Our system indicates that you have requested to reset your password.
+    If you did not make this request, simply ignore this email.
+    If you did make a request, just click the link below:
+    <br><br>
+    -password_reset_url-
+    <br><br>
+    If the above URL does not work, try copying and pasting it into your browser.
+    If you continue to have problem, please feel free to contact us.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are requesting to reset your password.
+    If you did not request this activity, please email us at -company_affiliate_contact_email-.
+
+affiliate_payment_info_confirmed:
+  email_type: "Affiliate Payment Info Confirmed"
+  subject: "-company_name- - Payment Info Confirmed"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your payment information has been confirmed. If you have any
+    redeemable payment, you can now redeem your payment.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+affiliate_payment_info_incomplete:
+  email_type: "Affiliate Payment Info Incomplete"
+  subject: "-company_name- - Payment Info Incomplete"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your payment information is incomplete. Please login to your account
+    and update your payment information.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+affiliate_status_active:
+  email_type: "Affiliate Status Active"
+  subject: "-company_name- - Your account is active"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your account is now active. Please login to your account.
+    <br><br>
+    Your account information:<br>
+    Email: -aff_email-<br>
+    Password: ******<br>
+    Login URL: <a href="-login_url-">-login_url-</a><br>
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an affiliate to -company_name-.
+
+affiliate_status_suspended:
+  email_type: "Affiliate Status Suspended"
+  subject: "-company_name- - Your account is suspended"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your account has been suspended. If you have any question, please
+    contact us at -company_affiliate_contact_email-.
+    <br><br>
+    Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you registered as an affiliate to -company_name-.
+
+banner_creative_rejected:
+  email_type: "Banner Creative Rejected"
+  subject: "-company_name- - Banners are rejected"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Your banners are being rejected.
+    <br>
+    -banner_list-
+    <br><br>
+    Reason: -rejected_reason-
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an advertiser to -company_name-.
+
+campaign_cap_depleting:
+  email_type: "Campaign Cap Depleting"
+  subject: "-company_name- - Cap is depleting for Offer -offer_name-"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Cap Remaining: -cap_percentage_used- as of -current_time-
+    Offer: (-offer_id-) -offer_name-
+    <br>
+    Affiliate: (-aff_id-) -aff_full_name-
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+campaign_cap_depleted:
+  email_type: "Campaign Cap Depleted"
+  subject: "-company_name- - Cap has depleted for Offer -offer_name-"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Cap has run out.
+    <br>
+    Offer: (-offer_id-) -offer_name-
+    <br>
+    Affiliate: (-aff_id-) -aff_full_name-
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+campaign_approved:
+  email_type: "Campaign Approved"
+  subject: "-company_name- - Offer Approved"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your campaign to run our (-offer_id-) -offer_name- offer has been approved.
+    Go here to grab your affiliate link (make sure that you're logged in):
+    <br><br>
+    -affiliate_offer_url-
+    <br><br>
+    Important:
+    Please make sure that you understand and follow the listed marketing restrictions.
+    Failure to do so will result in your publisher account being terminated without warning.
+    You will not be paid for traffic generated using methods, landing pages or creatives
+    that are not approved for this offer. Custom creatives and landing pages must be
+    approved by your affiliate manager. Do not hesitate to ask us questions if
+    you are unsure of something. If you need anything in regards to this offer
+    (creatives, a pixel test, or traffic source help), please contact your affiliate manager.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+campaign_invite_adlink:
+  email_type: "Campaign Invite via Adlink"
+  subject: "-company_name- - New Campaigns for Your Adlink"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    The following campaigns have been activated for your adlink:
+    <br><br>
+    -affiliate_offers_url_block-
+    <br><br>
+    Please visit your <strong>My Offers</strong> overview for more information.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+
+campaign_paused:
+  email_type: "Campaign Paused"
+  subject: "-company_name- - Offer Paused"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Your campaign to run our (-offer_id-) -offer_name- offer has been paused.
+    <br><br>
+    Please contact your account manager with any questions, or email -company_affiliate_contact_email-
+    so we can get you in touch with an affiliate strategist today.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+campaign_rejected:
+  email_type: "Campaign Rejected"
+  subject: "-company_name- - Offer Rejected"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Thank you for your interest in running (-offer_id-) -offer_name-. Unfortunately, your campaign request has been denied.
+    There are many reasons your application could be denied and having open,
+    frequent communication with your account manager improves your chances of being approved for apply to run offers.
+    <br><br>
+    Offer Note: -campaign_status_reason-
+    <br><br>
+    Please contact your account manager with any questions, or email -company_affiliate_contact_email-
+    so we can get you in touch with an account manager today.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+event_campaign_changes_required:
+  email_type: "Event Campaign Changes Required"
+  subject: "-company_name- - Changes are Required on Your Draft"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Changes are required on your draft to (-offer_id-) -offer_name-.
+    <br><br>
+    Please email the event coordinator at -event_info_coordinator_email- for more information.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+event_campaign_completed:
+  email_type: "Event Campaign Completed"
+  subject: "-company_name- - Your Event Application is Completed"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Congratulations! Your event application on (-offer_id-) -offer_name- offer has been completed.
+    <br><br>
+    Any commission will be credited to your account as soon as possible. If you have any question,
+    please contact the event coordinator at -event_info_coordinator_email-.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+event_campaign_rejected:
+  email_type: "Event Campaign Rejected"
+  subject: "-company_name- - (-offer_name-) Rejected"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Thank you for your application. We are sorry to inform you that your application has been rejected.
+    <br><br>
+    Reason: -campaign_status_reason-
+    <br><br>
+    If you are rejected due to providing the wrong website and would like to apply again, please mail to
+    -event_info_coordinator_email-.
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+event_campaign_selected:
+  email_type: "Event Campaign Selected"
+  subject: "-company_name- - Your Event Application has been Approved"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Your event application to work with our (-offer_id-) -offer_name- has been approved.
+    <br><br>
+    Please login to your account for more information and visit the event detail page:
+    <br><br>
+    -affiliate_offer_url-
+    <br><br>
+    Important:
+    Please make sure that you understand and follow the listed marketing restrictions,
+    requirements and instructions as shown on the event detail page. Do not hesitate to ask us
+    questions if you are unsure of something. Once your draft is approved, you will get the commission.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- - Compliance Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+feed_creative_rejected:
+  email_type: "Feed Creative Rejected"
+  subject: "-company_name- - Native Ad Rejected"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -adv_name-,
+    <br><br>
+    One of your native ads for offer (-offer_id-) -offer_name- has been rejected.
+    <br><br>
+    Please login to your advertiser panel for details.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an advertiser to -company_name-.
+    To turn off this notification, please login to your advertiser account and
+    modify the settings.
+
+missing_order_approved:
+  email_type: "Missing Order Approved"
+  subject: "-company_name- - Your order/transaction inquiry has been updated"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: -missing_order_id-) has been approved by the advertiser and credited to your account.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+
+missing_order_confirming:
+  email_type: "Missing Order Forwarded to the Advertiser"
+  subject: "-company_name- - Your order/transaction inquiry is in process"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: -missing_order_id-) has been forwarded to the advertiser.
+    <br><br>
+    Click Time: -missing_order_click_time-
+    <br>
+    Offer: -missing_order_offer_id_with_name-
+    <br>
+    Currency: -missing_order_currency_code-
+    <br>
+    Order Number: -missing_order_order_number-
+    <br>
+    Order Time: -missing_order_order_time-
+    <br>
+    Order Total: -missing_order_order_total-
+    <br>
+    Payment Method: -missing_order_payment_method-
+    <br>
+    Device: -missing_order_device-
+    <br><br>
+    Please allow up to 30 days for an update. Thank you.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+
+missing_order_rejected:
+  email_type: "Missing Order Rejected"
+  subject: "-company_name- - Your order/transaction inquiry status has been updated"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: -missing_order_id-) has been rejected by the advertiser with the following reason:
+    <br><br>
+    -missing_order_status_summary-
+    <br><br>
+    -missing_order_status_reason-
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+
+order_inquiry_approved:
+  email_type: "Order Inquiry Approved"
+  subject: "{{company_name}} - Your order/transaction inquiry has been updated"
+  sender: "{{company_name}} <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: |
+    Hi {{recipient_full_name}},
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: {{missing_order_id}}) has been approved by the advertiser and credited to your account.
+    <br><br>
+    Best Regards,
+    <br>
+    {{company_name}} Team
+  footer: |
+    You are receiving this email because you are an affiliate to {{company_name}}.
+
+order_inquiry_confirming:
+  email_type: "Order Inquiry Forwarded to the Advertiser"
+  subject: "{{company_name}} - Your order/transaction inquiry is in process"
+  sender: "{{company_name}} <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: |
+    Hi {{recipient_full_name}},
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: {{missing_order_id}}) has been forwarded to the advertiser.
+    <br><br>
+    Click Time: {{missing_order_click_time}}
+    <br>
+    Offer: {{missing_order_offer_id_with_name}}
+    <br>
+    Currency: {{missing_order_currency_code}}
+    <br>
+    Order Number: {{missing_order_order_number}}
+    <br>
+    Order Time: {{missing_order_order_time}}
+    <br>
+    Order Total: {{missing_order_order_total}}
+    <br>
+    Payment Method: {{missing_order_payment_method}}
+    <br>
+    Device: {{missing_order_device}}
+    <br><br>
+    Please allow up to 30 days for an update. Thank you.
+    <br><br>
+    Best Regards,
+    <br>
+    {{company_name}} Team
+  footer: |
+    You are receiving this email because you are an affiliate to {{company_name}}.
+
+order_inquiry_rejected:
+  email_type: "Order Inquiry Rejected"
+  subject: "{{company_name}} - Your order/transaction inquiry status has been updated"
+  sender: "{{company_name}} <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: |
+    Hi {{recipient_full_name}},
+    <br><br>
+    Your order/transaction inquiry (Inquiry ID: {{missing_order_id}}) has been rejected by the advertiser with the following reason:
+    <br><br>
+    {{missing_order_status_summary}}
+    <br><br>
+    {{missing_order_status_reason}}
+    <br><br>
+    Best Regards,
+    <br>
+    {{company_name}} Team
+  footer: |
+    You are receiving this email because you are an affiliate to {{company_name}}.
+
+order_inquiry_reminder:
+  email_type: "Order Inquiry Advertiser Reminder"
+  subject: "{{company_name}} - Order/Transaction inquiry needs your attention"
+  sender: "{{company_name}} <{{company_affiliate_contact_email}}>"
+  recipient: "{{recipient_email}}"
+  content: |
+    Hi {{recipient_full_name}},
+    <br><br>
+    An order/transaction inquiry (Inquiry ID: {{missing_order_id}}) needs your attention and requires your response.
+    Please login to your account and review inquiry details:
+    <br><br>
+    <a href="{{order_inquiry_url}}">{{order_inquiry_url}}</a>
+    <br><br>
+    Please respond to the order inquiry within {{remaining_days}} days, otherwise per CPA agreement,
+    it will automatically be approved and counted as a valid transaction.
+    <br><br>
+    Best Regards,
+    <br>
+    {{company_name}} Team
+  footer: |
+    You are receiving this email because you are an advertiser to {{company_name}}.
+    To turn off this notification, please login to your advertiser account and
+    modify the settings.
+
+missing_order_reminder:
+  email_type: "Missing Order Advertiser Reminder"
+  subject: "-company_name- - Order/Transaction inquiry needs your attention"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    An order/transaction inquiry (Inquiry ID: -missing_order_id-) needs your attention and requires your response.
+    Please login to your account and review inquiry details:
+    <br><br>
+    <a href="-order_inquiry_url-">-order_inquiry_url-</a>
+    <br><br>
+    Please respond to the order inquiry within -remaining_days- days, otherwise per CPA agreement,
+    it will automatically be approved and counted as a valid transaction.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an advertiser to -company_name-.
+    To turn off this notification, please login to your advertiser account and
+    modify the settings.
+
+new_missing_orders:
+  email_type: "New Missing Orders"
+  subject: "-company_name- - You have (-missing_orders_count-) new order/transaction inquiries"
+  sender: "-company_name- <-company_general_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    You have (-missing_orders_count-) new order/transaction inquiries received on -date-.
+    <br><br>
+    Please login to our system for more information.
+    <br><br>
+    Best Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an advertiser to -company_name-.
+    To turn off this notification, please login to your advertiser account and
+    modify the settings.
+
+offer_cap_depleting:
+  email_type: "Offer Cap Depleting"
+  subject: "-company_name- - Cap is depleting for Offer -offer_name-"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Cap Remaining: -cap_percentage_used- as of -current_time-
+    Offer: (-offer_id-) -offer_name-
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+offer_cap_depleted:
+  email_type: "Offer Cap Depleted"
+  subject: "-company_name- - Cap has depleted for Offer -offer_name-"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -recipient_full_name-,
+    <br><br>
+    Cap has run out.
+    <br>
+    Offer: (-offer_id-) -offer_name-
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+offer_paused_immediate:
+  email_type: "Offer Paused Immediate"
+  subject: "-company_name- - Offer has been paused/redirected"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Please be kindly notified that the campaign (-offer_id-) -offer_name- has been paused and redirected.
+    Please take quick measures to pause the promotion as soon as possible until further notice.
+    <br><br>
+    We apologize for any inconvenience caused and will keep you updated. Thanks for your attention.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+offer_paused_x_hour:
+  email_type: "Offer Paused X Hour"
+  subject: "-company_name- - Offer scheduled to expire in -hour_left- hours"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Please be advised that (-offer_id-) -offer_name- is going inactive on -offer_expired_at_local-
+    per advertiser request, and will be redirecting to a similar offer so be sure to pause or
+    redirect on your end as well.
+    <br><br>
+    If you have any questions or concerns, please contact your affiliate manager.
+    <br><br>
+    Thanks,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.
+
+offer_status_change:
+  email_type: "Offer Status Change"
+  subject: "-company_name- - -offer_name- status has been changed to -status-"
+  sender: "-company_name- <-company_affiliate_contact_email->"
+  recipient: "-recipient_email-"
+  content: |
+    Hi -aff_full_name-,
+    <br><br>
+    Please be kindly notified that the campaign (-offer_id-) "-offer_name-" status has been changed to -status-.
+    Please take quick measures to update the promotion as soon as possible.
+    <br><br>
+    Thanks for your attention.
+    <br><br>
+    Kind Regards,
+    <br>
+    -company_name- Team
+  footer: |
+    You are receiving this email because you are an affiliate to -company_name-.
+    To turn off this notification, please login to your affiliate account and
+    modify the settings.

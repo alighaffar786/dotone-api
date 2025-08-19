@@ -1,0 +1,22 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        address:
+          attributes:
+            address_1:
+              blank: "Please specify the street address."
+            city:
+              blank: "Please specify the city."
+            state_province:
+              blank: "Please specify the state/province."
+            zip_code:
+              blank: "Please specify the zip code."
+            country_id:
+              blank: "Please specify the country."
+            user_id:
+              blank: "Please specify the user."
+            is_mailing_default:
+              inclusion: "Please specify whether this address is a default mailing address."
+            is_payment_default:
+              inclusion: "Please specify whether this address is a default mailing address."

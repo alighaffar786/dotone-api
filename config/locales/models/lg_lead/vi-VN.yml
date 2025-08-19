@@ -1,0 +1,14 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        lg_lead:
+          attributes:
+            first_name:
+              blank: "Please specify the first name."
+            last_name:
+              blank: "Please specify the last name."
+            email:
+              blank: "Please specify the email."
+            language_id:
+              blank: "Language can't be blank."

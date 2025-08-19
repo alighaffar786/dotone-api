@@ -1,0 +1,9 @@
+en-US:
+  predefined:
+    models:
+      trace:
+        agent_type:
+          AffiliateUser: Admin
+          Network: Advertiser
+          Affiliate: Affiliate
+          User: User

@@ -1,0 +1,1 @@
+= raw t('.html', name: @network.full_name, month: t('date.month_names')[params[:end_date].month], year: params[:end_date].year, table: render('stat_summary_table'), login_url: DotOne::ClientRoutes.advertisers_login_url)

@@ -1,0 +1,72 @@
+zh-TW:
+  emails:
+    advertisers:
+      password_reset_instructions_subject: "%{company_name} - 重設登入密碼"
+      password_reset_instructions:
+        text: |
+          親愛的 %{full_name} 您好，
+
+          我們的系統告知我們您需要申請重設登入密碼，如果您沒有申請重設登入密碼，請勿理會此郵件。
+
+          如有需求請點擊以下連結重新認證您的電子郵件帳號，並回到本站修改您的密碼：
+
+          %{password_reset_url}
+
+          若您並沒有在%{company_name}註冊任何帳號，請您透過客服信箱聯絡我們。
+
+          客服信箱：%{company_email}
+
+          %{company_name} 敬上
+
+    affiliates:
+      aff_offer_approval_permission_request_subject: "商品推廣活動權限申請"
+
+      password_reset_instructions_subject: "%{company_name} - 重設登入密碼"
+      password_reset_instructions:
+        text: |
+          親愛的 %{full_name} 您好，
+
+          我們的系統告知我們您需要申請重設登入密碼，如果您沒有申請重設登入密碼，請勿理會此郵件。
+
+          如有需求請點擊以下連結重新認證您的電子郵件帳號，並回到本站修改您的密碼：
+
+          %{password_reset_url}
+
+          若您並沒有在%{company_name}註冊任何帳號，請您透過客服信箱聯絡我們。
+
+          客服信箱：%{company_email}
+
+          %{company_name} 敬上
+
+    owners:
+      password_reset_instructions_subject: "%{company_name} - 重設登入密碼"
+      password_reset_instructions:
+        text: |
+          親愛的 %{username} 您好，
+
+          我們的系統告知我們您需要申請重設登入密碼，如果您沒有申請重設登入密碼，請勿理會此郵件。
+
+          如有需求請點擊以下連結重新認證您的電子郵件帳號，並回到本站修改您的密碼：
+
+          %{password_reset_url}
+
+          若您並沒有在%{company_name}註冊任何帳號，請您透過客服信箱聯絡我們。
+
+          客服信箱：%{company_email}
+
+          %{company_name} 敬上
+
+    affiliate_users:
+      negative_balance_advertisers:
+        subject: "%{company_name} - Advertisers with Negative Balance Overview"
+        text: |
+          Hi there,
+
+          Our system indicates that you have advertisers with negative balances.
+          Please see attached files or you can visit the link below:
+
+          %{url}
+
+          Regards,
+
+          %{company_name} Team

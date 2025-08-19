@@ -1,0 +1,2 @@
+class AdSlotUploader < BaseUploader
+end

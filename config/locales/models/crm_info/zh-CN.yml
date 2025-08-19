@@ -1,0 +1,14 @@
+zh-Hans:
+
+  predefined:
+
+    models:
+
+      crm_info:
+
+        contact_media:
+          phone: "Phone"
+          email: "Email"
+          messenger: "Messenger"
+          face_to_face: "Face to Face"
+          other_media: "Other Media"

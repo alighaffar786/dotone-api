@@ -1,0 +1,10 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        lg_cs_log:
+          attributes:
+            status:
+              blank: "Please specify the status for the cs log."
+            log_type:
+              blank: "Please specify the log type for the cs log."

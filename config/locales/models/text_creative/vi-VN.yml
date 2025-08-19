@@ -1,0 +1,33 @@
+vi-VN:
+  
+  activerecord:
+
+    models:
+
+      text_creative:
+        one: "Native Ad"
+        other: "Native Ads"
+
+  activerecord:
+    models:
+      text_creative:
+        one: Native Ad
+        other: Native Ads
+
+  predefined:
+
+    models:
+
+      text_creative:
+
+        deal_scope:
+          "Entire Store": "Entire Store"
+          "Specific Product": "Specific Product"
+
+  will_paginate:
+
+    models:
+
+      text_creative:
+        one: "Native Ad"
+        other: "Native Ads"

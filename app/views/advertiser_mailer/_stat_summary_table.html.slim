@@ -1,0 +1,52 @@
+- @offers.each do |offer|
+  - performance = @performance_summary[offer.id]
+  - conversion = @conversion_summary[offer.id]
+  - confirmed = @confirmed_summary[offer.id]
+  - total_conversions = conversion&.pending_conversions.to_i + confirmed&.rejected_conversions.to_i + confirmed&.published_conversions.to_i
+  - clicks = performance&.clicks.to_i
+  - total_true_pay = conversion&.total_true_pay.to_f + confirmed&.total_true_pay.to_f
+  - true_pay_epc = clicks > 0 ? (total_true_pay / clicks) : total_true_pay
+  - order_total = conversion&.order_total.to_f + confirmed&.order_total.to_f
+  - roas = total_true_pay > 0 ? (order_total / total_true_pay).round(2) : order_total
+
+  table border="1" width="100%" cellpadding="1" cellspacing="0" style="margin-bottom: 1rem; text-align: center;"
+    tr
+      th colspan="3" = offer.id_with_name
+
+    tr
+      td
+        div = t('.new_application')
+        div = @affiliate_offers[offer.id].to_i
+      td
+        div = t('.total_clicks')
+        div = clicks
+
+      td
+        div = t('.total_conversions')
+        div = total_conversions
+    tr
+      td
+        div = t('.pending_conversions')
+        div = conversion&.pending_conversions.to_i
+      td
+        div = t('.rejected_conversions')
+        div = confirmed&.rejected_conversions.to_i
+      td
+        div = t('.published_conversions')
+        div = confirmed&.published_conversions.to_i
+    tr
+      td
+        div = t('.order_total')
+        div = network_stat_summary_currency(@network, order_total)
+      td
+        div = t('.average_cpc')
+        div = network_stat_summary_currency(@network, true_pay_epc)
+      td
+        div = t('.roas')
+        div = "#{roas} : 1"
+    tr
+      td colspan="3" style="text-align: right;"
+        | #{t('.true_pay')}: #{network_stat_summary_currency(@network, confirmed&.total_true_pay)}
+
+p
+  strong = "#{t('.total_true_pay', amount: network_stat_summary_currency(@network, @confirmed_total[:total_true_pay]))}"

@@ -1,0 +1,143 @@
+zh-TW:
+
+  activerecord:
+
+    errors:
+
+      models:
+
+        country:
+
+          attributes:
+            name:
+              blank: "請指明國家/地區的名稱。"
+              taken: "此國家名已存在。"
+            iso_2_country_code:
+              blank: "請為此國家/地區指定ISO2國家/地區代碼。"
+              taken: "此ISO2國家代碼已採用。"
+              wrong_length: "此ISO2國家代碼的字符長度不符合。"
+            iso_3_country_code:
+              blank: "請為此國家/地區指定ISO3國家/地區代碼。"
+              taken: "此ISO3國家代碼已採用。"
+              wrong_length: "此ISO3國家代碼的字符長度不符合。"
+
+  predefined:
+
+    models:
+
+      country:
+        continent:
+          "Africa": "非洲"
+          "Asia": "亞洲"
+          "Europe": "歐洲"
+          "North America": "北美洲"
+          "Oceania": "大洋洲"
+          "Other": "其他"
+          "South America": "南美洲"
+
+        name:
+          "Albania": "阿爾巴尼亞"
+          "Algeria": "阿爾及利亞"
+          "Argentina": "阿根廷"
+          "Australia": "澳洲"
+          "Austria": "奧地利"
+          "Bahrain": "巴林"
+          "Bangladesh": "孟加拉國"
+          "Belarus": "白俄羅斯"
+          "Belgium": "比利時"
+          "Bolivia": "玻利維亞"
+          "Brazil": "巴西"
+          "Bulgaria": "保加利亞"
+          "Canada": "加拿大"
+          "Chile": "智利"
+          "China": "中國"
+          "Colombia": "哥倫比亞"
+          "Costa Rica": "哥斯大黎加"
+          "Croatia": "克羅地亞"
+          "Cyprus": "塞普勒斯"
+          "Czech Republic": "捷克共和國"
+          "Denmark": "丹麥"
+          "Dominican Republic": "多明尼加共和國"
+          "Ecuador": "厄瓜多爾"
+          "Egypt": "埃及"
+          "El Salvador": "薩爾瓦多"
+          "Estonia": "愛沙尼亞"
+          "Finland": "芬蘭"
+          "France": "法國"
+          "Georgia": "格魯吉亞"
+          "Germany": "德國"
+          "Ghana": "加納"
+          "Greece": "希臘"
+          "Guatemala": "瓜地馬拉"
+          "Haiti": "海地"
+          "Honduras": "宏都拉斯"
+          "Hong Kong": "香港"
+          "Hungary": "匈牙利"
+          "Iceland": "冰島"
+          "India": "印度"
+          "Indonesia": "印尼"
+          "International": "國際全球"
+          "Iran": "伊朗"
+          "Iraq": "伊拉克"
+          "Ireland": "愛爾蘭"
+          "Israel": "以色列"
+          "Italy": "意大利"
+          "Japan": "日本"
+          "Jordan": "約旦"
+          "Kenya": "肯亞"
+          "Korea (South)": "韓國"
+          "Kuwait": "科威特"
+          "Lebanon": "黎巴嫩"
+          "Luxembourg": "盧森堡"
+          "Macau": "澳門"
+          "Macedonia": "馬其頓"
+          "Malaysia": "馬來西亞"
+          "Mexico": "墨西哥"
+          "Netherlands": "荷蘭"
+          "New Zealand": "紐西蘭"
+          "Nicaragua": "尼加拉瓜"
+          "Nigeria": "奈及利亞"
+          "Non-Taiwan": "非台灣"  #country label for payment info not in Taiwan
+          "Norway": "挪威"
+          "Oman": "阿曼"
+          "Other": &other "其他國家"
+          "Other Country": *other
+          "Panama": "巴拿馬"
+          "Paraguay": "巴拉圭"
+          "Peru": "祕魯"
+          "Philippines": "菲律賓"
+          "Poland": "波蘭"
+          "Portugal": "葡萄牙"
+          "Puerto Rico": "波多黎各"
+          "Qatar": "卡達"
+          "Romania": "羅馬尼亞"
+          "Russia": "俄羅斯"
+          "Saudi Arabia": "沙烏地阿拉伯"
+          "Singapore": "新加坡"
+          "Slovakia": "斯洛伐克"
+          "Slovenia": "斯洛文尼亞"
+          "South Africa": "南非"
+          "Spain": "西班牙"
+          "Sri Lanka": "斯里蘭卡"
+          "Sweden": "瑞典"
+          "Switzerland": "瑞士"
+          "Taiwan": "台灣"
+          "Thailand": "泰國"
+          "Turkey": "土耳其"
+          "Ukraine": "烏克蘭"
+          "United Arab Emirates": "阿拉伯聯合酋長國"
+          "United Kingdom": "英國"
+          "United States": "美國"
+          "Venezuela": "委內瑞拉"
+          "Vietnam": "越南"
+
+
+  will_paginate:
+
+    models:
+
+      country:
+        zero: "國家"
+        one: "國家"
+        few: "國家"
+        other: "國家"

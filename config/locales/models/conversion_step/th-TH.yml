@@ -1,0 +1,17 @@
+th-TH:
+
+  activerecord:
+
+    models:
+
+      conversion_step:
+        one: Conversion Point
+        other: Conversion Points
+
+  will_paginate:
+    models:
+      conversion_step:
+        zero: "Conversion Steps"
+        one: "Conversion Step"
+        few: "Conversion Steps"
+        other: "Conversion Steps"

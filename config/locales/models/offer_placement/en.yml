@@ -1,0 +1,10 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        offer_placement:
+          attributes:
+            offer_id:
+              blank: "An offer needs to be defined."
+            sub_page_id:
+              blank: "A sub page needs to be defined."

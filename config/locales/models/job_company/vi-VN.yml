@@ -1,0 +1,9 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        job_company:
+          attributes:
+            name:
+              blank: "Company Name is Required"
+              taken: "Company Name is Taken"

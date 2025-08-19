@@ -1,0 +1,67 @@
+zh-Hans:
+
+  activerecord:
+
+    models:
+
+      affiliate_offer:
+        one: "Campaign"
+        other: "Campaigns"
+
+  predefined:
+    models:
+      affiliate_offer:
+        approval_status:
+          "Active": "Active"
+          "Apply to Event": "Apply to Event"
+          "Pending": "Pending"
+          "Changes Required": "Changes Required"
+          "Completed": "Completed"
+          "Confirming": "Confirming"
+          "Paused": "Paused"
+          "Selected": "Selected"
+          "Suspended": "Rejected"
+          "Cancelled": "Cancelled"
+          "Under Evaluation": "Under Evaluation"
+          "Unqualified": "Unqualified"
+          "Waiting on Affiliate": "Waiting on Affiliate"
+
+        cap_type:
+          Monthly Cap: Monthly
+          Daily Cap: Daily
+          Lifetime Cap: Lifetime
+
+        status_summary:
+          Not Approved: Not Approved
+          Terms Violation: Terms Violation
+
+  will_paginate:
+    models:
+      affiliate_offer:
+        zero: "Campaigns"
+        one: "Campaign"
+        few: "Campaigns"
+        other: "Campaigns"
+
+  download_columns:
+    models:
+      affiliate_offer:
+        _aliases: &download_columns
+          affiliate: Affiliate
+          approval_status: Campaign Status
+          created_at: Applied At
+          event: Event Name
+          event_contract_signature: Event Agreement
+          event_draft_notes: Additional Content Information
+          event_draft_url: Draft Creatives
+          event_published_url: Published Creatives
+          event_promotion_notes: Self Promotion
+          event_shipment_notes: Additional Shipping Info
+          event_status: Event Status
+          event_supplement_notes: Supplement Information
+          offer: Offer
+          phone_number: Phone Number
+          shipping_address: Shipping Address
+          site_info_url: Affiliates Website URL
+          status_reason: Status Reason
+          status_summary: Status Summary

@@ -1,0 +1,15 @@
+zh-Hans:
+
+  predefined:
+
+    models:
+
+      affiliate_feed:
+
+  will_paginate:
+    models:
+      affiliate_feed:
+        zero: "Entries"
+        one: "Entry"
+        few: "Entries"
+        other: "Entries"

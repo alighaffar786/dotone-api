@@ -1,0 +1,9 @@
+id-ID:
+  
+  activerecord:
+  
+    models:
+
+      user:
+        one: "User"
+        other: "Users"

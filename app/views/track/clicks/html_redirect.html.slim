@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    - if is_social_media
+      title = offer.name
+      meta name="description" content="#{offer.short_description}"
+      meta property="og:title" content="#{offer.name}"
+      meta property="og:type" content="website"
+      meta property="og:description" content="#{offer.product_description}"
+      meta property="og:image" content="#{offer.brand_image_url}"
+  body
+    - if is_social_media
+      - if offer.brand_image_url.present?
+        center = image_tag(offer.brand_image_url)
+
+      center Redirecting...
+
+      p = offer.name
+      p = offer.brand_background
+      p = offer.product_description
+
+    = form_tag track_form_redirect_path, method: :get, id: 'go' do
+      = hidden_field_tag :t, target_url
+
+    javascript:
+      setTimeout(function() {
+        document.getElementById('go').submit();
+      }, 1000);
+
+    = pixels&.html_safe
+
+    css:
+      p { display: none; }

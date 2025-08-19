@@ -1,0 +1,57 @@
+zh-TW:
+  predefined:
+    models:
+      advertiser_balance:
+        balance_type:
+          Negative: Negative
+          Positive: Positive
+
+        record_type:
+          "Activity Fee": 活動費用
+          "Advertising Fee": 成效佣金
+          "Other": 其他交易
+          "Prepay": 預付款/儲值
+          "Security Deposit": 保證金
+          "Setup Fee": 賬戶年費
+          "Withdrawal": 餘額退還
+
+  active_record:
+    errors:
+      models:
+        advertiser_balance:
+          attributes:
+            record_type:
+              inclusion: "Record Type is not a valid option"
+
+  will_paginate:
+    models:
+      advertiser_balance:
+        zero: "記錄"
+        one: "記錄"
+        few: "記錄"
+        other: "記錄"
+
+  download_columns:
+    models:
+      advertiser_balance:
+        credit: 儲值金額
+        debit: 扣款金額
+        final_balance: 可用餘額
+        id: 記錄ID
+        invoice_amount: 發票金額
+        invoice_date: 發票日期
+        invoice_number: 發票號碼
+        network_sales_tax: 稅率%
+        network: 廠商
+        notes: 記錄筆記
+        original_credit: Orig. 儲值金額
+        original_debit: Orig. 扣款金額
+        original_invoice_amount: Orig. 發票金額
+        original_sales_tax: Orig. 營業稅(5%)
+        pending_payout: 待確認總額
+        published_payout: 已確認總額（本月）
+        record_type: 記錄類型
+        recorded_at: 支付日期
+        remaining_balance: 剩餘餘額
+        sales_tax: 營業稅(5%)
+        updated_at: 更新時間

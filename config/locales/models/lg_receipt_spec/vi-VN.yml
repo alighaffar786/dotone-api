@@ -1,0 +1,8 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        lg_receipt_spec:
+          attributes:
+            lg_form_id:
+              blank: "Please specify the lead form for the receipt spec."

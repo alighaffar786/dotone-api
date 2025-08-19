@@ -1,0 +1,22 @@
+zh-TW:
+
+  predefined:
+    models:
+      newsletter:
+        email_type:
+          "All Active Advertisers": "所有使用中廣告商"
+          "All Active Advertisers You Manage": "所有我管理的廣告商"
+          "All Active Advertisers You Manage With Live Offers": "所有我管理的廣告商（限使用中品牌）"
+          "All Active Affiliates": "所有使用中會員"
+          "All Active Affiliates for Offer": "此品牌/電商的推廣會員..."
+          "Choose Advertiser": "選廣告商..."
+          "Choose Affiliate": "選會員..."
+          "Leads For Offer...": "Leads For Offer..."
+
+  will_paginate:
+    models:
+      newsletter:
+        zero: "電子報"
+        one: "電子報"
+        few: "電子報"
+        other: "電子報"

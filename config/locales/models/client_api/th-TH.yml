@@ -1,0 +1,8 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        client_api:
+          attributes:
+            host:
+              taken: "We can't allow the same host for 2 different offers."

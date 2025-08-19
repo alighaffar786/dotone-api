@@ -1,0 +1,67 @@
+zh-TW:
+
+  activerecord:
+
+    models:
+
+      affiliate_offer:
+        one: "推廣活動"
+        other: "推廣活動"
+
+  predefined:
+    models:
+      affiliate_offer:
+        approval_status:
+          "Active": "使用中"
+          "Apply to Event": "申請活動"
+          "Pending": "審核中"
+          "Changes Required": "需要更正"
+          "Completed": "已完成"
+          "Confirming": "確認中"
+          "Paused": "暫停"
+          "Selected": "已獲選"
+          "Suspended": "審核未過" # Label for suspended/rejected campaign status
+          "Cancelled": "已取消"
+          "Under Evaluation": "評估中"
+          "Unqualified": "資格不符"
+          "Waiting on Affiliate": "等待會員"
+
+        cap_type:
+          Monthly Cap: 每月上限
+          Daily Cap: 每日上限
+          Lifetime Cap: 總上限數
+
+        status_summary:
+          Not Approved: 未批准
+          Terms Violation: 違反條款
+
+  will_paginate:
+    models:
+      affiliate_offer:
+        zero: "推廣活動"
+        one: "推廣活動"
+        few: "推廣活動"
+        other: "推廣活動"
+
+  download_columns:
+    models:
+      affiliate_offer:
+        _aliases: &download_columns
+          affiliate: 聯盟會員
+          approval_status: 活動申請狀態
+          created_at: 申請於
+          event: 接案活動
+          event_contract_signature: 活動協議
+          event_draft_notes: 其他創作內容資訊
+          event_draft_url: 草稿創作
+          event_published_url: 已發佈創作
+          event_promotion_notes: 自我推薦
+          event_shipment_notes: 其他運送訊息
+          event_status: 活動狀態
+          event_supplement_notes: 其他補充訊息
+          offer: 'Offer'
+          phone_number: 聯絡電話
+          shipping_address: 寄送地址
+          site_info_url: 會員網址URL
+          status_reason: 審核未過原因
+          status_summary: 狀態審核選擇

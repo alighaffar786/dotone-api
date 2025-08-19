@@ -1,0 +1,14 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        cms_comment:
+          attributes:
+            cms_content_id:
+              blank: "Content is required."
+            cms_user_id:
+              blank: "User is required."
+            content:
+              blank: "Content is required."
+            status:
+              blank: "Status is required."

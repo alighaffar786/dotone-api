@@ -1,0 +1,13 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        cms_domain:
+          attributes:
+            language_id:
+              blank: "Default language is missing."
+            name:
+              blank: "Please specify name for this domain."
+              taken: "Domain with the same name has already been defined."
+            user_id:
+              blank: "please specify the user for this domain."

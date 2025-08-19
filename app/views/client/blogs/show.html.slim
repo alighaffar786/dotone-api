@@ -1,0 +1,96 @@
+section.bg.blog-cover[style="background: url('/assets/images/custom/blog-page-cover.jpg')"]
+  .container
+    .text-center.sm-padding-40px-tb.sm-padding-15px-lr
+      h5.text-capitalize.alt-font.text-white.margin-35px-top.margin-15px-bottom.font-weight-700
+        = @blog_content.title
+      p.text-white.margin-5px-bottom
+        = @blog_content.short_description
+
+section.blog
+  .container
+    .row
+      .col-md-12
+        .page_nav
+          = link_to t('blog'), client_blogs_path
+          span
+            i.fa.fa-angle-double-right
+          = link_to @blog_content.page_name, page_client_blogs_path(slug: @blog_content.main_page.slug)
+          span
+            i.fa.fa-angle-double-right
+            = @blog_content.title
+    .row
+      .col-md-12.col-sm-12.col-xs-12.blog-post-content.margin-30px-bottom.xs-margin-30px-bottom.xs-text-center
+        - if @blog_content.image_url.present?
+          .blog-image
+            = image_tag @blog_content.image_url, alt: @blog_content.title, data: { 'no-retina': '' }
+        .blog-text.border-all.display-inline-block.width-100
+          .content.padding-30px-tb
+            .text-medium-gray.text-extra-small.margin-10px-bottom.text-capitalizealt-font.font-weight-400
+              span
+                | Posted on
+                = @blog_content.posted_at&.strftime('%Y-%m-%d')
+              span
+                = link_to @blog_content.page_name, page_client_blogs_path(slug: @blog_content.main_page.slug), class: 'text-medium-gray'
+              span
+                = link_to @blog_content.author.full_name, author_client_blogs_path(slug: @blog_content.author.id), class: 'text-medium-gray'
+            a.text-extra-dark-gray.text-capitalize.alt-font.text-extra-large.font-weight-600.margin-15px-bottom.display-block[href="#"]
+              = @blog_content.title
+            = @blog_content.html.html_safe
+
+section#blog-additional-information.bg-light-gray
+  .container
+    .row
+      .col-md-9.col-sm-12.col-xs-12
+        .row.margin-40px-bottom
+          .col-sm-12.margin-20px-bottom
+            span.text-uppercase.alt-font.text-extra-gray.margin-20px-bottom.font-weight-500.sm-width-100.xs-width-100
+              |  More Posts
+          - @related_blog_contents.each do |blog_content|
+            .col-sm-4
+              .blog-item.xs-padding-80px-bottom
+                - if blog_content.image_url.present?
+                  .blog-image
+                    = link_to post_client_blogs_path(slug: blog_content.slug) do
+                      = image_tag blog_content.image_url, alt: blog_content.title
+                .blog-inner.bg-white.padding-20px-lr.padding-30px-bottom
+                  .text-large.font-weight-500.text-extra-dark-gray.alt-font.margin-5px-bottom
+                    = link_to post_client_blogs_path(slug: blog_content.slug) do
+                      = blog_content.title
+                  .text-extra-small.alt-font.font-weight-300.margin-20px-bottom
+                    = blog_content.posted_at&.strftime('%Y-%m-%d')
+                  p.text-small.text-medium-gray.font-weight-300.line-height
+                    = blog_content.short_description
+        .row.margin-40px-bottom
+          .col-sm-12.margin-20px-bottom
+            span.text-uppercase.alt-font.text-extra-gray.margin-20px-bottom.font-weight-500.sm-width-100.xs-width-100
+              |  Other Contributors
+          .col-sm-12.contributor
+            r:blog_content:blog:authors
+              .contributor-toltip
+                a[href="<r:related_author:page_url />"]
+                  img[src="<r:related_author:avatar_url />" alt="<r:related_author:full_name />"]
+                span.tooltiptext.text-small
+                  r:related_author:full_name
+      .col-md-3.col-sm-12.col-xs-12
+        .row.margin-40px-bottom
+          .col-sm-12.margin-20px-bottom
+            span.text-uppercase.alt-font.text-extra-gray.margin-20px-bottom.font-weight-500.sm-width-100.xs-width-100
+              |  Tags
+          .col-sm-12
+            .tag-cloud.text-extra-small
+              r:blog_content:blog_tags
+                a[href="<r:blog_tag:blog_tag_path />"]
+                  r:blog_tag:name
+        .row
+          .col-sm-12.margin-20px-bottom
+            span.text-uppercase.alt-font.text-extra-gray.margin-20px-bottom.font-weight-500.sm-width-100.xs-width-100
+              |  More Categories
+          .col-sm-12
+            ul.blog-list-style.margin-50px-bottom.text-small.no-padding
+              r:blog_content:blog
+                r:blog_page_list_with_count
+                  li
+                    a.text-extra-medium-gray[href="<r:blog_page:page_path />"]
+                      r:blog_page:name
+                    span.float-right
+                      r:blog_page:content_count

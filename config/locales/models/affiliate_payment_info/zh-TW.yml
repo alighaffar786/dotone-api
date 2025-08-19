@@ -1,0 +1,52 @@
+zh-TW:
+  predefined:
+    models:
+      affiliate_payment_info:
+        payment_type:
+          "Check": "支票"
+          "Wire Transfer": "匯款"
+          "PayPal": "PayPal"
+
+        status:
+          "Confirmed": "已確認"
+          "Pending": "未審核"
+          "Waiting For Verification": "審核中"
+          "Incomplete": "資料不完整"
+
+  download_columns:
+    models:
+      affiliate_payment_info:
+        account_number: "銀行帳號"
+        affiliate_company_name: "公司名稱"
+        affiliate_created_at: "加入日"
+        affiliate_email: "電子郵件"
+        affiliate_full_address: "地址"
+        affiliate_id: "聯盟會員"
+        affiliate_phone_number: "電話號碼"
+        affiliate_users: "管理員"
+        affiliate: "聯盟會員"
+        bank_address: "銀行地址"
+        bank_identification: "銀行代號/識別碼"
+        bank_name: "銀行名稱"
+        branch_identification: "分行代碼"
+        branch_name: "分行別"
+        iban: "IBAN/ABA#/CNAPS"
+        latest_commission: "會員獎金"
+        legal_resident_address: "收款：戶籍地址"
+        payee_name: "收款人姓名"
+        payment_type: "收款類型"
+        paypal_email_address: "PayPal 電郵帳戶"
+        preferred_currency: "首選貨幣"
+        routing_number: "SWIFT #"
+        ssn_ein: EIN
+        status: "狀態"
+        tax_filing_country: "報稅國家"
+        updated_at: "更新時間"
+
+  will_paginate:
+    models:
+      affiliate_payment_info:
+        zero: "收款資料"
+        one: "收款資料"
+        few: "收款資料"
+        other: "收款資料"

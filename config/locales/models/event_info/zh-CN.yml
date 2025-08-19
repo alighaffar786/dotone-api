@@ -1,0 +1,38 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        event_info:
+          attributes:
+            offer_id:
+              blank: "Offer is required"
+
+  predefined:
+    models:
+      event_info:
+        availability_type:
+          Site Wide: Site Wide
+          Specific Item: Specific Item
+
+        event_type:
+          Backlinks: Backlinks
+          Creative Post: Ad Banner
+          Customization: Customization
+          Group Buy: Group Buy
+          Invite Only: Invite Only
+          Product Sampling: Product Sampling
+          Text Review: Text Content
+          Video Review: Video Content
+
+        fulfillment_type:
+          Delivery: Merchant Delivery
+          In-Person: In-Person Visit
+          Self Purchase: Self Purchase
+
+        popularity_unit:
+          Daily UU: Daily UU
+          Fans: Fans
+          Followers: Followers
+          Likes: Likes
+          Site Rank: Site Rank (Alexa/Similar Web)
+          Subscribers: Subscribers

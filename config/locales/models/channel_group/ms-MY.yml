@@ -1,0 +1,11 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        channel_group:
+          attributes:
+            name:
+              blank: "Please specify the name of the channel group."
+              taken: "Channel Group of the same name exists."
+            user_id:
+              blank: "Please specify the user for the channel group."

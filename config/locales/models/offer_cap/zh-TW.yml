@@ -1,0 +1,12 @@
+zh-TW:
+
+  predefined:
+    
+    models:
+    
+      offer_cap:
+    
+        cap_type:
+          Monthly Cap: 每月上限
+          Daily Cap: 每日上限
+          Lifetime Cap: 總上限數

@@ -1,0 +1,15 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        cms_category:
+          attributes:
+            language_id:
+              blank: "Language is missing."
+            name:
+              blank: "Please specify name for this category."
+              taken: "Category with the same name has already been defined."
+            cms_domain_id:
+              blank: "Please specify the domain for this category."
+            user_id:
+              blank: "please specify the user for this category."

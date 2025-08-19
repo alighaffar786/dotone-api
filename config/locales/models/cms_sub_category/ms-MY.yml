@@ -1,0 +1,17 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        cms_sub_category:
+          attributes:
+            language_id:
+              blank: "Language is missing."
+            name:
+              blank: "Please specify name for this sub category."
+              taken: "Sub Category with the same name has already been defined."
+            cms_domain_id:
+              blank: "Please specify the domain for this sub category."
+            cms_category_id:
+              blank: "Please specify the category."
+            user_id:
+              blank: "please specify the user for this sub category."

@@ -1,0 +1,19 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        lg_info_key:
+          attributes:
+            name:
+              blank: "Please specify the info key name."
+              taken: "Info Key Name is aleady exists."
+            user_id:
+              blank: "Please specify the user."
+            input_type:
+              blank: "Please specify the input type."
+            token:
+              blank: "Please specify the token."
+            language_id:
+              blank: "Please specify the language."
+            default_label:
+              blank: "Please specify the default label."

@@ -1,0 +1,7 @@
+- content_for(:title) { 'Invalid request' }
+
+- if flash.keys.present?
+  - flash.each do |key, value|
+    = value
+- else
+  p = 'Oops, offer no longer available.'

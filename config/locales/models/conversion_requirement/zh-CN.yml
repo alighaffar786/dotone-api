@@ -1,0 +1,34 @@
+zh-Hans:
+  
+  activerecord:
+  
+    errors:
+  
+      models:
+  
+        conversion_requirement:
+  
+          attributes:
+  
+            name:
+              blank: "Please specify the name of the conversion requirement."
+              taken: "Conversion Requirement with specified name exists."
+            language:
+              blank: "Language is missing for this conversion requirement."
+
+  predefined:
+
+    models:
+
+      conversion_requirement:
+
+        name:
+          "1-Page Form Submit": "1-Page Form Submit"
+          "2-Page Form Submit": "2-Page Form Submit"
+          "Completed Campaign": "Completed Campaign"
+          "Completed Sale": "Completed Sale"
+          "Completed Trial Order": "Completed Trial Order"
+          "Download/Installation": "Download/Installation"
+          "Exit/Valid Click": "Exit/Valid Click"
+          "First Time Deposit": "First Time Deposit"
+          "Multi-Page Form Submit": "Multi-Page Form Submit"

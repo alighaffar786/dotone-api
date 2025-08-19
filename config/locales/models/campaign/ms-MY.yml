@@ -1,0 +1,16 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        campaign:
+          attributes:
+            channel_id:
+              blank: "Please specify the channel for this campaign."
+            name:
+              blank: "Please specify the name of the campaign."
+              taken: "Campaign name has been taken."
+              too_long: "Name is too long. (Max: %{count} chars)."
+            user_id:
+              blank: "Please specify the user for this campaign."
+            campaign_type:
+              blank: "Please specify the campaign type for this campaign."

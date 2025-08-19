@@ -1,0 +1,26 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        track_user:
+          attributes:
+            email:
+              blank: "Please specify the email for this user."
+              invalid: "Email is invalid for this user."
+            managed_track_team_ids:
+              blank: "Team Manager should have at least one Team."
+            roles:
+              blank: "Please specify the roles for this user."
+            password:
+              blank: "Please specify the password for this user."
+              too_short: "Password needs to be at least 5 characters."
+              confirmation: "Password and its confirmation do not match."
+            status:
+              blank: "Please specify the status for this user."
+            time_zone_id:
+              blank: "Please specify the time zone."
+            username:
+              blank: "Please specify the username for this user."
+              invalid: "Username is not in valid format."
+              taken: "Username is taken."
+              too_short: "Username needs to be at least 3 characters."

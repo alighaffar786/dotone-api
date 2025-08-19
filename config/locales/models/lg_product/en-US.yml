@@ -1,0 +1,10 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        lg_product:
+          attributes:
+            lg_domain_id:
+              blank: "Please specify the Lead Domain."
+            sc_product_id:
+              blank: "Please specify the Shopping Cart Product."

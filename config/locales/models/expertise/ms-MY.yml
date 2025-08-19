@@ -1,0 +1,21 @@
+ms-MY:
+
+  predefined:
+    models:
+      expertise:
+
+        name:
+          "APP Developer": "APP Developer"
+          "Blogger": "Blogger"
+          "Contextual Media Buyer": "Contextual Media Buyer"
+          "Contextual Publisher": "Contextual Publisher"
+          "Display Banner": "Display Banner"
+          "Forum Moderator/Poster": "Forum Moderator/Poster"
+          "Incentive Traffic": "Incentive Traffic"
+          "Mailer": "Mailer"
+          "Mobile Media": "Mobile Media"
+          "SEO Marketer": "SEO Marketer"
+          "Search PPC": "Search PPC"
+          "Site Builder": "Site Builder"
+          "Social Network": "Social Network"
+          "Software Developer": "Software Developer"

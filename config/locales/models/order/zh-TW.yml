@@ -1,0 +1,23 @@
+zh-TW:
+  
+  predefined:
+    models:
+      order:
+        status:
+          "Adjusted": "交易金額調整"
+          "Confirmed": "交易獎金批准"
+          "Duplicate Order": "重複訂單"
+          "Duplicate IP": "重複 IP"
+          "Full Return": "交易全數退還"
+          "Inconclusive": "交易待處理"
+          "Pending": "交易審核中"
+          "Published": "交易成效批准"
+          "Rejected": "交易已否決"
+
+  will_paginate:
+    models:
+      order:
+        zero: "訂單"
+        one: "訂單"
+        few: "訂單"
+        other: "訂單"

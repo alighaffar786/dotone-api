@@ -1,0 +1,28 @@
+en-US:
+
+  predefined:
+    models:
+      affiliate_industry:
+        name:
+          "Adult": "Adult"
+          "APPs": "APPs"
+          "Art & Design": "Art & Design"
+          "Automotive": "Automotive"
+          "Beauty & Health": "Beauty & Health"
+          "Business": "Business"
+          "Children": "Children"
+          "Dating & Matchmaking": "Dating & Matchmaking"
+          "Deals & Coupons": "Deals & Coupons"
+          "Education & Career": "Education & Career"
+          "Events & Tickets": "Events & Tickets"
+          "Entertainment": "Entertainment"
+          "Financial & Insurance": "Financial & Insurance"
+          "Food & Restaurant": "Food & Restaurant"
+          "Games & Toys": "Games & Toys"
+          "Horoscope": "Horoscope"
+          "News & Information": "News & Information"
+          "Pets": "Pets"
+          "Retail & Ecommerce": "Retail & Ecommerce"
+          "Sports & Fitness": "Sports & Fitness"
+          "Travel": "Travel"
+          "Others": "Others"

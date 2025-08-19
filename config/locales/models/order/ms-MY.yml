@@ -1,0 +1,23 @@
+ms-MY:
+  
+  predefined:
+    models:
+      order:
+        status:
+          "Adjusted": "Order Adjusted"
+          "Confirmed": "Order Confirmed"
+          "Duplicate Order": "Duplicate Order"
+          "Duplicate IP": "Duplicate IP"
+          "Full Return": "Full Return"
+          "Inconclusive": "Order Inconclusive"
+          "Pending": "Order Pending"
+          "Published": "Order Published"
+          "Rejected": "Order Rejected"
+
+  will_paginate:
+    models:
+      order:
+        zero: "Orders"
+        one: "Order"
+        few: "Orders"
+        other: "Orders"

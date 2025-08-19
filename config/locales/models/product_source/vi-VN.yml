@@ -1,0 +1,11 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        product_source:
+          attributes:
+            name:
+              blank: "Please specify the name of the source."
+              taken: "Name has been used by other source."
+            url:
+              blank: "Please specify the URL for the source."

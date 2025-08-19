@@ -1,0 +1,108 @@
+en-US:
+  will_paginate:
+    models:
+      stat:
+        zero: "Stats"
+        one: "Stat"
+        few: "Stats"
+        other: "Stats"
+
+  download_columns:
+    models:
+      stat:
+        affiliate: Affiliate
+        captured: Total Conversion
+        clicks: Click
+        offer: Offer
+        offer_id: Offer
+        site_info_urls: Website URLs
+
+        _aliases: &stat_download_column_aliases
+          affiliate_id: "Affiliate"
+          image_creative_id: Banner
+          impressions: Impression
+          ip_country: Country
+          offer_name: Offer Name
+          offer_variant_id: Offer Variants
+          order_total: Total Revenue (%{currency})
+          subid_1: Subid 1
+          subid_2: Subid 2
+          subid_3: Subid 3
+          subid_4: Subid 4
+          subid_5: Subid 5
+          text_creative_id: Promo & Deal
+
+        <<: *stat_download_column_aliases
+
+  download_summary_columns:
+    models:
+      stat: &stat_download_summary_columns
+        <<: *stat_download_column_aliases
+        ad_slot_id: Ad Placement
+        affiliate_pay_epc: Commission EPC (%{currency})
+        approved_affiliate_pay: Approved Commission (%{currency})
+        approved_conversions: Approved Conversion
+        approved_true_pay: Approved Payout (%{currency})
+        avg_affiliate_pay: Average Commission (%{currency})
+        avg_true_pay: Average Payouts (%{currency})
+        browser_version: Browser Version
+        browser: Browser
+        captured: Total Conversion
+        clicks: Click
+        contact_lists: Advertiser Contact List
+        conversion_percentage: Conversion %
+        network_country: Advertiser Country Name
+        date: Dates
+        device_brand: Device Brand
+        device_model: Device Model
+        device_type: Device Type
+        invalid_conversions: Inconclusive Counts
+        isp: ISP
+        margin: Margin (%{currency})
+        media_categories: Media Categories
+        network_billing_email: Advertiser Billing Email
+        network_contact_email: Advertiser Contact Email
+        network_id: Advertiser
+        network_payment_term: Advertiser Payment Terms
+        network_payment_term_days: Advertiser Payment Term Days
+        network_status: Advertiser Status
+        network_universal_number: SSN/EIN
+        offer_id: Offer
+        pending_affiliate_pay: Pending Commission (%{currency})
+        pending_conversions: Pending Conversion
+        pending_true_pay: Pending Payout (%{currency})
+        published_affiliate_pay: Approved Commission (%{currency})
+        published_conversions: Approved Conversion
+        published_true_pay: Approved Payout (%{currency})
+        rejected_affiliate_pay: Rejected Commission (%{currency})
+        rejected_conversions: Rejected Conversion
+        rejected_rate: "Rejected Rate %"
+        rejected_true_pay: Rejected Payout (%{currency})
+        total_affiliate_pay: Total Commission (%{currency})
+        total_conversions: Conversion Count
+        total_true_pay: Total Payout (%{currency})
+        true_pay_epc: Avg. CPC (%{currency})
+
+        affiliate:
+          <<: *stat_download_summary_columns
+
+        network:
+          <<: *stat_download_summary_columns
+
+        owner:
+          <<: *stat_download_summary_columns
+          published_affiliate_pay: Published Commission (%{currency})
+          published_conversions: Published Conversion
+          published_true_pay: Published Payout (%{currency})
+
+  reports:
+    models:
+      stat:
+        network_balance_exporter:
+          available_balance: Available Balance
+          network_id: Advertiser ID
+          network_name: Advertiser Name
+          total_pending_payouts: Total Pending Payouts
+          total_published_payouts: Total Confirmed This Month
+          remaining_balance: Remaining Balance
+          total: Total

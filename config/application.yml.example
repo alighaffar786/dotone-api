@@ -1,0 +1,132 @@
+# SYSTEM
+TIMEZONE_GMT: "8.0"
+CURRENCY_CODE: "TWD"
+LANGUAGE_CODE: "zh-TW"
+
+# AWS SETUP
+AWS_ACCESS_KEY: [Enter Your AWS Access Key]
+AWS_SECRET_KEY: [Enter Your AWS Access Secret]
+AWS_S3_PRIVATE_BUCKET: [Enter S3 private bucket]
+AWS_S3_PUBLIC_BUCKET: [Enter S3 public bucket]
+
+# AWS SMTP SETUP
+AWS_SMTP_ACCESS_KEY: [Enter AWS smtp access key]
+AWS_SMTP_SECRET_KEY: [Enter AWS smtp secret key]
+
+# AWS ROOT AUTOSCALING SETUP
+AWS_ROOT_ACCESS_KEY: [Enter Your AWS Root Key]
+AWS_ROOT_SECRET_KEY: [Enter Your AWS Root Secret]
+AWS_WORKER_IMAGE_NAME: [Enter Image Name]
+AWS_WORKER_INSTANCE_SOURCE_NAME: [Enter Instance Name to Use in AutoScaling Group]
+AWS_WORKER_LAUNCH_CONFIGURATION_INSTANCE_TYPE: [Enter Instance Type to Use in AutoScaling Group]
+AWS_WORKER_LAUNCH_CONFIGURATION_SECURITY_GROUPS: [Enter Launch Configuration security groups to Use in AutoScaling Group]
+AWS_WORKER_LAUNCH_CONFIGURATION_NAME: [Enter launch config name]
+AWS_WORKER_AUTO_SCALING_GROUP: [Enter AutoScaling Group Names]
+
+# MYSQL DATABASE SETUP
+MYSQL_DATABASE_HOST: [Enter MySQL database host]
+MYSQL_DATABASE_USERNAME: [Enter MySQL database username]
+MYSQL_DATABASE_PASSWORD: [Enter MySQL database password]
+MYSQL_DATABASE_PRIMARY_NAME: [Enter primary database name]
+MYSQL_DATABASE_SECONDARY_NAME: [Enter secondary database name]
+MYSQL_DATABASE_POOL: [Enter pool value here as string to describe database pool. Default: "5"]
+
+# PUMA SETUP
+PUMA_MIN_THREADS: [Enter Puma minimum thread. Default: "5"]
+PUMA_MAX_THREADS: [Enter Puma maximum thread. Default: "5"]
+
+# RAILS APP SETUP
+CLIENT_API_HOST: [Enter client api host ex: localhost:3000]
+TRACKING_HOST: [Enter default tracking host, Example: vbtrax.com]
+JS_TRACKING_HOST: [Enter default js tracking host, Example: adotone.com]
+AFFILIATE_UI_HOST: [Enter host for the affilaite app. Example: localhost:3000 (does not include http or https)]
+ADVERTISER_UI_HOST: [Enter host for the affilaite app. Example: localhost:3000 (does not include http or https)]
+ADMIN_UI_HOST: [Enter host for the admin app. Example: localhost:3000 (does not include http or https)]
+ADVERTISER_API_HOST: [Enter host for advertiser api app. Example: localhost:3000 (does not include http or https)]
+AFFILIATE_API_HOST: [Enter host for affiliate api app. Example: localhost:3000 (does not include http or https)]
+UI_HOST_PROTOCOL: [Enter the protocol of the application either its http:// or https://]
+HOST: [Enter host for this app. Example: localhost:3000]
+AUTO_LOGIN_SOURCE_HOSTS: [V1 app hosts. Separate each host with a comma. Example: partner.affiliates.one, network.affiliates.one]
+JWT_SECRET_KEY: [Enter random string here]
+CDN_HOST: [Enter cdn host here]
+AD_LINK_HOST: [Enter AdLink host here]
+SERVER_TYPE: [Enter Server Type. Most likely it will be 'WEB'. Possible Value: WEB|TRACK|SUPPORT]
+SERVER_NAME: [Enter the name of server]
+OXR_APP_ID: [Enter API KEY here]
+ACTIVATE_POPULATOR: [When 'YES' and populator is active, any database table will be wiped out and test data will be deployed. Set it to 'NO' most of the time]
+
+# OmniAuth SETUP
+GOOGLE_CLIENT_ID: [Enter Google Client ID here]
+GOOGLE_CLIENT_SECRET: [Enter Google Client Secret here]
+FACEBOOK_APP_ID: [Enter Facebook App ID here]
+FACEBOOK_APP_SECRET: [Enter Facebook App Secret here]
+LINE_CLIENT_ID: [Enter LINE Client ID here]
+LINE_CLIENT_SECRET: [Enter LINE Client Secret here]
+INSTAGRAM_APP_ID: [Enter IG App ID]
+INSTAGRAM_APP_SECRET: [Enter IG App Secret]
+TIKTOK_CLIENT_ID: [Enter Tiktok client key]
+TIKTOK_CLIENT_SECRET: [Enter Tiktok client secret]
+
+# REDIS SETUP
+CACHE_REDIS_URL: [Enter Redis URL for cache. Example: redis://redis.host:port or localhost]
+SIDEKIQ_REDIS_URL: [Enter Redis URL for Sidekiq. Example: redis://redis.host:port or localhost]
+
+# REDSHIFT DATABASE SETUP
+REDSHIFT_DATABASE_HOST: [Enter Redshift database host]
+REDSHIFT_DATABASE_USERNAME: [Enter Redshift database username]
+REDSHIFT_DATABASE_PASSWORD: [Enter Redshift database password]
+REDSHIFT_DATABASE_NAME: [Enter Redshift database name]
+REDSHIFT_DATABASE_POOL: [Enter integer value here. Default 500]
+
+# TEST SETUP
+TEST_MYSQL_DATABASE_NAME: [Enter MySQL Database name for test]
+TEST_REDSHIFT_DATABASE_NAME: [Enter MySQL Database name for test]
+
+# SENTRY SETUP
+SENTRY_DSN: [Enter Sentry DSN for your specific app]
+SENTRY_TRACE_SAMPLE_RATE: [Enter value between 0.0 and 1.0 for performance monitoring capture percentage]
+
+# KINESIS SETUP
+# Sometimes we need to migrate region due to AWS zone downtime
+KINESIS_REGION: [Enter region]
+# To avoid polutting kinesis stream during test, turn this off
+KINESIS_STATUS: [Enter 'on' or 'off']
+# KINESIS STREAM NAMES
+KINESIS_STREAM_CLICKS: [Enter stream name for clicks]
+KINESIS_STREAM_CONVERSIONS: [Enter stream name for conversions]
+KINESIS_STREAM_PARTITIONS: [Enter stream name for partitions]
+KINESIS_STREAM_REDSHIFT: [Enter stream name for redshift]
+KINESIS_STREAM_OTHERS: [Enter stream name for others]
+
+# SIDEKIQ - Production
+SIDEKIQ_WEB_USERNAME: [enter username]
+SIDEKIQ_WEB_PASSWORD: [enter password]
+
+# STRIPE KEYS
+STRIPE_PUBLISHABLE_KEY: [Enter publishable key]
+STRIPE_SECRET_KEY: [Enter secret key]
+
+# TAP PAY KEYS
+TAP_PAY_APP_ID: [enter TapPay app id]
+TAP_PAY_APP_SECRET: [enter TapPay app secret]
+TAP_PAY_PARTNER_KEY: [enter TapPay partner secret]
+
+RECAPTCHA_SECRET_KEY: [enter Google reCAPTCHA v3 secret key]
+RECAPTCHA_MINIMUM_SCORE: [enter minimum reCAPTCHA score (0.0 - 1.0)]
+
+ELASTICSEARCH_URL [enter Elasticsearch URL. default: "localhost:9200"]
+
+EASY_STORE_CLIENT_ID: [enter EasyStore App ID]
+EASY_STORE_CLIENT_SECRET: [enter EasyStore App Secret]
+
+#TRACKING
+FIFTY_ONE_DEGREE_KEY: [Enter key]
+
+ENCRYPTOR_KEY: [Enter Key]
+
+WHITELISTED_IPS: [Enter whitelisted ip addresses]
+RACK_TIMEOUT_SERVICE_TIMEOUT: [Enter timeout in seconds]
+
+CONTACT_EMAILS: [Enter emails separate by comma]
+
+DB_STATE: [Enter "ON" or "OFF"]

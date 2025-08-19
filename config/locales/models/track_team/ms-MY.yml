@@ -1,0 +1,8 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        track_team:
+          attributes:
+            name:
+              blank: "Please specify the name for this team."

@@ -1,0 +1,28 @@
+zh-TW:
+
+  predefined:
+    models:
+      affiliate_industry:
+        name:
+          "Adult": "成人娛樂"
+          "APPs": "手機APP"
+          "Art & Design": "影像創作"
+          "Automotive": "車類服務"
+          "Beauty & Health": "美妝/保健"
+          "Business": "企業服務"
+          "Children": "親子兒童"
+          "Dating & Matchmaking": "約會交友"
+          "Deals & Coupons": "好康折扣"
+          "Education & Career": "教育/職場"
+          "Events & Tickets": "活動票券"
+          "Entertainment": "影視娛樂"
+          "Financial & Insurance": "金融/保險"
+          "Food & Restaurant": "美食餐廳"
+          "Games & Toys": "電玩/玩具"
+          "Horoscope": "星座/命理"
+          "News & Information": "新聞/資訊"
+          "Pets": "寵物寶貝"
+          "Retail & Ecommerce": "消費購物"
+          "Sports & Fitness": "運動/健身"
+          "Travel": "休閒旅遊"
+          "Others": "其他"

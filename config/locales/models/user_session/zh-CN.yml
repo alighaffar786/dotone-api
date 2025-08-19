@@ -1,0 +1,10 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        user_session:
+          attributes:
+            username:
+              blank: "Please specify your username"
+            password:
+              blank: "Please specify your password"

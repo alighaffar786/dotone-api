@@ -1,0 +1,158 @@
+th-TH:
+
+  activerecord:
+    errors:
+      models:
+        category:
+          attributes:
+            name:
+              blank: "Please specify the name of the category."
+              taken: "Category of the same name exists."
+
+
+  predefined:
+    models:
+      category:
+        name:
+
+          #Adult
+          "Adult Dating": "Adult Dating"
+          "Adult Toys": "Adult Toys"
+          "Adult Videos": "Adult Videos"
+          "Dating & Matchmaking": "Dating & Matchmaking"
+
+          #Beauty & Skincare
+          "Bath & Body": "Bath & Body"
+          "Cosmetics": "Cosmetics"
+          "Face & Body Treatment": "Face & Body Treatment"
+          "Perfume & Fragrance": "Perfume & Fragrance"
+          "Haircare Treatment": "Haircare Treatment"
+          "Nail & Eyelash": "Nail & Eyelash"
+          "Other Beauty": "Other Beauty"
+
+          #Clothing & Apparel
+          "Jewelry Accessories": "Jewelry Accessories"
+          "Luggage & Handbag": "Luggage & Handbag"
+          "Men Apparel": "Men Apparel"
+          "Other Fashions": "Other Fashions"
+          "Shoe & Footwear": "Shoe & Footwear"
+          "Swimwear & Underwear": "Swimwear & Underwear"
+          "Sport/Fitness Apparel": "Sport/Fitness Apparel"
+          "Teen Apparel": "Teen Apparel"
+          "Women Apparel": "Women Apparel"
+
+          #Cooking & DIY
+          "Chinese Cuisine": "Chinese Cuisine"
+          "Dessert / Bakery": "Dessert / Bakery"
+          "Health / Nutrition": "Health / Nutrition"
+          "Lunch Box": "Lunch Box"
+          "Other Cooking": "Other Cooking"
+          "Western Cuisine": "Western Cuisine"
+
+          #Education & Knowledge
+          "Books Sharing": "Books Sharing"
+          "Career Development": "Career Development"
+          "Graphics Design": "Graphics Design"
+          "Investment & Financial": "Investment & Financial"
+          "Language Learning": "Language Learning"
+          "Marketing Management": "Marketing Management"
+          "Online Course": "Online Course"
+          "Psychology": "Psychology"
+          "Social Media Tutor": "Social Media Tutor"
+          "Software Development": "Software Development"
+          "Others Knowledge": "Others Knowledge"
+
+          #Electronic & Tech
+          "APP/PC/Console Game": "APP/PC/Console Game"
+          "App & Software": "App & Software"
+          "Cloud Service & SAAS": "Cloud Service & SAAS"
+          "Computer Hardware": "Computer Hardware"
+          "eBook": "eBook"
+          "Electronic & Peripheral": "Electronic & Peripheral"
+
+          #Family & Kid
+          "Children Book": "Children Book"
+          "Child Education": "Child Education"
+          "Children Toy": "Children Toy"
+          "Toddler & Infant": "Toddler & Infant"
+
+          #Food & Drinks
+          "Alcohol/Tobacco": "Alcohol/Tobacco"
+          "Dessert & Drink": "Dessert & Drink"
+          "Food Delivery": "Food Delivery"
+          "Groceries": "Groceries"
+          "Local Delicacy": "Local Delicacy"
+          "Other Food & Drink": "Other Food & Drink"
+          "Restaurants": "Restaurants"
+
+          #General Merchandise
+          "Online Store": "Online Store"
+          "Tools & Supply": "Tools & Supply"
+
+          #Gifts & Flowers
+          "Flowers": "Flowers"
+          "Gifts": "Gifts"
+          "Greeting Cards": "Greeting Cards"
+          "Handmade Goods": "Handmade Goods"
+
+          #Health & Wellness
+          "Dental Care": "Dental Care"
+          "Health Supplement": "Health Supplement"
+          "Massages/Spas": "Massages/Spas"
+          "Other Wellness": "Other Wellness"
+          "Pharmacy & Supply": "Pharmacy & Supply"
+          "Vision Care": "Vision Care"
+          "Weight Loss": "Weight Loss"
+
+          #Home & Garden
+          "Bed & Bath": "Bed & Bath"
+          "Furniture & Decoration": "Furniture & Decoration"
+          "Gardening": "Gardening"
+          "Home Appliance": "Home Appliance"
+          "Kitchen": "Kitchen"
+          "Other Home & Garden": "Other Home & Garden"
+
+          #Pets & Aquarium
+          "Aquarium & Reptile": "Aquarium & Reptile"
+          "Cat & Dog": "Cat & Dog"
+          "Other Pets": "Other Pets"
+          "Pet": "Pet"
+          "Pet Food": "Pet Food"
+          "Pet Hotel": "Pet Hotel"
+          "Pet Spa": "Pet Spa"
+
+          #Professional Services
+          "Cleaner & Storage": "Cleaner & Storage"
+          "Credit Cards": "Credit Cards"
+          "Fundraising/Charitable": "Fundraising/Charitable"
+          "Insurance Service": "Insurance Service"
+          "Investment": "Investment"
+          "Loans & Debit": "Loans & Debit"
+          "Other Services": "Other Services"
+          "Video/Photography": "Video/Photography"
+
+          #Recreation & Leisure
+          "Board Game": "Board Game"
+          "Car Modification": "Car Modification"
+          "Collectibles": "Collectibles"
+          "Karaoke/KTV": "Karaoke/KTV"
+          "Motorcycles Modification": "Motorcycles Modification"
+          "Other Recreation": "Other Recreation"
+
+          #Sport & Fitness
+          "Aquatic Sport": "Aquatic Sport"
+          "Dance & Gymnastic": "Dance & Gymnastic"
+          "Fitness Equipment": "Fitness Equipment"
+          "Hiking & Outdoor": "Hiking & Outdoor"
+          "Indoor Activity": "Indoor Activity"
+          "Outdoor Adventure": "Outdoor Adventure"
+          "Other Sports": "Other Sports"
+          "Sport & Game": "Sport & Game"
+          "Yoga & Aerobic": "Yoga & Aerobic"
+
+          #Travel & Lodging
+          "Camping & Outdoor": "Camping & Outdoor"
+          "Event/Ticket": "Event/Ticket"
+          "Flight & Hotel": "Flight & Hotel"
+          "Other Travel Needs": "Other Travel Needs"
+          "Travel & Vacation": "Travel & Vacation"

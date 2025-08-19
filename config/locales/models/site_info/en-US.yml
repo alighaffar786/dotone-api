@@ -1,0 +1,8 @@
+en-US:
+  will_paginate:
+    models:
+      site_info:
+        zero: "Assets"
+        one: "Asset"
+        few: "Assets"
+        other: "Assets"

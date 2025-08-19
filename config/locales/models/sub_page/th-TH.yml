@@ -1,0 +1,13 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        sub_page:
+          attributes:
+            destination_url:
+              blank: "Please specify the destination url of the sub page."
+            landing_page_id:
+              blank: "Sub Page must belong to a landing page."
+            name:
+              blank: "Please specify the name of the sub page."
+              taken: "Sub Page with the same name already exists."

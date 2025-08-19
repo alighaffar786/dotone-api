@@ -1,0 +1,13 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        user_pixel:
+          attributes:
+            pixel_type:
+              blank: "Please specify pixel type."
+              inclusion: "Pixel type is invalid." 
+            user_id:
+              blank: "Please specify user."
+            content:
+              blank: "A pixel needs to have a content."

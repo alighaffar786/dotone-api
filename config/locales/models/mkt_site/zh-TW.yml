@@ -1,0 +1,9 @@
+zh-TW:
+
+  will_paginate:
+    models:
+      mkt_site:
+        zero: "網站"
+        one: "網站"
+        few: "網站"
+        other: "網站"

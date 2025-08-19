@@ -1,0 +1,11 @@
+development:
+  adapter: redis
+  url: <%= ENV.fetch("CACHE_REDIS_URL") { "redis://localhost:6379/1" } %>
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("CACHE_REDIS_URL") { "redis://localhost:6379/1" } %>
+  channel_prefix: dotone_api_production

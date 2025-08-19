@@ -1,0 +1,19 @@
+zh-TW:
+  
+  activerecord:
+
+    models:
+
+      network_offer:
+        one: "品牌/電商"
+        other: "品牌/電商"
+  
+  will_paginate:
+
+    models:
+  
+      network_offer:
+        zero: "品牌/電商"
+        one: "品牌/電商"
+        few: "品牌/電商"
+        other: "品牌/電商"

@@ -1,0 +1,9 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        rescue_path:
+          attributes:
+            name:
+              blank: "Please specify name for this rescue path."
+              taken: "Rescue Path with the same name has already been defined."

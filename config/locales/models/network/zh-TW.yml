@@ -1,0 +1,86 @@
+zh-TW:
+
+  activerecord:
+
+    attributes:
+
+      network:
+        payment_term: |
+          付款方式
+        payment_term_days: |
+          付款期限日
+
+    models:
+
+      network:
+        one: "商家"
+        other: "商家"
+
+  predefined:
+    models:
+      network:
+        sales_pipeline:
+          "Contract Signed": "簽訂合約"
+          "Deal Completed": "合作客戶"
+          "Evaluate & Negotiate": "廠商評估"
+          "Follow-up Contact": "後續聯繫"
+          "Initial Contact": "初次聯繫"
+          "New Lead": "新客户"
+          "Not Interested": "無合作意願"
+          "Presentation & Demo": "視訊會議"
+          "Qualified Lead": "潛在客戶"
+          "Unqualified Lead": "無法合作"
+        status:
+          "Active": "使用中"
+          "New": "新記錄"
+          "Paused": "已暫停"
+          "Pending": "審核中"
+          "Suspended": "已終止"
+        payment_term:
+          "Net Term": "支付期限"
+          "Net Term (Includes Sales Tax)": "支付期限(含稅)"
+          "Prepay": "預付"
+
+  will_paginate:
+
+    models:
+
+      network:
+        zero: "商家"
+        one: "商家"
+        few: "商家"
+        other: "商家"
+
+  download_columns:
+    models:
+      network:
+        affiliate_logs: '筆記'
+        affiliate_users: '管理員'
+        billing_currency: '結算貨幣'
+        billing_region: 'Billing Region' #TODO
+        brands: '品牌/商標'
+        campaign: '推廣活動'
+        category_groups: '專長推廣產業'
+        channel: '行銷通路/媒體'
+        company_url: '公司網站'
+        contact_email: '電子郵件'
+        contact_lists: '廠商聯絡列表'
+        contact_name: '聯絡人姓名'
+        contact_phone: '聯絡號碼'
+        contact_title: '聯絡人頭銜'
+        country: '國家'
+        created_at: '加入日'
+        name: 'Advertiser Name' #TODO
+        payment_term: '付款方式'
+        profile_updated_at: 'Profile Updated At' #TODO
+        published_date: '發布日期'
+        recruiter: '開發者'
+        sales_pipeline: '開發階段/管道'
+        status: '狀態'
+        subscription: 'Subscription' #TODO
+        transaction_affiliate: '聯盟推廣者'
+        transaction_subid_1: 'Subid 1 標籤'
+        transaction_subid_2: 'Subid 2 標籤'
+        transaction_subid_3: 'Subid 3 標籤'
+        transaction_subid_4: 'Subid 4 標籤'
+        transaction_subid_5: 'Subid 5 標籤'

@@ -1,0 +1,23 @@
+th-TH:
+
+  predefined:
+    models:
+      category_group:
+        name:
+          "Adult": "Adult"
+          "Beauty & Skincare": "Beauty & Skincare"
+          "Clothing & Apparel": "Clothing & Apparel"
+          "Cooking & DIY": "Cooking & DIY"
+          "Education & Knowledge": "Education & Knowledge"
+          "Electronic & Tech": "Electronic & Tech"
+          "Family & Kid": "Family & Kid"
+          "Food & Drinks": "Food & Drinks"
+          "General Merchandise": "General Merchandise"
+          "Gifts & Flowers": "Gifts & Flowers"
+          "Health & Wellness": "Health & Wellness"
+          "Home & Garden": "Home & Garden"
+          "Pets & Aquarium": "Pets & Aquarium"
+          "Professional Services": "Professional Services"
+          "Recreation & Leisure": "Recreation & Leisure"
+          "Sport & Fitness": "Sport & Fitness"
+          "Travel & Lodging": "Travel & Lodging"

@@ -1,0 +1,18 @@
+en-US:
+
+  activerecord:
+
+    models:
+
+      api_key:
+        one: API Key
+        other: API Keys
+
+  predefined:
+
+    models:
+
+      api_key:
+        status:
+          Active: Active
+          Inactive: Inactive

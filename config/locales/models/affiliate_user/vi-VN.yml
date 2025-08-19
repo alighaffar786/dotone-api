@@ -1,0 +1,35 @@
+vi-VN:
+
+  activerecord:
+
+    models:
+
+      affiliate_user:
+        one: "User"
+        other: "Users"
+
+  predefined:
+
+    models:
+
+      affiliate_user:
+
+        role:
+          "Affiliate Director": "Affiliate Director"
+          "Affiliate Manager": "Affiliate Manager"
+          "Designer": "Designer"
+          "Event Manager": "Event Manager"
+          "Network Manager": "Network Manager"
+          "Ops Team": "Ops Team"
+          "Sales Director": "Sales Director"
+          "Sales Manager": "Sales Manager"
+
+  will_paginate:
+
+    models:
+  
+      affiliate_user:
+        zero: "Users"
+        one: "User"
+        few: "Users"
+        other: "Users"

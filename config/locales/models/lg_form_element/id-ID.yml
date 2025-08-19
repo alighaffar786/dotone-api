@@ -1,0 +1,11 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        lg_form_element:
+          attributes:
+            lg_form_id:
+              taken: "Form with same info key is aleady exists."
+              blank: "Please specify form."
+            lg_info_key_id:
+              blank: "Please specify info key."

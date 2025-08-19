@@ -1,0 +1,6 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        pay_schedule:
+          invalid_payout: "At least one of affiliate_pay, true_pay, true_share, or affiliate_share must be greater than 0"

@@ -1,0 +1,71 @@
+zh-TW:
+  activerecord:
+    models:
+      affiliate_payment:
+        one: "款項"
+        other: "款項"
+
+  will_paginate:
+    models:
+      affiliate_payment:
+        zero: "款項"
+        one: "款項"
+        few: "款項"
+        other: "款項"
+
+  download_columns:
+    models:
+      affiliate_payment:
+        account_number: 銀行帳號
+        affiliate_amount: 會員獎金
+        affiliate_id: 聯盟會員
+        affiliate_users: 管理員
+        amount: 發款金額
+        bank_address: 銀行地址
+        bank_identification: 銀行代號/識別碼
+        bank_name: Bank Name
+        branch_identification: 分行代碼
+        branch_name: 分行別
+        business_entity: 單位
+        company_name: Company Name
+        conversion_file_url: Conversions
+        end_date: 款項結束期
+        iban: IBAN
+        id: 款項 ID
+        legal_resident_address: 收款：戶籍地址
+        mailing_country: Mailing Country
+        net_payment_amount: Net Payment
+        non_redeemed_amount: Non Redeemed Amount
+        notes: 記錄筆記
+        paid_date: 付款日期
+        payee_name: 收款人姓名
+        payment_info_status: 知訊狀態
+        payment_type: 收款類型
+        paypal_email_address: PayPal 電郵帳戶
+        post_tax_payment_amount: Post Tax Amount
+        preferred_currency: 首選貨幣
+        previous_amount: 帳戶餘額
+        redeemed_amount: 請款金額
+        referral_amount: 推薦獎金
+        routing_number: Routing Number
+        ssn_ein: EIN
+        start_date: 款項開始期
+        status: 款項狀態
+        tax_fee_amount: Tax
+        tax_filing_country: 報稅國家
+        taxable_payment: Taxable Payment
+        total_commissions: 會員獎金總額
+        total_fees: 稅金/費用
+        wire_fee_amount: Bank Fee
+
+  predefined:
+    models:
+      affiliate_payment:
+        status:
+          "Confirmed": 已確認
+          "Deferred": 順延
+          "Paid": 已付
+          "Pending": 審核中
+          "Redeemable": 可請款
+          "Redeemed": 已請款
+          "Suspended": 已終止

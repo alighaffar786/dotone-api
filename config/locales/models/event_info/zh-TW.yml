@@ -1,0 +1,38 @@
+zh-TW:
+  activerecord:
+    errors:
+      models:
+        event_info:
+          attributes:
+            offer_id:
+              blank: "Offer is required"
+
+  predefined:
+    models:
+      event_info:
+        availability_type:
+          Site Wide: 全官網/電商
+          Specific Item: 指定商品
+
+        event_type:
+          Backlinks: 反向連結
+          Creative Post: 廣告版位
+          Customization: 限定活動
+          Group Buy: 團購活動
+          Invite Only: 指定創作者
+          Product Sampling: 試用活動
+          Text Review: 寫文活動
+          Video Review: 影音活動
+
+        fulfillment_type:
+          Delivery: 廠商寄送
+          In-Person: 到場體驗
+          Self Purchase: 自行購買
+
+        popularity_unit:
+          Daily UU: 日流量
+          Fans: 粉絲數
+          Followers: 追蹤數
+          Likes: 讚數
+          Site Rank: 網站排名
+          Subscribers: 訂閱數

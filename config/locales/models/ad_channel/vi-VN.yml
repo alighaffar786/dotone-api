@@ -1,0 +1,9 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        ad_channel:
+          attributes:
+            name:
+              blank: "Please specify the name of the ad channel."
+              taken: "Name has been used by other ad channel."

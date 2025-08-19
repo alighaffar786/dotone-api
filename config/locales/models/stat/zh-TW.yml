@@ -1,0 +1,108 @@
+zh-TW:
+  will_paginate:
+    models:
+      stat:
+        zero: "Stats"
+        one: "Stat"
+        few: "Stats"
+        other: "Stats"
+
+  download_columns:
+    models:
+      stat:
+        affiliate: 聯盟會員
+        captured: 總交易數
+        clicks: 點擊數
+        offer: 品牌/電商
+        offer_id: 品牌/電商
+        site_info_urls: 會員網址URL
+
+        _aliases: &stat_download_column_aliases
+          affiliate_id: "聯盟會員"
+          image_creative_id: "圖片素材"
+          impressions: "曝光數"
+          ip_country: "國家"
+          offer_name: "品牌/電商名稱"
+          offer_variant_id: "品牌電商登陸頁"
+          order_total: "總營收 (%{currency})"
+          subid_1: "追蹤標籤1"
+          subid_2: "追蹤標籤2"
+          subid_3: "追蹤標籤3"
+          subid_4: "追蹤標籤4"
+          subid_5: "追蹤標籤5"
+          text_creative_id: "促銷優惠"
+
+        <<: *stat_download_column_aliases
+
+  download_summary_columns:
+    models:
+      stat: &stat_download_summary_columns
+        <<: *stat_download_column_aliases
+        ad_slot_id: "優惠版位"
+        affiliate_pay_epc: "會員 EPC (%{currency})"
+        approved_affiliate_pay: "成效平均獎金 (%{currency})"
+        approved_conversions: "獎金確認次數"
+        approved_true_pay: "廠商佣金總額 (%{currency})"
+        avg_affiliate_pay: "成效平均獎金 (%{currency})"
+        avg_true_pay: "廠商平均佣金 (%{currency})"
+        browser: "瀏覽器"
+        browser_version: "瀏覽器版本"
+        captured: "總交易數"
+        clicks: "點擊次數"
+        contact_lists: "廠商聯絡列表"
+        conversion_percentage: "交易轉換率(%)"
+        network_country: "廠商所在國家"
+        date: "日期"
+        device_brand: "裝置品牌"
+        device_model: "明細型號"
+        device_type: "裝置類型"
+        invalid_conversions: "待處理"
+        isp: "ISP 網路供應商"
+        margin: "盈利 (%{currency})"
+        media_categories: "媒體需求"
+        network_billing_email: "廠商賬單 Email"
+        network_contact_email: "廠商聯絡 Email"
+        network_id: "廠商"
+        network_payment_term: "付款方式"
+        network_payment_term_days: "付款期限日"
+        network_status: "廠商狀態"
+        network_universal_number: "身份證/統編"
+        offer_id: "品牌電商"
+        pending_affiliate_pay: "未確認獎金 (%{currency})"
+        pending_conversions: "未確認交易"
+        pending_true_pay: "未確認佣金 (%{currency})"
+        published_affiliate_pay: "成效獎金總額 (%{currency})"
+        published_conversions: "已確認交易"
+        published_true_pay: "已確認佣金 (%{currency})"
+        rejected_affiliate_pay: "否決/無效獎金 (%{currency})"
+        rejected_conversions: "否決/無效交易"
+        rejected_rate: "否決率 %"
+        rejected_true_pay: "不支付佣金 (%{currency})"
+        total_affiliate_pay: "總成效獎金 (%{currency})"
+        total_conversions: "獎金確認次數"
+        total_true_pay: "總廣告費/佣金 (%{currency})"
+        true_pay_epc: "平均點擊費 (%{currency})"
+
+        affiliate:
+          <<: *stat_download_summary_columns
+
+        network:
+          <<: *stat_download_summary_columns
+
+        owner:
+          <<: *stat_download_summary_columns
+          published_affiliate_pay: "成效確認總額 (%{currency})"
+          published_conversions: "成效確認次數"
+          published_true_pay: "成效確認佣金 (%{currency})"
+
+  reports:
+    models:
+      stat:
+        network_balance_exporter:
+          available_balance: 可用餘額
+          network_id: 廠商ID
+          network_name: 廠商名稱
+          total_pending_payouts: 待確認總額
+          total_published_payouts: 已確認總額（本月）
+          remaining_balance: 剩餘餘額
+          total: 總計

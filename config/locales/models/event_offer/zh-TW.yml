@@ -1,0 +1,25 @@
+zh-TW:
+  activerecord:
+    models:
+      event_offer:
+        one: 接案活動
+        other: 接案活動
+
+  will_paginate:
+    models:
+      event_offer:
+        zero: "接案活動"
+        one: "接案活動"
+        few: "接案活動"
+        other: "接案活動"
+
+  predefined:
+    models:
+      event_offer:
+        short_description:
+          Unboxing Review: 開箱體驗評論
+          Unboxing Video: 開箱體驗影音
+          In-Store Review: 到店體驗評論
+          In-Store Video: 到店體驗影音
+          Service Exp. Review: 服務體驗評論
+          Service Exp. Video: 服務體驗影音

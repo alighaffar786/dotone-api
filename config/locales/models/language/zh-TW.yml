@@ -1,0 +1,13 @@
+zh-TW:
+  shared:
+    texts:
+      language:
+        name:
+          "en-CA": "English (CA)"
+          "en-US": "English (US)"
+          "id-ID": "Bahasa Indonesia"
+          "fr-CA": "Français (CA)"
+          "my-MY": "Bahasa Malaysia"
+          "th-TH": "Thai"
+          "zh-CN": "中文 (简体)"
+          "zh-TW": "中文 (繁體)"

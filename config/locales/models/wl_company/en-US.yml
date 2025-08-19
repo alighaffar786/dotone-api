@@ -1,0 +1,24 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        wl_company:
+          attributes:
+            name:
+              blank: "Please specify the name of the white label company."
+            domain_name:
+              blank: "Please specify the domain name of the white label company."
+            language_id:
+              blank: "Please specify the language for the company."
+            user_id:
+              blank: "Please specify user for the white label company."
+            currency_id:
+              blank: "Please specify the currency for this white label company."
+
+  will_paginate:
+    models:
+      wl_company:
+        zero: "Company"
+        one: "Company"
+        few: "Companies"
+        other: "Companies"

@@ -1,0 +1,95 @@
+doctype transitional
+html[lang="en"]
+  head
+    meta[http-equiv="Content-Type" content="text/html; charset=UTF-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    / So that mobile will display zoomed in
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    / enable media queries for windows phone 8
+    meta[name="format-detection" content="telephone=no"]
+    / disable auto telephone linking in iOS
+    meta[charset="UTF-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    link[rel="preconnect" href="https://fonts.googleapis.com"]
+    link[rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""]
+    link[href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Orbitron:wght@700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"]
+    title
+      | Email Template
+    style[type="text/css"]
+      | body {
+          margin: 0;
+          padding: 0;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+        }
+
+        table {
+          border-spacing: 0;
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+
+        table td {
+          border-collapse: collapse;
+        }
+
+        .ExternalClass {
+          width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
+
+        .ReadMsgBody {
+          width: 100%;
+          background-color: #ebebeb;
+        }
+
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+
+        .yshortcuts a {
+          border-bottom: none !important;
+        }
+
+        @media screen and (max-width: 599px) {
+          .force-row,
+          .container {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
+        }
+
+        @media screen and (max-width: 400px) {
+          .container-padding {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+          }
+        }
+
+        .banner-list-item {
+          max-width: 300px;
+        }
+
+        .ios-footer a {
+          color: #aaaaaa !important;
+          text-decoration: underline;
+        }
+
+  / 100% background wrapper (grey background)
+  body
+    div[style="width: 70%; height: auto; margin: 0 auto"]
+      div[style="width: 75%"]
+        img[src="https://cdn.affiliates.one/logos/production/8/advertiser-en-us.png" width="250px" alt=""]
+      = @email_template.html_safe
+      div[style="font-weight: 700; font-size: 20px; margin: 40px 0px; text-align: center;"]
+        | Thank you for partnering with us!
+          / /100% background wrapper

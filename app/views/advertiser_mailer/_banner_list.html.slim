@@ -1,0 +1,7 @@
+- banners.each do |banner|
+  div[style="margin-top: 15px;"]
+    = image_tag(banner.cdn_url, class: "banner-list-item")
+  br
+  = banner.size
+div[style="margin-top: 10px;"]
+  = size_for_more_string

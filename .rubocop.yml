@@ -1,0 +1,83 @@
+# Affiliates.One Rubocop custom configuration
+# Override any settings from default:
+# https://github.com/rubocop/rubocop/blob/master/config/default.yml
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/ArrayAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/HashAsLastArrayItem:
+  EnforcedStyle: no_braces
+
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
+Layout/LineLength:
+  Max: 999
+
+Metrics/MethodLength:
+  Max: 999

@@ -1,0 +1,33 @@
+zh-TW:
+
+  activerecord:
+
+    models:
+
+      affiliate_user:
+        one: "User"
+        other: "Users"
+
+  predefined:
+
+    models:
+
+      affiliate_user:
+
+        role:
+          "Affiliate Director": "聯盟總監"
+          "Affiliate Manager": "聯盟經理"
+          "Designer": "Designer"
+          "Network Manager": "平台管理員"
+          "Sales Director": "業務總監"
+          "Sales Manager": "業務經理"
+
+  will_paginate:
+
+    models:
+  
+      affiliate_user:
+        zero: "Users"
+        one: "User"
+        few: "Users"
+        other: "Users"

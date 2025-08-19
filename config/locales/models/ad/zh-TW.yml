@@ -1,0 +1,9 @@
+zh-TW:
+
+  will_paginate:
+    models:
+      ad:
+        zero: "Ads"
+        one: "Ad"
+        few: "Ads"
+        other: "Ads"

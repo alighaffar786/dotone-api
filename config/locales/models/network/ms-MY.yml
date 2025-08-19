@@ -1,0 +1,86 @@
+ms-MY:
+
+  activerecord:
+
+    attributes:
+
+      network:
+        payment_term: |
+          Payment Term
+        payment_term_days: |
+          Payment Term Days
+
+    models:
+
+      network:
+        one: "Advertiser"
+        other: "Advertisers"
+
+  predefined:
+    models:
+      network:
+        sales_pipeline:
+          "Contract Signed": "Contract Signed"
+          "Deal Completed": "Deal Completed"
+          "Evaluate & Negotiate": "Evaluate & Negotiate"
+          "Follow-up Contact": "Follow-up Contact"
+          "Initial Contact": "Initial Contact"
+          "New Lead": "New Lead"
+          "Not Interested": "Not Interested"
+          "Presentation & Demo": "Presentation & Demo"
+          "Qualified Lead": "Qualified Lead"
+          "Unqualified Lead": "Unqualified Lead"
+        status:
+          "Active": "Active"
+          "New": "New"
+          "Paused": "Paused"
+          "Pending": "Pending"
+          "Suspended": "Suspended"
+        payment_term:
+          "Net Term": "Net Term"
+          "Net Term (Includes Sales Tax)": "Net Term (Includes Sales Tax)"
+          "Prepay": "Prepay"
+
+  will_paginate:
+
+    models:
+
+      network:
+        zero: "Advertisers"
+        one: "Advertiser"
+        few: "Advertisers"
+        other: "Advertisers"
+
+  download_columns:
+    models:
+      network:
+        affiliate_logs: 'Notes'
+        affiliate_users: 'Manager'
+        brands: 'Brands'
+        billing_currency: 'Billing Currency'
+        billing_region: 'Billing Region'
+        campaign: 'Campaign'
+        category_groups: 'Vertical'
+        channel: 'Marketing Channel'
+        company_url: 'Company Site'
+        contact_email: 'Contact Email'
+        contact_name: 'Contact Name'
+        contact_phone: 'Contact Phone'
+        contact_title: 'Contact Title'
+        contact_lists: 'Contact List'
+        country: 'Country'
+        created_at: 'Joined Date'
+        name: 'Advertiser Name'
+        payment_term: 'Payment Term'
+        profile_updated_at: 'Profile Updated At'
+        published_date: 'Publ. Date'
+        recruiter: 'Recruiter'
+        sales_pipeline: 'Sales Pipeline'
+        status: 'Advertiser Status'
+        subscription: 'Subscription'
+        transaction_affiliate: 'Source Affiliate'
+        transaction_subid_1: 'Source Subid 1'
+        transaction_subid_2: 'Source Subid 2'
+        transaction_subid_3: 'Source Subid 3'
+        transaction_subid_4: 'Source Subid 4'
+        transaction_subid_5: 'Source Subid 5'

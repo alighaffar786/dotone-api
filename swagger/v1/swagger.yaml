@@ -1,0 +1,40 @@
+---
+swagger: '2.0'
+info:
+  title: API V2
+  version: v2
+paths:
+  "/api/v1/advertisers/password_resets":
+    post:
+      summary: create password_reset
+      responses:
+        '200':
+          description: successful
+  "/api/v1/advertisers/password_resets/{id}":
+    parameters:
+    - name: id
+      in: path
+      type: string
+      description: id
+      required: true
+    patch:
+      summary: update password_reset
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update password_reset
+      responses:
+        '200':
+          description: successful
+  "/api/v1/advertisers/login":
+    post:
+      summary: login session
+      responses:
+        '200':
+          description: successful
+servers:
+- url: "{defaultHost}"
+  variables:
+    defaultHost:
+      default: http://localhost:3000

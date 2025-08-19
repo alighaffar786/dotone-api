@@ -1,0 +1,15 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        affiliate_application:
+          attributes:
+            address_id:
+              blank: "Please specify the address for this application."
+            affiliate_id:
+              blank: "Please specify the affiliate for this application."
+              taken: "Application for this affiliate exists."
+            status:
+              blank: "Status is required."
+            phone_number:
+              blank: "Phone Number is required."

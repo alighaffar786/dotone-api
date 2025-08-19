@@ -1,0 +1,22 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        sc_auto_ship:
+          attributes:
+            status:
+              blank: "Please specify the status for the auto ship."
+            day_period:
+              blank: "Please specify the day period for the auto ship."
+            sc_subscription_id:
+              blank: "Subscription for the auto ship is required."
+            sc_product_variant_id:
+              blank: "Product Variant for the auto ship is required."
+            next_order_at:
+              blank: "Next order date for the auto ship can't be blank."
+            unit_price:
+              blank: "Unit price for the auto ship can't be blank."
+            quantity:
+              blank: "Quantity for the auto ship can't be blank."
+            status:
+              blank: "Status for the auto ship can't be blank."

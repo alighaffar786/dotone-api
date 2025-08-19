@@ -1,0 +1,21 @@
+zh-TW:
+
+  predefined:
+    models:
+      expertise:
+
+        name:
+          "APP Developer": "APP 開發"
+          "Blogger": "部落客/貼文"
+          "Contextual Media Buyer": "內容廣告採購"
+          "Contextual Publisher": "推廣文章寫手"
+          "Display Banner": "曝光橫幅廣告"
+          "Forum Moderator/Poster": "論壇版主/貼文"
+          "Incentive Traffic": "獎勵式流量"
+          "Mailer": "電子郵件行銷"
+          "Mobile Media": "行動/手機媒體"
+          "SEO Marketer": "SEO優化"
+          "Search PPC": "搜尋引擎 PPC"
+          "Site Builder": "建設網站"
+          "Social Network": "社群行銷 (FB/粉絲團)"
+          "Software Developer": "軟體開發"

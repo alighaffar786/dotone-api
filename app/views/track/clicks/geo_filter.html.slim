@@ -1,0 +1,81 @@
+- content_for(:title) { t('.page_title') }
+- content_for(:head) do
+  - if @current_offer.destination_url
+    meta[http-equiv="refresh" content="5;url=#{@current_offer.destination_url}"]
+  style
+    |
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #e7e7e7;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      #container {
+        color: #333;
+        margin: auto;
+        width: 75%;
+        text-align: center;
+        padding-top: 2rem;
+      }
+
+      #container h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #container h4 {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+      #container .details {
+        font-size: 1.5rem;
+      }
+
+      #container img {
+        height: 150px;
+      }
+
+      .cta a {
+        font-size: 1.75rem;
+      }
+
+      #footer {
+        color: #FFF;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        padding: 0.5rem;
+      }
+
+      #footer span {
+        font-size: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+      }
+
+      #footer img {
+        height: 25px;
+      }
+
+#container
+  = image_tag image_path('geo_restrict.png')
+  h2
+    = @current_offer.t_name
+  = t('.intro').html_safe
+  .details
+    = t(".details").html_safe
+    - if @current_offer.destination_url
+      .cta
+        = t('.if_preview_url_exist', url: @current_offer.destination_url).html_safe
+#footer
+  span
+    | Powered By
+  = image_tag image_path('logo_white.png')
+

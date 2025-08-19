@@ -1,0 +1,13 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        landing_page:
+          attributes:
+            destination_url:
+              blank: "Please specify the destination url for the landing page."
+            name:
+              blank: "Please specify the name of the landing page."
+              taken: "Landing page name has been taken."
+            user_id:
+              blank: "Please specify the user for the landing page."

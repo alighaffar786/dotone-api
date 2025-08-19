@@ -1,0 +1,19 @@
+zh-TW:
+
+  predefined:
+    models:
+      currency:
+        code_name:
+          AUD: "澳幣"
+          CAD: "加拿大元"
+          CNY: "人民幣"
+          EUR: "歐元"
+          GBP: "英鎊"
+          HKD: "港幣"
+          IDR: "印尼盾"
+          JPY: "日圓"
+          MYR: "馬來西亞林吉特"
+          SGD: "新加坡幣"
+          THB: "泰國銖"
+          TWD: "新台幣"
+          USD: "美元"

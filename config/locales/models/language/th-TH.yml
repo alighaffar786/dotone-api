@@ -1,0 +1,25 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        language:
+          attributes:
+            name:
+              blank: "Please specify the name of the language."
+            code:
+              blank: "Please specify the language code of the language."
+            country_id:
+              blank: "Please specify the country for this language."
+  
+  shared:
+    texts:
+      language:
+        name:
+          "en-CA": "English (CA)"
+          "th-TH": "English (US)"
+          "id-ID": "Bahasa Indonesia"
+          "fr-CA": "Français (CA)"
+          "my-MY": "Bahasa Malaysia"
+          "th-TH": "Thai"
+          "zh-CN": "中文 (简体)"
+          "zh-TW": "中文 (繁體)"

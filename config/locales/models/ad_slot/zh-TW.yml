@@ -1,0 +1,20 @@
+zh-TW:
+  
+  predefined:
+    
+    models:
+
+      ad_slot:
+
+        inventory_selection_type:
+          "Ad": "由廣告內容"
+          "Offer": "由品牌"
+          "Ad Categories": "由產業"
+          
+  will_paginate:
+    ad_slot:
+      zero: "Ad Placements"
+      one: "Ad Placement"
+      few: "Ad Placements"
+      other: "Ad Placements"
+    

@@ -1,0 +1,35 @@
+en-US:
+  activerecord:
+    models:
+      conversion_step:
+        one: Conversion Point
+        other: Conversion Points
+
+  will_paginate:
+    models:
+      conversion_step:
+        zero: "Conversion Steps"
+        one: "Conversion Step"
+        few: "Conversion Steps"
+        other: "Conversion Steps"
+
+  predefined:
+    models:
+      conversion_step:
+        label:
+          Complete Purchase: Complete Purchase
+          Complete Form: Complete Form
+          Complete Registration: Complete Registration
+          Download & Install: Download & Install
+          Trial Signup: Trial Signup
+          Complete Booking: Complete Booking
+          Complete Stay: Complete Stay
+          Subscription Purchase: Subscription Purchase
+          Complete Ride: Complete Ride
+          Complete Usage: Complete Usage
+          Valid Click: Valid Click
+          Complete Action: Complete Action
+          New Purchase: New Purchase
+          Return Purchase: Return Purchase
+          Complete Trial: Complete Trial
+          Complete Verification: Complete Verification

@@ -1,0 +1,78 @@
+ms-MY:
+  emails:
+    advertisers:
+      password_reset_instructions_subject: "%{company_name} - Password Reset Request"
+
+      password_reset_instructions:
+        text: |
+          Hi %{full_name},
+
+          Our system indicates that you have requested to reset your password.
+          If you did not make this request, simply ignore this email.
+          If you did make a request, just click the link below:
+
+          %{password_reset_url}
+
+          If the above URL does not work, try copying and pasting it into your browser.
+          If you continue to have problem, please feel free to contact us.
+
+          Regards,
+
+          %{company_name} Team
+
+    affiliates:
+      aff_offer_approval_permission_request_subject: "Campaign Approval Permission Request"
+
+      password_reset_instructions_subject: "%{company_name} - Password Reset Request"
+
+      password_reset_instructions:
+        text: |
+          Hi %{full_name},
+
+          Our system indicates that you have requested to reset your password.
+          If you did not make this request, simply ignore this email.
+          If you did make a request, just click the link below:
+
+          %{password_reset_url}
+
+          If the above URL does not work, try copying and pasting it into your browser.
+          If you continue to have problem, please feel free to contact us.
+
+          Regards,
+
+          %{company_name} Team
+
+    owners:
+      password_reset_instructions_subject: "%{company_name} - Password Reset Request"
+
+      password_reset_instructions:
+        text: |
+          Hi %{username},
+
+          Our system indicates that you have requested to reset your password.
+          If you did not make this request, simply ignore this email.
+          If you did make a request, just click the link below:
+
+          %{password_reset_url}
+
+          If the above URL does not work, try copying and pasting it into your browser.
+          If you continue to have problem, please feel free to contact us.
+
+          Regards,
+
+          %{company_name} Team
+
+    affiliate_users:
+      negative_balance_advertisers:
+        subject: "%{company_name} - Advertisers with Negative Balance Overview"
+        text: |
+          Hi there,
+
+          Our system indicates that you have advertisers with negative balances.
+          Please see attached files or you can visit the link below:
+
+          %{url}
+
+          Regards,
+
+          %{company_name} Team

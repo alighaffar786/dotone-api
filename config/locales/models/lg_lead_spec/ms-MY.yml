@@ -1,0 +1,8 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        lg_lead_spec:
+          attributes:
+            lg_form_id:
+              blank: "Please specify the lead form for the lead spec."

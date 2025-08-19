@@ -1,0 +1,20 @@
+th-TH:
+
+  predefined:
+    
+    models:
+
+      ad_slot:
+
+        inventory_selection_type:
+          "Ad": "By Ad Content"
+          "Offer": "By Offers"
+          "Ad Categories": "By Categories"
+
+  will_paginate:
+    ad_slot:
+      zero: "Ad Placements"
+      one: "Ad Placement"
+      few: "Ad Placements"
+      other: "Ad Placements"
+    

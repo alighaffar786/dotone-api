@@ -1,0 +1,12 @@
+th-TH:
+
+  predefined:
+    
+    models:
+    
+      offer_cap:
+    
+        cap_type:
+          Monthly Cap: Monthly Cap
+          Daily Cap: Daily Cap
+          Lifetime Cap: Lifetime Cap

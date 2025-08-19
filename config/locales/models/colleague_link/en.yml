@@ -1,0 +1,11 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        colleague_link:
+          attributes:
+            user_id:
+              blank: "User is blank."
+              unique_relationship: "User already has the colleague on the colleague list."
+            colleague_id:
+              blank: "Colleague is blank."

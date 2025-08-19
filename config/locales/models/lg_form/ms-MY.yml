@@ -1,0 +1,21 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        lg_form:
+          attributes:
+            name:
+              blank: "Please specify the name of the form."
+              taken: "Name for the form is taken."
+            user_id:
+              blank: "Please specify the user for this form."
+            width:
+              blank: "Please specify the width of the form area."
+            height: 
+              blank: "Please specify the height of the form area."
+            lg_domain_id:
+              blank: "please specify the domain for the form."
+            language_id:
+              blank: "please specify the language for the form."
+            status:
+              blank: "Please specify the status for the form."

@@ -1,0 +1,5 @@
+paid_date,period_start_date,period_end_date,affiliate_id,affiliate_name,business_entity,previous_amount,referral_amount,affiliate_amount,total_commissions,tax_filing_country,payment_currency,status,payment_info_status,payment_type
+2021-11-30,2021-10-01,2021-10-31,2008,ChenBaoling,Individual,8.72,0,0,8.72,Taiwan,SGD,Deferred,Incomplete,PayPal
+2021-11-30,2021-10-01,2021-10-31,3618,¤ý¼z¬Â,Individual,1.44,0,0,1.44,Taiwan,SGD,Deferred,Incomplete,PayPal
+2021-11-30,2021-10-01,2021-10-31,2356,¦Ì©g,Individual,4.58,0,0,4.58,Taiwan,SGD,Deferred,Incomplete,Wire Transfer
+2021-11-30,2021-10-01,2021-10-31,32457,HsuAngel,Individual,52.44,0,606.49,658.93,Singapore,SGD,Redeemable,Confirmed,Wire Transfer

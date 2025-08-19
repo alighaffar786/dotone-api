@@ -1,0 +1,66 @@
+vi-VN:
+  
+  activerecord:
+
+    models:
+
+      offer_variant:
+        one: "Offer Variant"
+        other: "Offer Variants"
+  
+    errors:
+  
+      models:
+  
+        offer_variant:
+          
+          attributes:
+            offer_id:
+              blank: "An offer needs to be defined."
+              taken: "An offer with the same language has already been defined."
+            language_id:
+              blank: "Language is missing."
+            name:
+              blank: "Please specify name for this offer variant."
+              taken: "Offer Variant with the same name has already been defined."
+            status:
+              blank: "Please specify status for this offer."
+            true_pay:
+              blank: "Please specify the payout."
+              not_a_number: "Invalid currency format."
+              greater_than_or_equal_to: "True Pay can't be less than zero."
+            affiliate_pay:
+              blank: "Please specify the commission."
+              not_a_number: "Invalid currency format."
+              greater_than_or_equal_to: "Affiliate Pay can't be less than zero."
+              less_than_or_equal_to: "Affiliate Pay can't be greater than True Pay."
+            is_default:
+              inclusion: "Please specify whether this variant is default or not"
+            destination_url:
+              blank: "Please specify the destination URL for this offer."
+
+  predefined:
+
+    models:
+
+        offer_variant:
+
+          status:
+            Active: Active
+            Active Public: Active Public
+            Active Private: Active Private
+            Completed: Completed
+            Draft: Draft
+            Fulfilled: Fulfilled
+            Paused: Paused
+            Suspended: Suspended
+
+will_paginate:
+    
+    models:
+    
+      offer_variant:
+        zero: "Offer Variants"
+        one: "Offer Variant"
+        few: "Offer Variants"
+        other: "Offer Variants"

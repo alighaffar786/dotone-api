@@ -1,0 +1,25 @@
+en-US:
+  activerecord:
+    models:
+      event_offer:
+        one: Event
+        other: Events
+
+  will_paginate:
+    models:
+      event_offer:
+        zero: "Events"
+        one: "Event"
+        few: "Events"
+        other: "Events"
+
+  predefined:
+    models:
+      event_offer:
+        short_description:
+          Unboxing Review: Unboxing Review
+          Unboxing Video: Unboxing Video
+          In-Store Review: In-Store Review
+          In-Store Video: In-Store Video
+          Service Exp. Review: Service Exp. Review
+          Service Exp. Video: Service Exp. Video

@@ -1,0 +1,8 @@
+en-US:
+  activerecord:
+    errors:
+      models:
+        variant_tag:
+          attributes:
+            offer_variant_id:
+              taken: Offer Tag is already applied to the Offer Variant

@@ -1,0 +1,163 @@
+id-ID:
+  activerecord:
+    models:
+      affiliate_stat:
+        zero: "Transactions"
+        one: "Transaction"
+        few: "Transactions"
+        other: "Transactions"
+
+  download_columns:
+    models:
+      affiliate_stat:
+        adv_uniq_id: |
+          Advertiser Unique ID
+        aff_uniq_id: |
+          Affiliate Unique ID
+        affiliate_conv_type: |
+          Commission Type
+        affiliate_id: |
+          Affiliate ID
+        affiliate_name: |
+          Affiliate Name
+        affiliate_status: |
+          Affiliate Status
+        approval: |
+          Transaction Status
+        approval_for_advertiser: |
+          Transaction Status
+        browser: |
+          Browser
+        browser_version: |
+          Browser Version
+        calculated_margin: |
+          Margin
+        captured_at: |
+          Captured Time
+        captured_time: |
+          Captured Time
+        click_time: |
+          Click Time
+        conversion_time: |
+          Conversion Time
+        days_return: |
+          Order Return Period
+        device_brand: |
+          Device Brand
+        device_model: |
+          Device Model
+        device_type: |
+          Device Type
+        affiliate_pay: |
+          Commission
+        true_pay: |
+          Payout
+        gaid: |
+          Google Advertising ID
+        http_referer: |
+          HTTP Referer
+        ip_address: |
+          IP Address
+        ip_country: |
+          Country
+        isp: |
+          ISP
+        network_billing_email: |
+          Advertiser Billing Email
+        network_contact_email: |
+          Advertiser Contact Email
+        network_id: |
+          Advertiser ID
+        network_name: |
+          Advertiser Name
+        network_payment_term: |
+          Advertiser Payment Term
+        network_payment_term_days: |
+          Advertiser Payment Term Days
+        network_universal_number: |
+          Advertiser EIN / SSN
+        network_status: |
+          Advertiser Status
+        offer_commission_type: |
+          Commission Type
+        offer_id: |
+          Offer ID
+        offer_name: |
+          Offer Name
+        offer_payout_type: |
+          Payout Type
+        offer_status: |
+          Offer Status
+        order_days_return: |
+          Order Return Period
+        order_number: |
+          Order Number
+        order_step_name: |
+          Step Name
+        order_total: |
+          Order Total
+        order_total_for_affiliate: |
+          Order Total
+        order_true_currency: |
+          Order True Currency
+        order_real_total: |
+          Order True Total
+        postback_stats: |
+          Postback Stats
+        published_at: |
+          Published Time
+        published_time: |
+          Published Time
+        recorded_at: |
+          Click Time
+        skip_api_refresh: |
+          Skip API Refresh
+        step_label: |
+          Step Label
+        subid_1: |
+          Subid 1
+        subid_2: |
+          Subid 2
+        subid_3: |
+          Subid 3
+        subid_4: |
+          Subid 4
+        subid_5: |
+          Subid 5
+        transaction_id: |
+          Transaction ID
+        true_conv_type: |
+          Payout Type
+
+  predefined:
+    models:
+      affiliate_stat:
+        approval:
+          "Adjusted": "Transaction Adjusted"
+          "Approved": "Transaction Approved"
+          "Full Return": "Transaction Returned"
+          "Invalid": "Transaction Inconclusive"
+          "Pending": "Transaction Pending"
+          "Published": "Transaction Published"
+          "Rejected": "Transaction Rejected"
+
+        status:
+          "Beyond Referral Period": "Beyond Referral Period"
+          "Duplicate Advertiser Uniq ID": "Duplicate Advertiser Unique ID"
+          "Duplicate IP Address": "Duplicate IP Address"
+          "Duplicate Order": "Duplicate Order"
+          "Exceed Cap": "Exceed Cap"
+          "Lead Approved": "Lead Approved"
+          "Lead Approved But Pending": "Lead Approved But Pending"
+          "Lead Approved But Invalid": "Lead Approved But Invalid"
+          "Lead Approved But Duplicate": "Lead Approved But Duplicate"
+          "Lead Bad Name": "Lead Bad Name"
+          "Lead Disqualified": "Lead Disqualified"
+          "Lead Duplicate": "Lead Duplicate"
+          "Lead Filter Invalid": "Lead Filter Invalid"
+          "Manual Approval": "Manual Approval"
+          "Manual Credit": "Manual Credit"
+          "Negative Margin": "Negative Margin"
+          "No Active Campaign": "No Active Campaign"
+          "Suppressed": "Suppressed"
+          "Test Conversion": "Test Conversion"

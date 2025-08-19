@@ -1,0 +1,15 @@
+zh-TW:
+  
+  predefined:
+
+    models:
+
+      affiliate_feed:
+
+  will_paginate:
+    models:
+      affiliate_feed:
+        zero: "項目"
+        one: "項目"
+        few: "項目"
+        other: "項目"

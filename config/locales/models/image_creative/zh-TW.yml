@@ -1,0 +1,23 @@
+zh-TW:
+
+  activerecord:
+
+    models:
+
+      image_creative:
+        one: "圖片素材"
+        other: "圖片素材"
+
+    attributes:
+      
+      image_creatives:
+        cdn_url: "CDN URL"
+
+  will_paginate:
+
+    models:
+  
+      image_creative:
+        zero: "圖片素材"
+        one: "圖片素材"
+        other: "圖片素材"

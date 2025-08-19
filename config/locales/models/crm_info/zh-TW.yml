@@ -1,0 +1,14 @@
+zh-TW:
+
+  predefined:
+
+    models:
+
+      crm_info:
+
+        contact_media:
+          phone: "電話聯繫"
+          email: "電子郵件"
+          messenger: "通訊軟體"
+          face_to_face: "面對面/拜訪"
+          other_media: "其他"

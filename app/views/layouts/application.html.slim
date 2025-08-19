@@ -1,0 +1,79 @@
+doctype html
+html.no-js[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1"]
+    meta[name="author" content="Affiliates.One"]
+    meta[name="description" content="Affiliates.One is the ONE entry to Asia affiliate marketing. We are the leading affiliate marketing program provider in China, Taiwan, Hong Kong, Singapore, and Southeast Asia."]
+    meta[name="keywords" content="affiliate network, affiliate marketing, affiliate asia, affiliate platform"]
+    title
+      | Affiliates.One | The Leading Asia Affiliate Network
+
+    link[rel="icon" href="/assets/images/favicon.ico"]
+    link[rel="stylesheet" href="/assets/css/animate.min.css"]
+    link[rel="stylesheet" href="/assets/css/bootstrap.min.css"]
+    link[rel="stylesheet" href="/assets/css/font-awesome.min.css"]
+    link[rel="stylesheet" href="/assets/css/magnific-popup.min.css"]
+    link[rel="stylesheet" href="/assets/css/jquery.fancybox.min.css"]
+    link[rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css"]
+    link[rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css"]
+    link[href="/assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all"]
+    link[href="/assets/css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="all"]
+    link[rel="stylesheet" href="/assets/css/swiper.min.css"]
+    link[rel="stylesheet" type="text/css" href="/assets/css/component.css"]
+    link[rel="stylesheet" type="text/css" href="/assets/css/flag-icon.min.css"]
+    link[rel="stylesheet" href="/assets/css/core.css"]
+    link[rel="stylesheet" href="/assets/css/style.css"]
+    link[rel="stylesheet" href="/assets/css/custom.css"]
+
+  body.side-nav.eupopup-bottom
+    #loader
+      .loader
+
+    - if @page == :main || @page == :blog
+      #perspective.perspective.effect-move-left
+        .cont
+          .wrapper
+            - if @nav == :beta
+              = render partial: 'client/shared/nav_beta'
+            - else
+              = render partial: 'client/shared/nav_alpha'
+
+            = yield
+            = render partial: 'client/shared/common_foot_beta'
+        = render partial: 'client/shared/nav_push'
+    - else
+      = yield
+
+    script[src="/assets/js/jquery-3.2.1.js"]
+    script[defer src="/assets/js/bootstrap.min.js"]
+    script[defer src="/assets/js/jquery.appear.min.js"]
+    script[defer src="/assets/js/owl.carousel.min.js"]
+    script[defer src="/assets/js/jquery.magnific-popup.min.js"]
+    script[defer src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"]
+    script[defer src="/assets/js/jquery.fancybox.min.js"]
+    script[defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"]
+    script[defer src="/assets/js/morphext.min.js"]
+    javascript:
+      if ($("#perspective").length > 0) {
+        $.getScript("/assets/js/push_nav.js");
+      }
+    script[defer src="/assets/js/wow.js"]
+    script[defer src="/assets/js/parallaxie.min.js"]
+    script[defer src="/assets/js/isotope.pkgd.min.js"]
+    script[defer src="/assets/revolution/js/jquery.themepunch.tools.min.js"]
+    script[defer src="/assets/revolution/js/jquery.themepunch.revolution.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"]
+    script[defer src="/assets/revolution/js/extensions/revolution.extension.video.min.js"]
+    script[defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/jquery.validate.min.js"]
+    script[defer src="https://cdn.vbtrax.com/javascripts/va.js"]
+    script[defer src="/assets/js/main.js"]
+    script[defer src="/assets/js/custom.js"]

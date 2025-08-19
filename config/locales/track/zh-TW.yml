@@ -1,0 +1,22 @@
+zh-TW:
+  track:
+    ad_slots:
+      index:
+        discount_price: 促銷價
+        original_price: 原價
+        use_coupon: 折扣碼
+
+    clicks:
+      geo_filter:
+        details: |
+          <p>請注意，此網站因受地理限制或通路來源資格可能無法成功導入網站和取得推薦佣金。</p>
+        if_preview_url_exist: |
+          <p>
+            此頁面即將重新導向預設網站。如無反應，請點以下連結：
+          </p>
+          <p><a href="%{url}">導向網站</a></p>
+
+        intro: |
+          <h4>受地理限制或當下無法使用</h4>
+        page_title: |
+          Offer Is Not Available in Your Country

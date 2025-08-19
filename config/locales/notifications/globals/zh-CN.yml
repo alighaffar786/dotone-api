@@ -1,0 +1,135 @@
+zh-CN:
+  errors:
+    account:
+      advertiser_not_found: |
+        Advertiser is not found.
+      base: "Account Error"
+      not_active: |
+        Account is not active.
+      not_active_via_api: |
+        Account associated with the API Key has been paused or suspended.
+        Please contact your account manager for more information.
+      not_found: |
+        Account is not found.
+
+    api_key:
+      base: "API Key Error"
+      invalid: |
+        API Key cannot be recognized. Please check with your account manager.
+      missing: |
+        API Key is necessary to make an API call. Please ask your account manager for an API Key.
+
+    api_request:
+      base: "API Request Error"
+      date_range_exceed: |
+        Date range parameters exceed the allowed limit for this API. Please check start_at or end_at parameter.
+      invalid_access_token: |
+        Please provide the correct access token.
+      invalid_browse_statuses_param: |
+        The following parameter has invalid value - browse_statuses.
+        Browse Status value cannot be recognized. Please provide the correct Browse Status.
+      invalid_creative_type_param: |
+        The following parameter has invalid value - creative_type.
+      invalid_date_type_param: |
+        The following parameter has invalid value - date_type.
+        Date Type value cannot be recognized.
+        Please provide the correct Date Type.
+      invalid_offer_or_offer_variant_param: |
+        Offer ID or Offer Variant ID is Invalid.
+        Value for offer_variant_id or offer_id cannot be recognized, please provide the correct ID.
+      missing_access_token: |
+        Please include parameter access_token in your request.
+      missing_campaign: |
+        No campaign is active. Please apply for a campaign first.
+      missing_creative_type_param: |
+        The following parameter is missing - creative_type.
+      missing_offer: |
+        There is no offer found. Please make sure that a valid offer id is included.
+      missing_offer_or_offer_variant_param: |
+        The following parameter is missing - offer_variant_id or offer_id.
+      missing_snippet: |
+        The snippet you are requesting does not exist,
+        please provide the correct snippet key.
+      missing_snippet_key: |
+        Please include parameter snippet_key in your request.
+      page_exceed: |
+        Page parameter exceed the limit set for this API. Please adjust the value.
+      per_page_exceed: |
+        Per page parameter exceed the limit set for this API. Please adjust the value.
+      unverifiable_request: |
+        Request could not be verified
+
+    click:
+      base: |
+        Click Error
+      blacklisted_referer_domain: |
+        Referer Domain %{domain} is Prohibited
+      blacklisted_subid: |
+        Subid Data: %{subid_data} is Prohibited
+      inactive_advertiser: |
+        Advertiser %{advertiser} is Not Active
+      invalid_geo: |
+        Geo is Invalid
+      invalid_referer_domain: |
+        Referer Domain %{domain} is Invalid
+
+    currency:
+      base: |
+        Currency Rate Error
+      source_currency_blank: |
+        Source currency is blank
+      source_currency_not_recognized: |
+        Source currency is not recognized
+      target_currency_blank: |
+        Target currency is blank
+      target_currency_not_recognized: |
+        Target currency is not recognized
+
+    job_status_check:
+      in_progress_cj: We are currently busy finalizing another request. Please wait for it to finish and try again later
+      in_progress_order_pull: We're currently importing orders and unable to process this request at the moment. Please try again later.
+
+    data:
+      approval_date_is_invalid: Conversion date must be later than %{attribute}
+      base: "Invalid Data"
+      duplicate_advertiser_uniq_id: "Duplicate Advertiser Unique ID"
+      duplicate_order: "Duplicate orders"
+      invalid_date_format: "%{attribute} date format is invalid"
+      invalid_json: "%{attribute} is invalid JSON"
+      invalid_number: "%{attribute} is invalid number"
+      invalid_order: "Order is invalid" # Error message thrown when order is failed to save during conversion process
+      invalid_string: "%{attribute} is invalid string"
+      invalid_url: "%{attribute} is invalid URL"
+      is_not_array: "%{attribute} is not array"
+      mismatch_with_merchant_url: "%{attribute} does not match merchant URL"
+      missing_order: "%{attribute} value contains missing order"
+      missing_value: "%{attribute} value is required"
+      size_too_large: "%{attribute} size is too large"
+      transaction_is_already_approved: "Transaction is already approved"
+      unknown_advertiser: "Advertiser is unknown"
+      unknown_conversion_step: "Conversion step is unknown"
+      unknown_offer: "Offer is unknown"
+      unknown_transaction: "Transaction is unknown"
+
+    upload:
+      base: "Upload Failure"
+      invalid_csv_file: |
+        File is not a valid CSV file. Please refer to this
+        documentation %{doc_url} for more information.
+      invalid_encoding: |
+        File has invalid encoding. Please refer to this
+        documentation %{doc_url} for more information.
+
+    Affiliate Not Found: "Affiliate is not found"
+    Cap Exceeded: "Cap has been exceeded"
+    Conversion Expired: "Conversion is beyond referral period"
+    Duplicate Order: "Duplicate Order"
+    Email Not Verified: "Email is not verified"
+    Final State Modification: "Transaction is final and cannot be modified"
+    Missing Campaign: "Campaign is missing"
+    Missing Offer: "Offer is not found"
+    Missing Transaction: "Transaction is not found"
+    Offer Not Deeplink: "Offer is not eligible for deeplink"
+    Overlapped Payment: "Overlapped payment is found"
+    Site Info Not Found: "Site info is not found"
+    Unknown Affiliate: "Affiliate is not recognized"

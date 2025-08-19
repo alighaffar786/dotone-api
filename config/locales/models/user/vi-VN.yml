@@ -1,0 +1,9 @@
+vi-VN:
+  
+  activerecord:
+  
+    models:
+
+      user:
+        one: "User"
+        other: "Users"

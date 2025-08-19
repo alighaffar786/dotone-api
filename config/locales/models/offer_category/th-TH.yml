@@ -1,0 +1,11 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        offer_category:
+          attributes:
+            offer_id:
+              blank: "Offer is missing."
+              taken: "Offer exists with the specified category."
+            category_id:
+              blank: "Category is missing."

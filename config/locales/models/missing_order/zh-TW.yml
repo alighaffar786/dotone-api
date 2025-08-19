@@ -1,0 +1,115 @@
+zh-TW:
+
+  activerecord:
+
+    models:
+
+      missing_order:
+        one: 遺失訂單
+        other: 遺失訂單
+
+  download_columns:
+
+    models:
+
+      missing_order:
+
+        download_meta_order_total_currency: Order Total Currency
+        click_time: 追蹤連結點擊時間
+        created_at: 提交時間
+        device: 裝置
+        id: 回報ID
+        notes: 問題敘述
+        offer: 品牌/電商名稱
+        order_number: 訂單編號
+        order_time: 訂單時間
+        order_total: 訂單金額
+        payment_method: 付款方式
+        question_type: 查詢類型
+        result: 結果
+        screenshot_cdn_url: 訂單截圖
+        status: 狀態
+        status_reason: 詳情說明
+
+  predefined:
+    models:
+      missing_order:
+        device:
+          Desktop: 桌上型電腦
+          Mobile: 行動裝置
+          Tablet: 平板電腦
+          Unknown: Unknown
+
+        payment_method:
+          Apple: Apple Pay
+          Atm: ATM轉帳
+          Card: 信用卡
+          Cash: 貨到付款
+          Jkos: 街口支付
+          Line: Line Pay
+          Others: 其他付款方式
+          PayPal: PayPal
+          WeChat: 微信支付
+
+        question_type:
+          Incorrect Amount: 訂單/交易總金額不正確
+          No Postback: 訂單/交易未成立
+          Other: 其他查詢
+          Unconfirmed: 訂單/交易尚未確認
+
+        status:
+          Approved: 批准
+          Completed: 已完成
+          Confirming: 確認中
+          Pending: 審核中
+          Rejected: 被拒絕
+
+        status_reason:
+          Amount Adjusted: |
+            您的訂單金額已調整，請到會員後台查詢。
+          Coupon Invalid: |
+            此筆訂單使用非聯盟網提供的折扣碼，因此此筆訂單無法獲得傭金(請詳閱商的額外聲明/條款)。
+          Not Due: |
+            此筆訂單目前尚為超過獎金確認時間，廠商將會在獎金確認時間到期前進行訂單確認(請詳閱此廠商的成效規範-獎金確認時間)
+          Order Added: |
+            此筆訂單已添加到您的帳戶裡，請到會員後台查看。
+          Order Confirmed: |
+            此筆訂單已確認，請到會員後台查看。
+          Order Expired: |
+            此筆訂單超過廠商規定的Cookie天數，因此此筆訂單無法獲得傭金(請詳閱此廠商的其他資訊-Cookie天數)
+          Source Invalid: |
+            此筆訂單最終點其來源為其他來源(其他推廣者、廠商廣告來源...等)，因此此筆訂單無法獲得傭金。
+          Without Commission: |
+            此筆訂單商品未在可分潤商品類別裡，因此此筆訂單無法獲得傭金(請詳閱此廠商的額外聲明/條款-分潤商品類別)
+          Without Some Commission: |
+            此筆訂單部分商品未在可分潤商品類別裡，因此此筆訂單實際可獲得傭金與您訂單所可獲得傭金有差值(請詳閱此廠商的額外聲明/條款-分潤商品類別)
+
+        status_summary:
+          Amount Adjusted: |
+            訂單金額已調整
+          Coupon Invalid: |
+            使用非聯盟提供折扣碼/不分潤折扣碼
+          Not Due: |
+            此筆訂單尚未超過獎金確認時間
+          Order Added: |
+            此筆訂單已添加到您的帳戶裡
+          Order Confirmed: |
+            此筆訂單已確認
+          Order Expired: |
+            此筆訂單超過廠商規定Cookie天數
+          Others: |
+            其他
+          Source Invalid: |
+            此筆訂單最終點其來源為其他來源(其他推廣者、廠商廣告來源...等)
+          Without Commission: |
+            此筆訂單商品未在可分潤商品類別裡，因此此筆訂單無法獲得傭金
+          Without Some Commission: |
+             此筆訂單部分商品未在可分潤商品類別裡，未列入之商品不可獲得分潤傭金
+
+  will_paginate:
+    models:
+      missing_order:
+        zero: 遺失訂單
+        one: 遺失訂單
+        few: 遺失訂單
+        other: 遺失訂單

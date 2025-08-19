@@ -1,0 +1,28 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        cms_user:
+          attributes:
+            username:
+              blank: "Username is required."
+              taken: "Username is taken."
+              too_short: "Username needs to be at least 3 characters."
+              invalid: "Username is not in valid format."
+            email:
+              blank: "Email is required."
+              invalid: "Email is invalid."
+              taken: "Email is taken."
+            cms_domain_id:
+              blank: "Cms Domain is required."
+            status:
+              blank: "Status is required."
+            crypted_password:
+              blank: "Password is required."
+            password:
+              blank: "Please specify password."
+              too_short: "Password needs to be at least 5 characters."
+            vanity_name:
+              invalid: "Your URL Name is not in valid format."
+              taken: "Your URL Name is taken."
+              too_short: "URL Name needs to be at least 5 characters."

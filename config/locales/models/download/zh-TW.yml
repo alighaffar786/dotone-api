@@ -1,0 +1,9 @@
+zh-TW:
+
+  will_paginate:
+    models:
+      download:
+        zero: "檔案"
+        one: "檔案"
+        few: "檔案"
+        other: "檔案"

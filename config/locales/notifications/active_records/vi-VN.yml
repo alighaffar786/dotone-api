@@ -1,0 +1,239 @@
+vi-VN:
+  activerecord:
+    # Attribute Error Messages
+    errors:
+      messages:
+        record_invalid: "Something is wrong in saving the data"
+      models:
+        ad_slot:
+          attributes:
+            name:
+              taken: "Ad Placement Name is taken"
+            category_group_ids:
+              one_inventory_selection_must_exist: |
+                One inventory selection must be defined
+
+        advertiser_balance:
+          attributes:
+            network_id:
+              blank: |
+                Advertiser is Required
+
+            recorded_at:
+              blank: |
+                Recorded Date is Required
+              invalid_recorded_at: |
+                Record Date is invalid
+
+        affiliate:
+          attributes:
+            affiliate_payment_infos:
+              bank_id_blank: |
+                Bank ID is Required
+              bank_id_invalid: |
+                Bank ID is Invalid
+              bank_name_blank: |
+                Bank Name is Required
+              branch_id_blank: |
+                Branch ID is Required
+              paypal_email_blank: |
+                PayPal Email Address is Required
+
+            birthday:
+              not_old_enough: |
+                Must be 18 years or older
+
+            email:
+              blacklisted_email_domain: Email is invalid
+              blank: Email is required
+              invalid: "Email is invalid"
+              taken: "Email is taken"
+
+            first_name:
+              too_long: First name is invalid
+
+            recruiter_id:
+              affiliate_has_conversion: |
+                Recruiter cannot be assigned to affiliate with recent conversion
+              recruiter_is_present: |
+                Existing recruiter cannot be changed
+
+            tax_filing_country:
+              blank: |
+                Tax Filing Country is Required
+
+        affiliate_offer:
+          attributes:
+            affiliate_id:
+              blank: "Affiliate is required for this offer setup"
+              no_site_info: "Website or Media Property is Required"
+            approval_status:
+              blank: "Status is required for this offer setup"
+            custom_commission:
+              too_small: "Custom Commission can't be less than Base Commission"
+              too_large: "Custom Commission can't be greater than Payout"
+            offer_variant_id:
+              blank: "Offer is required for this offer setup"
+              taken: "Offer already in affiliate account"
+
+        affiliate_payment:
+          attributes:
+            start_date:
+              overlapped: Period date overlapped
+            redeemed_amount:
+              invalid_amount: Redeem Amount is Invalid
+
+        affiliate_payment_info:
+          attributes:
+            attachments:
+              not_complete: |
+                Documents are not complete
+
+            bank_identification:
+              blank: |
+                Bank ID is Required
+              invalid: |
+                Bank ID is Invalid
+
+            bank_name:
+              blank: |
+                Bank Name is Required
+
+            branch_identification:
+              blank: |
+                Branch ID is Required
+
+            payment_type:
+              blank: |
+                Payment Type is Required
+
+            paypal_email_address:
+              blank: |
+                PayPal Email Address is Required
+
+            preferred_currency:
+              blank: |
+                Preferred Currency is Required
+
+            status:
+              final_status: |
+                Payment information can no longer be updated.
+                Please contact support
+
+        affiliate_user:
+          attributes:
+            email:
+              blank: "Email is required"
+
+        api_key:
+          attributes:
+            partner_app_id:
+              blank: "Partner App is Required"
+
+        blog_content:
+          attributes:
+            html:
+              blank: "Content cannot be blank"
+            slug:
+              blank: "Content slug cannot be blank"
+              taken: "Content slug has been taken"
+            title:
+              blank: "Content title cannot be blank"
+
+        blog_page:
+          attributes:
+            name:
+              taken: "Page name is already taken"
+            slug:
+              taken: "Page slug is already taken"
+
+        contact_list:
+          attributes:
+            email:
+              taken: "Email is taken"
+
+        conversion_step:
+          attributes:
+            label:
+              taken: "Conversion Point label is already taken"
+            name:
+              taken: "Conversion Point name is already taken"
+
+        image_creative:
+          attributes:
+            active_date_end:
+              range_cannot_be_in_the_past: "Active date range cannot be in the past"
+            active_date_start:
+              range_cannot_be_in_the_past: "Active date range cannot be in the past"
+            client_url:
+              does_not_match: "URL's domain does not match the required domain"
+
+        network:
+          attributes:
+            company_url:
+              blank: "Company URL is Required"
+
+            contact_email:
+              blank: "Email is Required"
+              taken: "Email is Already Taken"
+
+            contact_name:
+              blank: "Contact Name is Required"
+
+            contact_phone:
+              blank: "Contact Phone is Required"
+
+            contact_title:
+              blank: "Contact Title is Required"
+
+            country_id:
+              blank: "Country is needed for the advertiser"
+
+            iso_2_country_code:
+              blank: "Country is Required"
+
+            locale_code:
+              blank: "Language is Required"
+
+            name:
+              blank: "Advertiser Name is Required"
+              taken: "Company Name is Taken"
+
+            recruiter_id:
+              recruiter_is_present: |
+                Existing recruiter cannot be changed
+
+            password:
+              blank: "Please specify the password for this advertiser"
+              confirmation: "Password does not match its confirmation"
+
+            user_id:
+              blank: "Please specify the user for this advertiser"
+
+            username:
+              taken: "Username is no longer available"
+              too_short: "Username needs to be at least 3 characters"
+              invalid: "Username is not in valid format"
+              blank: "Username for this advertiser is required"
+
+        site_info:
+          attributes:
+            url:
+              url_exist: "URL already exists"
+              url_blacklisted: "URL is blacklisted"
+
+        text_creative:
+          attributes:
+            creative_name:
+              blank: "Creative name cannot be blank"
+              taken: "Creative name has been taken"
+              too_long: "Creative name cannot exceed %{count} characters"
+            title:
+              too_long: "Creative title cannot exceed %{count} characters"
+            content_1:
+              blank: "Promotional text cannot be blank"
+              too_long: "Promotional text cannot exceed %{count} characters"
+            status:
+              blank: "Status cannot be blank"
+            client_url:
+              does_not_match: "URL's domain does not match the required domain"

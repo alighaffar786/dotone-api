@@ -1,0 +1,9 @@
+ms-MY:
+  
+  activerecord:
+  
+    models:
+
+      user:
+        one: "User"
+        other: "Users"

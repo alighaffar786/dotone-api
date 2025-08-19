@@ -1,0 +1,8 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        optout_email:
+          attributes:
+            md5:
+              taken: Email has been opted-out

@@ -1,0 +1,12 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        channel:
+          attributes:
+            name:
+              blank: "Please specify the name of the channel."
+              taken: "Channel of the same name exists."
+              too_long: "Name is too long. (Max: %{count} chars)."
+            user_id:
+              blank: "Please specify the user for this channel."

@@ -1,0 +1,144 @@
+th-TH:
+
+  activerecord:
+
+    errors:
+
+      models:
+
+        country:
+
+          attributes:
+
+            name:
+              blank: "Please specify the name of the country."
+              taken: "Country of the same name exists."
+            iso_2_country_code:
+              blank: "Please specify the ISO 2 Country Code for this country."
+              taken: "ISO 2 Country Code is already been taken."
+              wrong_length: "ISO 2 Country Code has invalid length."
+            iso_3_country_code:
+              blank: "Please specify the ISO 3 Country Code for this country."
+              taken: "ISO 3 Country Code is already been taken."
+              wrong_length: "ISO 3 Country Code has invalid length."
+
+  predefined:
+
+    models:
+
+      country:
+        continent:
+          "Africa": "Africa"
+          "Asia": "Asia"
+          "Europe": "Europe"
+          "North America": "North America"
+          "Oceania": "Oceania"
+          "Other": "Other"
+          "South America": "South America"
+
+        name:
+          "Albania": "Albania"
+          "Algeria": "Algeria"
+          "Argentina": "Argentina"
+          "Australia": "Australia"
+          "Austria": "Austria"
+          "Bahrain": "Bahrain"
+          "Bangladesh": "Bangladesh"
+          "Belarus": "Belarus"
+          "Belgium": "Belgium"
+          "Bolivia": "Bolivia"
+          "Brazil": "Brazil"
+          "Bulgaria": "Bulgaria"
+          "Canada": "Canada"
+          "Chile": "Chile"
+          "China": "China"
+          "Colombia": "Colombia"
+          "Costa Rica": "Costa Rica"
+          "Croatia": "Croatia"
+          "Cyprus": "Cyprus"
+          "Czech Republic": "Czech Republic"
+          "Denmark": "Denmark"
+          "Dominican Republic": "Dominican Republic"
+          "Ecuador": "Ecuador"
+          "Egypt": "Egypt"
+          "El Salvador": "El Salvador"
+          "Estonia": "Estonia"
+          "Finland": "Finland"
+          "France": "France"
+          "Georgia": "Georgia"
+          "Germany": "Germany"
+          "Ghana": "Ghana"
+          "Greece": "Greece"
+          "Guatemala": "Guatemala"
+          "Haiti": "Haiti"
+          "Honduras": "Honduras"
+          "Hong Kong": "Hong Kong"
+          "Hungary": "Hungary"
+          "Iceland": "Iceland"
+          "India": "India"
+          "Indonesia": "Indonesia"
+          "International": "International"
+          "Iran": "Iran"
+          "Iraq": "Iraq"
+          "Ireland": "Ireland"
+          "Israel": "Israel"
+          "Italy": "Italy"
+          "Japan": "Japan"
+          "Jordan": "Jordan"
+          "Kenya": "Kenya"
+          "Korea (South)": "South Korea"
+          "Kuwait": "Kuwait"
+          "Lebanon": "Lebanon"
+          "Luxembourg": "Luxembourg"
+          "Macau": "Macau"
+          "Macedonia": "Macedonia"
+          "Malaysia": "Malaysia"
+          "Mexico": "Mexico"
+          "Netherlands": "Netherlands"
+          "New Zealand": "New Zealand"
+          "Nicaragua": "Nicaragua"
+          "Nigeria": "Nigeria"
+          "Non-Taiwan": "Non-Taiwan"
+          "Norway": "Norway"
+          "Oman": "Oman"
+          "Other": &other "Other Country"
+          "Other Country": *other
+          "Panama": "Panama"
+          "Paraguay": "Paraguay"
+          "Peru": "Peru"
+          "Philippines": "Philippines"
+          "Poland": "Poland"
+          "Portugal": "Portugal"
+          "Puerto Rico": "Puerto Rico"
+          "Qatar": "Qatar"
+          "Romania": "Romania"
+          "Russia": "Russia"
+          "Saudi Arabia": "Saudi Arabia"
+          "Singapore": "Singapore"
+          "Slovakia": "Slovakia"
+          "Slovenia": "Slovenia"
+          "South Africa": "South Africa"
+          "Spain": "Spain"
+          "Sri Lanka": "Sri Lanka"
+          "Sweden": "Sweden"
+          "Switzerland": "Switzerland"
+          "Taiwan": "Taiwan"
+          "Thailand": "Thailand"
+          "Turkey": "Turkey"
+          "Ukraine": "Ukraine"
+          "United Arab Emirates": "United Arab Emirates"
+          "United Kingdom": "United Kingdom"
+          "United States": "United States"
+          "Venezuela": "Venezuela"
+          "Vietnam": "Vietnam"
+
+
+  will_paginate:
+
+    models:
+
+      country:
+        zero: "Countries"
+        one: "Country"
+        few: "Countries"
+        other: "Countries"

@@ -1,0 +1,12 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        site_info:
+          attributes:
+            url:
+              blank: "Please specify the url."
+            description:
+              blank: "Please specify the description."
+            unique_visit_per_day:
+              blank: "Please specify the unique visit per day."

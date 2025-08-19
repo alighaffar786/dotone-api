@@ -1,0 +1,41 @@
+section.bg.blog-cover[style="background: url('/assets/images/custom/blog-page-cover.jpg')"]
+  .container
+    .text-center.sm-padding-40px-tb.sm-padding-15px-lr
+      h5.text-uppercase.alt-font.text-white.margin-35px-top.margin-15px-bottom.font-weight-700
+        |  Latest Blog
+      p.text-white.margin-5px-bottom
+        |  New Advertisers, Tips, Latest News
+section
+  .container
+    .row
+      .col-md-9.col-sm-12.col-xs-12.right-sidebar.sm-margin-60px-bottom.xs-margin-40px-bottom.no-padding-left.sm-no-padding-right
+        = render partial: 'blog', collection: @blog_contents
+      aside.col-md-3.col-sm-12.col-xs-12.pull-right
+        = render partial: 'blog_search'
+        .margin-25px-bottom.contributor
+          .text-extra-dark-gray.margin-20px-bottom.alt-font.text-large.font-weight-600
+            |  Our Contributors
+          - @authors.each do |author|
+            .contributor-toltip
+              = link_to client_blogs_path do
+                = image_tag author.avatar_cdn_url, alt: author.full_name
+              span.tooltiptext.text-small
+                = author.full_name
+          p.margin-20px-bottom.text-small.margin-30px-top
+            |  We love to share what's happening within our network as well as in digital marketing world. We know that our team find it informative and useful. We hope that you do too.
+        .margin-45px-bottom.xs-margin-25px-bottom
+          .text-extra-dark-gray.margin-20px-bottom.alt-font.font-weight-600.text-large.aside-title
+            span
+              | Categories
+          ul.blog-list-style.margin-50px-bottom.text-small.no-padding
+            - @blog_pages.each do |page|
+              li
+                = link_to page.name, tag_client_blogs_path(slug: page.content_link), class: 'text-extra-medium-gray'
+                span.float-right
+                  = page.content_count
+        .margin-45px-bottom.xs-margin-25px-bottom
+          .text-extra-dark-gray.margin-25px-bottom.alt-font.font-weight-600.text-large.aside-title
+            |  Tags
+          .tag-cloud.text-extra-small
+            - @blog_tags.each do |tag|
+              = link_to tag.t_name, client_blogs_path

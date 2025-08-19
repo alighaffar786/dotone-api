@@ -1,0 +1,64 @@
+th-TH:
+
+  predefined:
+
+    models:
+
+      advertiser_balance:
+
+          balance_type:
+            Negative: Negative
+            Positive: Positive
+
+          record_type:
+            "Activity Fee": Campaign Fee
+            "Advertising Fee": CPA Commission
+            "Other": Other Transaction
+            "Prepay": Prepayment
+            "Security Deposit": Security Deposit
+            "Setup Fee": Account Fee
+            "Withdrawal": Balance Return
+
+  active_record:
+
+    errors:
+
+      models:
+
+        advertiser_balance:
+
+          attributes:
+
+            record_type:
+              inclusion: "Record Type is not a valid option"
+
+  will_paginate:
+
+    models:
+
+      advertiser_balance:
+        zero: "Advertiser Payments"
+        one: "Advertiser Payment"
+        few: "Advertiser Payments"
+        other: "Advertiser Payments"
+
+  download_columns:
+    models:
+      advertiser_balance:
+        credit: Credit
+        debit: Debit
+        id: ID
+        invoice_amount: Invoice Amount
+        invoice_date: Invoice Date
+        invoice_number: Invoice Number
+        network_sales_tax: Tax %
+        network: Advertiser
+        notes: Notes
+        original_credit: Orig. Credit
+        original_debit: Orig. Debit
+        original_invoice_amount: Orig. Invoice Amount
+        original_sales_tax: Orig. Sales Tax
+        record_type: Record Type
+        recorded_at: Payment Date
+        sales_tax: Sales Tax
+        updated_at: Updated Time

@@ -1,0 +1,15 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        lg_domain:
+          attributes:
+            site_name:
+              blank: "Please specify the site name for the domain name."
+              taken: "Site name is aleady exists."
+            name:
+              blank: "Please specify the domain name."
+            user_id:
+              blank: "Please specify the user."
+            default_language_id:
+              blank: "Please sepcify the default language for this domain."

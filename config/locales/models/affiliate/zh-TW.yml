@@ -1,0 +1,149 @@
+zh-TW:
+  activerecord:
+    models:
+      affiliate:
+        one: 聯盟會員
+        other: 聯盟會員
+
+    errors:
+      models:
+        affiliate:
+          attributes:
+            password:
+              blank: "Please specify the password for this affiliate."
+              too_short: "Password is too short."
+              confirmation: "Password does not match its confirmation."
+            email:
+              blank: "Please specify the email for this affiliate."
+              invalid: "Email is invalid."
+              taken: "Email has already been taken."
+            first_name:
+              blank: "Please specify the first name for this affiliate."
+            last_name:
+              blank: "Please specify the last name for this affiliate."
+            status:
+              blank: "Account Status is required for this affiliate."
+            time_zone_id:
+              blank: "Time Zone is Required for this affiliate."
+            username:
+              taken: "Username is no longer available."
+              too_short: "Username needs to be at least 3 characters."
+              invalid: "Username is not in valid format."
+              blank: "Username for this affiliate is required."
+
+  predefined:
+    models:
+      affiliate:
+        business_entity:
+          "Individual": "個人"
+          "Company": "公司"
+
+        experience_level:
+          "5": "5 - 大師"
+          "4": "4 - 專家"
+          "3": "3 - 資深"
+          "2": "2 - 初級"
+          "1": "1 - 初學者"
+          "0": "0 - 無經驗"
+
+        gender:
+          "Man": "男性"
+          "Non Binary": "非二元性別"
+          "Prefer Not to Say": "傾向不回答"
+          "Transgender": "跨性別"
+          "Woman": "女性"
+
+        label:
+          "Above Average": "中上級"
+          "Average": "中等級"
+          "Below Average": "中下級"
+          "Black List": "黑名單"
+          "Excellent": "高品質"
+          "Poor": "低品質"
+          "Superb": "最優等"
+
+        messenger_service:
+          "Line": "LINE"
+          "QQ": "QQ 號碼"
+          "Skype": "Skype 帳號"
+          "Telegram": "Telegram"
+          "WeChat": "微信"
+          "Whatsapp": "WhatsApp"
+
+        ranking:
+          "10": "10 - 超級會員"
+          "9": "9 - 超級會員"
+          "8": "8 - 精英會員"
+          "7": "7 - 精英會員"
+          "6": "6 - 優良會員"
+          "5": "5 - 優良會員"
+          "4": "4 - 優良會員"
+          "3": "3 - 普通會員"
+          "2": "2 - 普通會員"
+          "1": "1 - 普通會員"
+
+        source:
+          Direct: "品牌端"
+          Marketplace: "平台端"
+
+        status:
+          Active: "使用中"
+          New: "New"
+          Paused: "已暫停"
+          Pending: "審核中"
+          Suspended: "已終止"
+
+        traffic_quality_level:
+          "0": "0 - 作弊刪除"
+          "1": "1 - 警告/需注意"
+          "2": "2 - 低於平均值"
+          "3": "3 - 中等/平均"
+          "4": "4 - 高品質"
+          "5": "5 - 最佳品質"
+
+  will_paginate:
+    models:
+      affiliate:
+        zero: "聯盟會員"
+        one: "聯盟會員"
+        few: "聯盟會員"
+        other: "聯盟會員"
+
+  download_columns:
+    models:
+      affiliate:
+        affiliate_logs: "筆記"
+        affiliate_users: "管理員"
+        site_infos: "網址URL"
+        avatar_url: "頭像"
+        business_entity: "單位"
+        campaign: "品牌推廣"
+        channel: "通路/媒體"
+        company_name: "公司名稱"
+        company_site: "公司網站"
+        contact_info: "Contact Info" # TODO
+        conversion_count: "成效次數"
+        country: "國家"
+        created_at: "加入日"
+        current_balance: Current Balance # TODO
+        experience_level: "行銷經驗"
+        gender: "性別"
+        group_tags: "組標籤"
+        id: "聯盟會員"
+        label: "標籤"
+        last_request_at: "上次登錄時間"
+        login_count: "登入次數"
+        media_categories: "網站/媒體類型"
+        ranking: "會員平台等級"
+        recruiter: "開發者"
+        referrer: "推薦人"
+        source: "會員來源"
+        status: "狀態"
+        top_offers: "最佳廠商"
+        traffic_quality_level: "所有流量等級"
+        transaction_affiliate: "聯盟推廣者"
+        transaction_subid_1: "追蹤標籤1"
+        transaction_subid_2: "追蹤標籤2"
+        transaction_subid_3: "追蹤標籤3"
+        transaction_subid_4: "追蹤標籤4"
+        transaction_subid_5: "追蹤標籤5"

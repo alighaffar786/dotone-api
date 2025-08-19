@@ -1,0 +1,149 @@
+zh-TW:
+
+  predefined:
+    models:
+      category:
+        name:
+
+          #Adult
+          "Adult Dating": "成人交友"
+          "Adult Toys": "成人玩具"
+          "Adult Videos": "成人影片"
+          "Dating & Matchmaking": "約會交友"
+
+          #Beauty & Skincare
+          "Bath & Body": "內外保養"
+          "Cosmetics": "流行彩妝"
+          "Face & Body Treatment": "醫美保養"
+          "Perfume & Fragrance": "香水香氛"
+          "Haircare Treatment": "髮類保養"
+          "Nail & Eyelash": "美甲美睫"
+          "Other Beauty": "其他美容保養"
+
+          #Clothing & Apparel
+          "Jewelry Accessories": "飾品配件"
+          "Luggage & Handbag": "背包提袋"
+          "Men Apparel": "男士服裝"
+          "Other Fashions": "其他時尚"
+          "Shoe & Footwear": "流行鞋款"
+          "Sport/Fitness Apparel": "運動服裝"
+          "Swimwear & Underwear": "泳衣内衣"
+          "Teen Apparel": "少年服飾"
+          "Women Apparel": "女士服裝"
+
+          #Cooking & DIY
+          "Chinese Cuisine": "中菜料理"
+          "Dessert / Bakery": "甜點烘焙"
+          "Health / Nutrition": "營養餐"
+          "Lunch Box": "便當料理"
+          "Other Cooking": "其他料理"
+          "Western Cuisine": "西餐料理"
+
+          #Education & Knowledge
+          "Books Sharing": "書籍分享"
+          "Career Development": "職涯發展"
+          "Graphics Design": "繪圖設計"
+          "Investment & Financial": "金融理財"
+          "Language Learning": "語言學習"
+          "Marketing Management": "行銷管理"
+          "Online Course": "線上課程"
+          "Psychology": "心理學"
+          "Social Media Tutor": "自媒體操作"
+          "Software Development": "軟體開發"
+          "Others Knowledge": "其他知識"
+
+          #Electronic & Tech
+          "APP/PC/Console Game": "電子遊戲"
+          "App & Software": "APP 軟體"
+          "Cloud Service & SAAS": "雲端工具"
+          "Computer Hardware": "電腦硬件"
+          "eBook": "電子書"
+          "Electronic & Peripheral": "電子周邊"
+
+          #Family & Kid
+          "Children Book": "兒童書籍"
+          "Child Education": "兒童教育"
+          "Children Toy": "兒童玩具"
+          "Toddler & Infant": "親子育兒"
+
+          #Food & Drinks
+          "Alcohol/Tobacco": "香菸品酒"
+          "Dessert & Drink": "甜食飲料"
+          "Food Delivery": "宅配美食"
+          "Groceries": "生鮮食品"
+          "Local Delicacy": "美食特產"
+          "Other Food & Drink": "其他飲食"
+          "Restaurants": "美食餐廳"
+
+          #General Merchandise
+          "Online Store": "電子商城"
+          "Tools & Supply": "工具用品"
+
+          #Gifts & Flowers
+          "Flowers": "鮮花禮品"
+          "Gifts": "禮物贈品"
+          "Greeting Cards": "賀卡禮包"
+          "Handmade Goods": "手工藝品"
+
+          #Health & Wellness
+          "Dental Care": "牙齒護理"
+          "Health Supplement": "保健食品"
+          "Massages/Spas": "推拿按摩"
+          "Other Wellness": "其他保健"
+          "Pharmacy & Supply": "醫療藥品"
+          "Vision Care": "視力保健"
+          "Weight Loss": "纖體減重"
+
+          #Home & Garden
+          "Bed & Bath": "室內衛浴"
+          "Furniture & Decoration": "家具裝飾"
+          "Gardening": "園藝植栽"
+          "Home Appliance": "居家家電"
+          "Kitchen": "廚房餐具"
+          "Other Home & Garden": "其他居家"
+
+          #Pets & Aquarium
+          "Aquarium & Reptile": "水族爬蟲"
+          "Cat & Dog": "貓犬動物"
+          "Other Pets": "其他寵物"
+          "Pet": "寵物用品"
+          "Pet Food": "寵物食品"
+          "Pet Hotel": "寵物住宿"
+          "Pet Spa": "寵物美容"
+
+          #Professional Services
+          "Cleaner & Storage": "清潔收納"
+          "Credit Cards": "信用卡"
+          "Fundraising/Charitable": "非營利性"
+          "Insurance Service": "保險服務"
+          "Investment": "投資理財"
+          "Loans & Debit": "信用管理"
+          "Other Services": "其他服務"
+          "Video/Photography": "拍照攝影"
+
+          #Recreation & Leisure
+          "Board Game": "智力桌遊"
+          "Car Modification": "汽車改裝"
+          "Collectibles": "收藏愛好"
+          "Karaoke/KTV": "音樂歌唱"
+          "Motorcycles Modification": "機車改裝"
+          "Other Recreation": "其他娛樂"
+
+          #Sport & Fitness
+          "Aquatic Sport": "水上運動"
+          "Dance & Gymnastic": "流行舞蹈"
+          "Fitness Equipment": "健身器材"
+          "Hiking & Outdoor": "登山健行"
+          "Indoor Activity": "室內運動"
+          "Outdoor Adventure": "戶外探險"
+          "Other Sports": "其他運動"
+          "Sport & Game": "球類運動"
+          "Yoga & Aerobic": "瑜伽運動"
+
+          #Travel & Lodging
+          "Camping & Outdoor": "露營戶外"
+          "Event/Ticket": "活動票券"
+          "Flight & Hotel": "機票住宿"
+          "Other Travel Needs": "旅遊周邊"
+          "Travel & Vacation": "旅遊度假"
+

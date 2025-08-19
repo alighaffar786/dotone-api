@@ -1,0 +1,9 @@
+th-TH:
+
+  will_paginate:
+    models:
+      download:
+        zero: "Downloads"
+        one: "Download"
+        few: "Downloads"
+        other: "Downloads"

@@ -1,0 +1,11 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        user_role:
+          attributes:
+            role_id:
+              blank: "Please specify the role."
+            user_id:
+              blank: "Please specify the user."
+              taken: "User with specified role exists."

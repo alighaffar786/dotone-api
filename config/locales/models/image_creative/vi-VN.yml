@@ -1,0 +1,22 @@
+vi-VN:
+  
+  activerecord:
+
+    models:
+
+      image_creative:
+        one: "Banner"
+        other: "Banners"
+      
+    attributes:
+      
+      image_creative:
+        cdn_url: "CDN URL"
+
+  will_paginate:
+    
+    models:
+    
+      image_creative:
+        one: "Banner"
+        other: "Banners"

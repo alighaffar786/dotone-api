@@ -1,0 +1,18 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        lg_lead_file:
+          attributes:
+            file:
+              blank: "Please specify the file."
+            start_at:
+              blank: "Please specify the start date."
+            end_at:
+              blank: "Please specify the end date."
+            time_zone_id:
+              blank: "Please specify the time zone."
+            user_id:
+              blank: "Please specify the user."
+            lg_domain_id:
+              blank: "Please specify the domain."

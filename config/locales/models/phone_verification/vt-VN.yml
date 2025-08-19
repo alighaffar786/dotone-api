@@ -1,0 +1,12 @@
+vt-VN:
+  activerecord:
+    errors:
+      models:
+        phone_verification:
+          attributes:
+            otp:
+              not_match: Verification code is not match
+              max_attempt_reached: You've already reached limit to send verification code
+              limit_in_resend: Please wait for 1 minute to resend verification code
+            phone_number:
+              invalid_format: "Phone number must be a valid international format"

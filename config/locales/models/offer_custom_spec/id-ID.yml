@@ -1,0 +1,14 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        offer_custom_spec:
+          attributes:
+            offer_variant_id:
+              blank: "Offer Variant is missing."
+              taken: "Offer Variant exists with the specified user."
+            user_id:
+              blank: "User is missing."
+            custom_affiliate_pay:
+              blank: "Affiliate pay is missing."
+              not_a_number: "Invalid currency format."

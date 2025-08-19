@@ -1,0 +1,19 @@
+vi-VN:
+
+  predefined:
+    models:
+      currency:
+        code_name:
+          AUD: "Australian Dollar"
+          CAD: "Canadian Dollar"
+          CNY: "Chinese Yuen Renminbi"
+          EUR: "European Euro"
+          GBP: "British Pound"
+          HKD: "Hong Kong Dollar"
+          IDR: "Indonesian Rupiah"
+          JPY: "Japanese Yen"
+          MYR: "Malaysian Ringgit"
+          SGD: "Singapore Dollar"
+          THB: "Thai Baht"
+          TWD: "Taiwan Dollar"
+          USD: "US Dollar"

@@ -1,0 +1,149 @@
+en-US:
+  activerecord:
+    models:
+      affiliate:
+        one: Affiliate
+        other: Affiliates
+
+    errors:
+      models:
+        affiliate:
+          attributes:
+            password:
+              blank: "Please specify the password for this affiliate."
+              too_short: "Password is too short."
+              confirmation: "Password does not match its confirmation."
+            email:
+              blank: "Please specify the email for this affiliate."
+              invalid: "Email is invalid."
+              taken: "Email has already been taken."
+            first_name:
+              blank: "Please specify the first name for this affiliate."
+            last_name:
+              blank: "Please specify the last name for this affiliate."
+            status:
+              blank: "Account Status is required for this affiliate."
+            time_zone_id:
+              blank: "Time Zone is Required for this affiliate."
+            username:
+              taken: "Username is no longer available."
+              too_short: "Username needs to be at least 3 characters."
+              invalid: "Username is not in valid format."
+              blank: "Username for this affiliate is required."
+
+  predefined:
+    models:
+      affiliate:
+        business_entity:
+          "Individual": "Individual"
+          "Company": "Company"
+
+        experience_level:
+          "5": "5 - Guru"
+          "4": "4 - Expert"
+          "3": "3 - Senior"
+          "2": "2 - Junior"
+          "1": "1 - Novice"
+          "0": "0 - No Experience"
+
+        gender:
+          "Man": "Man"
+          "Non Binary": "Non-Binary"
+          "Prefer Not to Say": "Prefer Not to Say"
+          "Transgender": "Transgender"
+          "Woman": "Woman"
+
+        label:
+          "Above Average": "Above Average"
+          "Average": "Average"
+          "Below Average": "Below Average"
+          "Black List": "Black List"
+          "Excellent": "Excellent"
+          "Poor": "Poor"
+          "Superb": "Superb"
+
+        messenger_service:
+          "Line": "LINE"
+          "QQ": "QQ"
+          "Skype": "Skype"
+          "Telegram": "Telegram"
+          "WeChat": "WeChat"
+          "Whatsapp": "WhatsApp"
+
+        ranking:
+          "10": "10 - Super Affiliate"
+          "9": "9 - Super Affiliate"
+          "8": "8 - Super Affiliate"
+          "7": "7 - Premium Affiliate"
+          "6": "6 - Premium Affiliate"
+          "5": "5 - Premium Affiliate"
+          "4": "4 - Premium Affiliate"
+          "3": "3 - Regular Affiliate"
+          "2": "2 - Regular Affiliate"
+          "1": "1 - Regular Affiliate"
+
+        source:
+          Direct: "Direct"
+          Marketplace: "Marketplace"
+
+        status:
+          Active: "Active"
+          New: "New"
+          Paused: "Paused"
+          Pending: "Pending"
+          Suspended: "Suspended"
+
+        traffic_quality_level:
+          "0": "0 - Fraud"
+          "1": "1 - Warning"
+          "2": "2 - Below Average"
+          "3": "3 - Neutral"
+          "4": "4 - Expert"
+          "5": "5 - Superb"
+
+  will_paginate:
+    models:
+      affiliate:
+        zero: "Affiliates"
+        one: "Affiliate"
+        few: "Affiliates"
+        other: "Affiliates"
+
+  download_columns:
+    models:
+      affiliate:
+        affiliate_logs: notes
+        affiliate_users: Managers
+        site_infos: Asset URL
+        avatar_url: Avatar
+        business_entity: Business Entity
+        campaign: Campaign
+        channel: Channel
+        company_name: Company Name
+        company_site: Company Site
+        contact_info: Contact Information
+        conversion_count: Conversions Count
+        country: Country
+        created_at: Joined Date
+        current_balance: Current Balance
+        experience_level: Experience Level
+        gender: Gender
+        group_tags: Group Tags
+        id: ID
+        label: Label
+        last_request_at: Last Login Time
+        login_count: Login Count
+        media_categories: Media Categories
+        ranking: Ranking
+        recruiter: Recruiter
+        referrer: Referrer
+        status: Status
+        source: Source
+        top_offers: Top Offers
+        traffic_quality_level: Traffic Quality
+        transaction_affiliate: Source Affiliate
+        transaction_subid_1: Subid 1
+        transaction_subid_2: Subid 2
+        transaction_subid_3: Subid 3
+        transaction_subid_4: Subid 4
+        transaction_subid_5: Subid 5

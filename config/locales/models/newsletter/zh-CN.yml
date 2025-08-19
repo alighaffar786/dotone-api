@@ -1,0 +1,22 @@
+zh-Hans:
+
+  predefined:
+    models:
+      newsletter:
+        email_type:
+          "All Active Advertisers": "All Active Advertisers"
+          "All Active Advertisers You Manage": "All Active Advertisers You Manage"
+          "All Active Advertisers You Manage With Live Offers": "All Active Advertisers You Manage With Live Offers"
+          "All Active Affiliates": "All Active Affiliates"
+          "All Active Affiliates for Offer": "All Active Affiliates for Offer..."
+          "Choose Advertiser": "Choose Advertiser..."
+          "Choose Affiliate": "Choose Affiliate..."
+          "Leads For Offer...": "Leads For Offer..."
+
+  will_paginate:
+    models:
+      newsletter:
+        zero: "Email Messages"
+        one: "Email Message"
+        few: "Email Messages"
+        other: "Email Messages"

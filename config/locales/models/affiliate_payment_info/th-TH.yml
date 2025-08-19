@@ -1,0 +1,52 @@
+th-TH:
+  predefined:
+    models:
+      affiliate_payment_info:
+        payment_type:
+          "Check": "Check"
+          "Wire Transfer": "Wire Transfer"
+          "PayPal": "PayPal"
+
+        status:
+          "Confirmed": "Confirmed"
+          "Pending": "Pending"
+          "Waiting For Verification": "Waiting For Verification"
+          "Incomplete": "Incomplete"
+
+  download_columns:
+    models:
+      affiliate_payment_info:
+        account_number: Account Number
+        affiliate_company_name: Affiliate Company Name
+        affiliate_created_at: Joined Date
+        affiliate_email: Affiliate Email
+        affiliate_full_address: Address
+        affiliate_id: Affiliate
+        affiliate_phone_number: Affiliate Phone Number
+        affiliate_users: Manager
+        affiliate: Affiliate
+        bank_address: Bank Address
+        bank_identification: Bank Identification
+        bank_name: Bank Name
+        branch_identification: Branch Identification
+        branch_name: Branch Name
+        iban: IBAN/ABA#/CNAPS
+        latest_commission: Latest Commission
+        legal_resident_address: Legal Address
+        payee_name: Payee Name
+        payment_type: Payment Type
+        paypal_email_address: PayPal Email Address
+        preferred_currency: Preferred Currency
+        routing_number: Routing Number
+        ssn_ein: EIN
+        status: Status
+        tax_filing_country: Tax Filing Country
+        updated_at: Updated Time
+
+  will_paginate:
+    models:
+      affiliate_payment_info:
+        zero: "Payment Info"
+        one: "Payment Info"
+        few: "Payment Info"
+        other: "Payment Info"

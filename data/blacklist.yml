@@ -1,0 +1,20 @@
+ad_link_hostnames:
+  - ".*.googleusercontent.com"
+  - ".*.translate.goog"
+  - "content"
+  - "file"
+  - "http"
+
+ip_addresses:
+  - "184.173.44.99"
+  - "186.216.180.27"
+  - "188.162.195.196"
+  - "45.227.253.58"
+  - "45.227.255.149"
+  - "172.245.93.113"
+  - "87.101.82.137"
+
+s2s_postback_strings:
+  - "track/postback/conversions/8/global?order=2020100700493&order_total=1680&revenue=50&server_subid=50657d0d165fdf5a7892948d4209f883&step=sale"
+  - "track/postback/conversions/8/globalorder=B0041017977&order_total=15&server_subid=682d7892a480f12548c02829f48b0ff0?show_layer=1&step=sale"
+  - "track/postback/conversions/8/globalorder=L0042885088&order_total=852&server_subid=4a8c1afdf3b1b594ca2ea5160909e45c&step=sale"

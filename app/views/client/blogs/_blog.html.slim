@@ -1,0 +1,27 @@
+.col-md-12.col-sm-12.col-xs-12.margin-50px-bottom
+  .blog-post-list
+    .col-xs-12.margin-15px-bottom
+      .blog-list-image
+        = image_tag blog.image_url, alt: blog.title if blog.image_url
+    .col-md-8.col-sm-6
+      = link_to post_client_blogs_path(slug: blog.slug), class: 'text-dark-gray' do
+        h5.text-double-large.font-weight-600
+          = blog.title
+      p.margin-20px-top
+        = blog.short_description
+    .col-md-4.col-sm-6
+      .blog-author
+        span.author-img
+          = image_tag blog.author.avatar_cdn_url, alt: blog.author.full_name
+        .author-name
+          = link_to blog.author.full_name, client_blogs_path, class: 'no-margin-bottom text-medium font-weight-400 text-extra-medium-gray'
+          span.display-block.text-small
+            | Contributor
+        p.metas
+          i.fa.fa-calendar
+          span
+            = blog.posted_at&.strftime('%Y-%m-%d')
+        p.metas
+          i.fa.fa-folder-open
+          span
+            = link_to blog.page_name, client_blogs_path

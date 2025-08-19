@@ -1,0 +1,10 @@
+ms-MY:
+  activerecord:
+    errors:
+      models:
+        job_post:
+          attributes:
+            title:
+              blank: "Job Title is Required"
+            description:
+              blank: "Job Description is Required"

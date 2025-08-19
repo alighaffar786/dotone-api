@@ -1,0 +1,35 @@
+zh-TW:
+  activerecord:
+    models:
+      conversion_step:
+        one: Conversion Point
+        other: Conversion Points
+
+  will_paginate:
+    models:
+      conversion_step:
+        zero: "Conversion Steps"
+        one: "Conversion Step"
+        few: "Conversion Steps"
+        other: "Conversion Steps"
+
+  predefined:
+    models:
+      conversion_step:
+        label:
+          Complete Purchase: 完成購買
+          Complete Form: 填寫表格
+          Complete Registration: 完成註冊
+          Download & Install: 下載安裝
+          Trial Signup: 試用註冊
+          Complete Booking: 完成預訂
+          Complete Stay: 完成住宿
+          Subscription Purchase: 訂閱購買
+          Complete Ride: 完成搭乘
+          Complete Usage: 完成使用
+          Valid Click: 有效點擊
+          Complete Action: 完成行動
+          New Purchase: 首次購買
+          Return Purchase: 現客回購
+          Complete Trial: 完成試用
+          Complete Verification: 完成驗證

@@ -1,0 +1,867 @@
+---
+swagger: '2.0'
+info:
+  title: API V2
+  version: v2
+paths:
+  "/api/v2/advertisers/affiliate_users":
+    get:
+      summary: Retrieves all affiliate users of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/banners":
+    get:
+      summary: Retrieves all banners of an offer
+      tags:
+      - Banner
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: page
+        in: query
+      - name: per_page
+        in: query
+      - name: status
+        in: query
+      - name: offer_id
+        in: query
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Create new banner
+      tags:
+      - Banner
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+      - name: banner
+        in: body
+        schema:
+          type: object
+          properties:
+            offer_variant_id:
+              type: integer
+            locale:
+              type: string
+            status:
+              type: string
+            active_date_start:
+              type: string
+              format: date-time
+            active_date_end:
+              type: string
+              format: date-time
+            is_infinity_time:
+              type: boolean
+            status_reason:
+              type: string
+            client_url:
+              type: string
+          required:
+          - offer_variant_id
+          - offer_id
+      responses:
+        '201':
+          description: created
+  "/api/v2/advertisers/banners/{id}":
+    put:
+      summary: Update a banner
+      tags:
+      - Banner
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: id
+        in: path
+        required: true
+      - name: banner
+        in: body
+        schema:
+          type: object
+          properties:
+            offer_variant_id:
+              type: integer
+            locale:
+              type: string
+            status:
+              type: string
+            active_date_start:
+              type: string
+              format: date-time
+            active_date_end:
+              type: string
+              format: date-time
+            is_infinity_time:
+              type: boolean
+            status_reason:
+              type: string
+            client_url:
+              type: string
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/bulk/banners":
+    put:
+      summary: Bulk update banners
+      tags:
+      - Bulk Banner
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: banners
+        in: body
+        schema:
+          type: object
+          properties:
+            id:
+              type: integer
+            status:
+              type: string
+            client_url:
+              type: string
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/contact_lists":
+    get:
+      summary: Retrieves all contact lists of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Creates a new contact list
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: banner
+        in: body
+        schema:
+          type: object
+          properties:
+            status:
+              type: string
+            email:
+              type: string
+            first_name:
+              type: string
+            last_name:
+              type: string
+            title:
+              type: string
+            phone:
+              type: string
+            flag_messenger_service:
+              type: integer
+            flag_messenger_id:
+              type: integer
+            email_optin:
+              type: string
+          required:
+          - status
+          - email
+          - first_name
+          - last_name
+          - email_optin
+      responses:
+        '201':
+          description: created
+  "/api/v2/advertisers/contact_lists/{id}/archive":
+    get:
+      summary: Archives a contact lists of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: id
+        in: path
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/all":
+    get:
+      summary: Retrieves all dashboard information of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/account_overview":
+    get:
+      summary: Retrieves account overview of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/exposure":
+    get:
+      summary: Retrieves exposures of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/total_order":
+    get:
+      summary: Retrieves total orders of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/performance_stat":
+    get:
+      summary: Retrieves performance stats of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      - name: duration
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/visitor":
+    get:
+      summary: Retrieves visitors of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/commission_balance":
+    get:
+      summary: Retrieves commission and balance information of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/announcement":
+    get:
+      summary: Retrieves announcements of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      - name: role
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/recent_conversion":
+    get:
+      summary: Retrieves recent conversions of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/dashboards/publisher":
+    get:
+      summary: Retrieves top publishers of an advertiser
+      tags:
+      - Dashboard
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: refresh
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/native_ads":
+    get:
+      summary: Retrieves all native ads of an advertiser
+      tags:
+      - Native Ads
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: offer_id
+        in: query
+      - name: page
+        in: query
+      - name: per_page
+        in: query
+      - name: status
+        in: query
+      responses:
+        '200':
+          description: successful
+    post:
+      summary: Creates a new Native Ad
+      tags:
+      - Native Ads
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: native_ad
+        in: body
+        schema:
+          type: object
+          properties:
+            locale:
+              type: string
+            active_date_start:
+              type: string
+              format: date-time
+            active_date_end:
+              type: string
+              format: date-time
+            status_reason:
+              type: string
+            button_text:
+              type: string
+            custom_landing_page:
+              type: string
+            deal_scope:
+              type: string
+            coupon_code:
+              type: string
+            published_at:
+              type: string
+              format: date-time
+            title:
+              type: string
+            creative_name:
+              type: string
+            offer_variant_id:
+              type: integer
+            content_1:
+              type: string
+            flag_original_price:
+              type: number
+              format: float
+            flag_discount_price:
+              type: number
+              format: float
+            category_id:
+              type: array
+              items:
+                type: integer
+          required:
+          - active_date_start
+          - active_date_end
+          - creative_name
+          - title
+          - content_1
+          - custom_landing_page
+          - button_text
+          - offer_variant_id
+      responses:
+        '201':
+          description: created
+  "/api/v2/advertisers/native_ads/defaults":
+    get:
+      summary: Retrieves all default native ads of an advertiser
+      tags:
+      - Native Ads
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/native_ads/{id}":
+    put:
+      summary: Updates Native Ad
+      tags:
+      - Native Ads
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: id
+        in: path
+        required: true
+      - name: native_ad
+        in: body
+        schema:
+          type: object
+          properties:
+            locale:
+              type: string
+            active_date_start:
+              type: string
+              format: date-time
+            active_date_end:
+              type: string
+              format: date-time
+            status_reason:
+              type: string
+            button_text:
+              type: string
+            custom_landing_page:
+              type: string
+            deal_scope:
+              type: string
+            coupon_code:
+              type: string
+            published_at:
+              type: string
+              format: date-time
+            title:
+              type: string
+            creative_name:
+              type: string
+            offer_variant_id:
+              type: integer
+            content_1:
+              type: string
+            flag_original_price:
+              type: integer
+            flag_discount_price:
+              type: integer
+            category_id:
+              type: array
+              items:
+                type: integer
+            image_cdn:
+              type: string
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/offers":
+    get:
+      summary: Retrieves all offers
+      tags:
+      - Offers
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: page
+        in: query
+        required: true
+      - name: per_page
+        in: query
+        required: true
+      - name: offer_id
+        in: query
+      - name: countries
+        in: query
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/password_resets":
+    post:
+      summary: create password_reset
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/password_resets/{id}":
+    parameters:
+    - name: id
+      in: path
+      type: string
+      description: id
+      required: true
+    patch:
+      summary: update password_reset
+      responses:
+        '200':
+          description: successful
+    put:
+      summary: update password_reset
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/profile":
+    get:
+      summary: Retrieves profile details of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+    patch:
+      summary: Updates profile
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: profile
+        in: body
+        schema:
+          type: object
+          properties:
+            contact_email:
+              type: string
+            name:
+              type: string
+            contact_name:
+              type: string
+            contact_phone:
+              type: string
+            language_id:
+              type: integer
+            time_zone_id:
+              type: integer
+            currency_id:
+              type: integer
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/profile/update_password":
+    patch:
+      summary: Updates profile password
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: profile
+        in: body
+        schema:
+          type: object
+          properties:
+            password:
+              type: string
+            password_confirmation:
+              type: string
+          required:
+          - password
+          - password_confirmation
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/profile/update_avatar":
+    patch:
+      summary: Updates profile avatar
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: profile
+        in: body
+        schema:
+          type: object
+          properties:
+            avatar_url:
+              type: string
+          required:
+          - avatar_url
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/time_zones":
+    get:
+      summary: Retrieves all timezones of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/currencies":
+    get:
+      summary: Retrieves all currencies of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/languages":
+    get:
+      summary: Retrieves all languages of an advertiser
+      tags:
+      - Profile
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/search/offers":
+    get:
+      summary: Search advertisers offers
+      tags:
+      - Search
+      consumes:
+      - application/json
+      security:
+      - Bearer: {}
+      parameters:
+      - name: Authorization
+        in: header
+        type: string
+        required: true
+      - name: search
+        in: query
+        type: string
+      responses:
+        '200':
+          description: successful
+  "/api/v2/advertisers/login":
+    post:
+      summary: login session
+      tags:
+      - Login
+      produces:
+      - application/json
+      parameters:
+      - name: session
+        in: body
+        schema:
+          type: object
+          properties:
+            email:
+              type: string
+            password:
+              type: string
+          required:
+          - email
+          - password
+      responses:
+        '200':
+          description: successful
+servers:
+- url: "{defaultHost}"
+  variables:
+    defaultHost:
+      default: localhost:3000

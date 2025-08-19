@@ -1,0 +1,44 @@
+header.header-with-topbar
+  nav.navbar.navbar-default.bootsnav.navbar-top.header-light-transparent.bg-transparent.nav-box-width.box-nav
+    .container
+      .row
+        .col-md-2.col-xs-5
+          = link_to client_home_path, title: 'Logo', class: 'logo inner-link' do
+            img.logo-dark[src="/assets/images/custom/logo.png" alt="Affiliats.One"]
+            img.logo-light.default[src="/assets/images/custom/logo.png" alt="Affiliates.One"]
+        .col-md-7.col-xs-2.width-auto.pull-right.accordion-menu.xs-no-padding-right.hidden-sm.hidden-xs.no-padding
+          #navbar-collapse-toggle-1.navbar-collapse.collapse.pull-right
+            ul#accordion.nav.navbar-nav.navbar-left.no-margin.alt-font.text-normal[data-in="fadeIn" data-out="fadeOut"]
+              li.nav-item.nav-home
+                = link_to t('home'), client_home_path
+              li.nav-item.nav-events
+                = link_to t('events'), client_events_path
+              li.nav-item.nav-affiliates
+                = link_to t('affiliates'), client_affiliates_path
+              li.nav-item.nav-advertisers
+                = link_to t('advertisers'), client_advertisers_path
+              li.nav-item.nav-agencies
+                = link_to t('agencies'), client_agencies_path
+              li.nav-item.nav-blog
+                = link_to t('blog'), client_blogs_path
+              li.nav-item.nav-login.dropdown
+                a.nav-link.dropdown-toggle[href="javascript:;" data-toggle="dropdown"]
+                  |  Login
+                  span.caret
+                ul.dropdown-menu
+                  li.dropdown-item
+                    a.js-pub-btn-login
+                      |  Login as Affiliate
+                  li.dropdown-item
+                    a.js-adv-btn-login
+                      |  Login as Advertiser
+              li.nav-item.dropdown
+                a.nav-link.dropdown-toggle[href="javascript:;" data-toggle="dropdown"]
+                  |  English (US)
+                  span.caret
+                ul.dropdown-menu.pull-right
+                  li
+                    a.dropdown-item[href="/zh-tw/"]
+                      |  繁體中文
+    #showMenu.showMenuButton-two
+      span.hamburger

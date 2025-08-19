@@ -1,0 +1,37 @@
+zh-TW:
+
+  address:
+    formats:
+      html: |
+        %{state}%{city}<br/>%{address}
+
+  date:
+    formats:
+      default_with_day: ! "%b %d, %Y (%A)"
+      long_date: ! "%Y/%m/%d"
+      short_month: ! "%b %d, %Y"
+      global: ! "%Y-%m-%d"
+      global_month_only: ! "%Y-%m"
+      javascripts:
+        default: "YYYY-MM-DD"
+        momentjs: "MMM DD, YYYY"
+      on_global: ! 於 %Y-%m-%d
+      up_to_global: ! 至 %Y-%m-%d
+
+  number:
+    currency:
+      formats:
+        no_unit_format: '%n'
+        plain_format: '%u%n'
+        
+  person:
+    formats:
+      full_name: "%{last_name}%{first_name}"
+
+  time:
+    formats:
+      default_with_day: ! "%b %d, %Y (%A)"
+      default_with_time: ! "%b %d, %Y %I:%M %p"
+      short_month: ! "%b %d, %Y %I:%M %p"
+      global: ! "%Y-%m-%d %H:%M:%S"
+      time: ! "%I:%M %p"

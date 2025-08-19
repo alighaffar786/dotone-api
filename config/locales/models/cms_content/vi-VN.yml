@@ -1,0 +1,22 @@
+vi-VN:
+  activerecord:
+    errors:
+      models:
+        cms_content:
+          attributes:
+            language_id:
+              blank: "Language is missing."
+            title:
+              taken: "Content with the same title on the same language already exists."
+            cms_domain_id:
+              blank: "Please specify the domain for this content."
+            cms_sub_category_id:
+              blank: "Please specify the sub category for this content."
+            posted_at:
+              blank: "Please specify the posted date."
+            buy_link:
+              invalid: "Please fix the URL."
+            picture_only:
+              inclusion: "Picture only can't be blank."
+            status:
+              blank: "Status is required for this content."

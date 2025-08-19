@@ -1,0 +1,8 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        rescue_path_item:
+          attributes:
+            target_type:
+              blank: "Please specify the target type."

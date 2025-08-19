@@ -1,0 +1,72 @@
+th-TH:
+  activerecord:
+    models:
+      affiliate_payment:
+        one: "Payment"
+        other: "Payments"
+
+  will_paginate:
+    models:
+      affiliate_payment:
+        zero: "Payments"
+        one: "Payment"
+        few: "Payments"
+        other: "Payments"
+
+  download_columns:
+    models:
+      affiliate_payment:
+        account_number: Account Number
+        affiliate: Affiliate Name
+        affiliate_amount: Affiliate Commission
+        affiliate_id: Affiliate ID
+        affiliate_users: Managers
+        amount: Paid Amount
+        bank_address: Bank Address
+        bank_identification: Bank ID
+        bank_name: Bank Name
+        branch_identification: Branch Identification
+        branch_name: Branch Name
+        business_entity: Business Entity
+        company_name: Company Name
+        conversion_file_url: Conversions
+        end_date: End Period
+        iban: IBAN
+        id: Payment ID
+        legal_resident_address: Legal Resident Address
+        mailing_country: Mailing Country
+        net_payment_amount: Net Payment
+        non_redeemed_amount: Non Redeemed Amount
+        notes: Notes
+        paid_date: Payment Date
+        payment_info_status: Payment Info Status
+        payment_type: Payment Type
+        payee_name: Payee Name
+        paypal_email_address: PayPal Email
+        post_tax_payment_amount: Post Tax Amount
+        preferred_currency: Preferred Currency
+        previous_amount: Previous Commission
+        redeemed_amount: Redeemed Amount
+        referral_amount: Referral Commission
+        routing_number: Routing Number
+        ssn_ein: EIN
+        start_date: Start Period
+        status: Payment Status
+        tax_fee_amount: Tax
+        tax_filing_country: Tax Filing Country
+        taxable_payment: Taxable Payment
+        total_commissions: Total Commission
+        total_fees: Fees
+        wire_fee_amount: Bank Fee
+
+  predefined:
+    models:
+      affiliate_payment:
+        status:
+          "Confirmed": Confirmed
+          "Deferred": Deferred
+          "Paid": Paid
+          "Pending": Pending
+          "Redeemable": Redeemable
+          "Redeemed": Redeemed
+          "Suspended": Suspended

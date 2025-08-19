@@ -1,0 +1,23 @@
+th-TH:
+
+  predefined:
+
+    models:
+    
+      upload:
+
+        status:
+          "Error": "Error"
+          "In Progress": "In Progress"
+          "Ready": "Ready"
+          "Warning": "Warning"
+  
+  will_paginate:
+    
+    models:
+    
+      upload:
+        zero: "Uploads"
+        one: "Upload"
+        few: "Uploads"
+        other: "Uploads"

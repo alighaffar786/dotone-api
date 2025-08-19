@@ -1,0 +1,33 @@
+zh-TW:
+  
+  activerecord:
+
+    models:
+
+      text_creative:
+        one: "優惠訊息"
+        other: "優惠訊息"
+
+  activerecord:
+    models:
+      user:
+        one: Native Ad
+        other: Native Ads
+        
+  predefined:
+    
+    models:
+    
+      text_creative:
+    
+        deal_scope: # Deal scope selection for text creative
+          "Entire Store": "整個商店"
+          "Specific Product": "單一商品"
+
+  will_paginate:
+    
+    text_creative:
+      zero: "優惠訊息"
+      one: "優惠訊息"
+      few: "優惠訊息"
+      other: "優惠訊息"

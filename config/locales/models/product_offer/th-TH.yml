@@ -1,0 +1,16 @@
+th-TH:
+  activerecord:
+    errors:
+      models:
+        product_offer:
+          attributes:
+            name:
+              blank: "Please specify the name of the offer."
+              taken: "Name has been used by other offer."
+            url:
+              blank: "Please specify the URL for the offer."
+            product_source_id:
+              blank: "Please specify the source for the offer."
+            offer_type:
+              blank: "Please specify the offer type for the offer."
+              inclusion: "Invalid Offer Type for the offer."

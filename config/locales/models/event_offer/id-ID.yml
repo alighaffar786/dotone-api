@@ -1,0 +1,17 @@
+id-ID:
+  
+  activerecord:
+
+    models:
+
+      event_offer:
+        one: Event
+        other: Events
+
+  will_paginate:
+    models:
+      event_offer:
+        zero: "Events"
+        one: "Event"
+        few: "Events"
+        other: "Events"

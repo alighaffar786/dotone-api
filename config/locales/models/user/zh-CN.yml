@@ -1,0 +1,9 @@
+zh-Hans:
+  
+  activerecord:
+  
+    models:
+
+      user:
+        one: "User"
+        other: "Users"

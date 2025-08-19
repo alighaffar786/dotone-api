@@ -1,0 +1,56 @@
+en-US:
+  predefined:
+    models:
+      offer:
+        approval_method:
+          As It Occurs: As It Occurs
+          Payment Received: Payment Received
+        attribution_type:
+          First Click: First Click
+          Last Click: Last Click
+          Both Click: First & Last Click
+
+        conversion_time_info:
+          "N/A": "N/A"
+          "Instant": "Instant"
+          "Within N Days": "Within %{n} Days"
+          "Within N Minutes": "Within %{n} Minutes"
+
+        track_device:
+          Desktop: Desktop
+          Mobile Web: Mobile Web
+          iOS: iOS
+          Android: Android
+
+  download_columns:
+    models:
+      network_offer:
+        affiliate_logs: Notes
+        affiliate_pay: Comm.
+        affiliate_share: Comm %
+        attribution_type: Attribution Type
+        brand_image_small_url: Thumbnail
+        brand_image_url: Brand Image
+        categories: Categories
+        click_volume: Click Volume
+        conversion_point: Conversion Point
+        conversion_type: Conv. Type
+        countries: Countries
+        destination_url: Destination URL
+        detail_views_last_month: Detail View Count
+        earning_meter: Popularity
+        group_tags: Group Tags
+        has_product_api: Has Product API
+        id: Offer ID
+        media_restrictions: Traffic Restrictions
+        name: Offers
+        network: Advertiser
+        original_currency: Original Currency
+        published_date: Publ. Date
+        request_count: Request #
+        status: Status
+        track_device: Track Device
+        translation_stats: Translation Done
+        true_conv_type: Conversion Type
+        true_pay: Payout
+        true_share: Payout Share

@@ -1,0 +1,19 @@
+zh-Hans:
+  activerecord:
+    errors:
+      models:
+        ad_group:
+          attributes:
+            name:
+              blank: "Please specify the name of the ad group."
+              taken: "Name has been taken by other ad group in the same campaign."
+              too_long: "Name is too long. (Max: %{count} chars)."
+            user_id:
+              blank: "Please specify the user for this ad group."
+            campaign_id:
+              blank: "Please specify the campaign for this ad group."
+              taken: "Campaign with selected Channel already exists."
+            max_cpc:
+              invalid: "Max. CPC is not in correct format."
+            channel_id:
+              blank: "Please specify the channel."

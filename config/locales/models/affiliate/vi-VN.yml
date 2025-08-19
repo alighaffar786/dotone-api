@@ -1,0 +1,98 @@
+vi-VN:
+
+  activerecord:
+
+    models:
+
+      affiliate:
+        one: Affiliate
+        other: Affiliates
+
+    errors:
+      models:
+        affiliate:
+          attributes:
+            password:
+              blank: "Please specify the password for this affiliate."
+              too_short: "Password is too short."
+              confirmation: "Password does not match its confirmation."
+            email:
+              blank: "Please specify the email for this affiliate."
+              invalid: "Email is invalid."
+              taken: "Email has already been taken."
+            first_name:
+              blank: "Please specify the first name for this affiliate."
+            last_name:
+              blank: "Please specify the last name for this affiliate."
+            status:
+              blank: "Account Status is required for this affiliate."
+            time_zone_id:
+              blank: "Time Zone is Required for this affiliate."
+            username:
+              taken: "Username is no longer available."
+              too_short: "Username needs to be at least 3 characters."
+              invalid: "Username is not in valid format."
+              blank: "Username for this affiliate is required."
+
+  predefined:
+    models:
+      affiliate:
+        business_entity:
+          "Individual": "Individual"
+          "Company": "Company"
+
+        experience_level:
+          "5": "5 - Guru"
+          "4": "4 - Expert"
+          "3": "3 - Senior"
+          "2": "2 - Junior"
+          "1": "1 - Novice"
+          "0": "0 - No Experience"
+
+        messenger_service:
+          "Line": "LINE"
+          "QQ": "QQ"
+          "Skype": "Skype"
+          "Telegram": "Telegram"
+          "WeChat": "WeChat"
+          "Whatsapp": "WhatsApp"
+
+        ranking:
+          "10": "10 - Super Affiliate"
+          "9": "9 - Super Affiliate"
+          "8": "8 - Super Affiliate"
+          "7": "7 - Premium Affiliate"
+          "6": "6 - Premium Affiliate"
+          "5": "5 - Premium Affiliate"
+          "4": "4 - Premium Affiliate"
+          "3": "3 - Regular Affiliate"
+          "2": "2 - Regular Affiliate"
+          "1": "1 - Regular Affiliate"
+
+        traffic_quality:
+          "0 - Fraud": "0 - Fraud"
+          "1 - Warning": "1 - Warning"
+          "2 - Below Average": "2 - Below Average"
+          "3 - Neutral": "3 - Neutral"
+          "4 - Good": "4 - Good"
+          "5 - Superb": "5 - Superb"
+          "Below Average": "Below Average"
+          "Fraud": "Fraud"
+          "Good": "Good"
+          "Neutral": "Neutral"
+          "Superb": "Superb"
+          "Warning": "Warning"
+
+  will_paginate:
+    models:
+      affiliate:
+        zero: "Affiliates"
+        one: "Affiliate"
+        few: "Affiliates"
+        other: "Affiliates"
+  download_columns:
+    models:
+      affiliate:
+        id: ID
+        current_balance: Current Balance
+        last_request_at: Last Request At

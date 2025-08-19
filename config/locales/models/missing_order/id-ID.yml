@@ -1,0 +1,114 @@
+id-ID:
+
+  activerecord:
+
+    models:
+
+      missing_order:
+        one: Order/Transaction Inquiry
+        other: Order/Transaction Inquiries
+  download_columns:
+
+    models:
+
+      missing_order:
+        
+        download_meta_order_total_currency: Order Total Currency
+        click_time: Tracking Link Click Time
+        created_at: Submit Date
+        device: Device
+        id: Report ID
+        notes: Comment/Description
+        offer: Offer Name
+        order_number: Order Number
+        order_time: Order Time
+        order_total: Order Amount
+        payment_method: Payment Method
+        question_type: Inquiry Type
+        result: Result
+        screenshot_cdn_url: Order Screenshot
+        status: Status
+        status_reason: Reason
+
+  predefined:
+    models:
+      missing_order:
+        device:
+          Desktop: Desktop
+          Mobile: Mobile
+          Tablet: Tablet
+          Unknown: Unknown
+
+        payment_method:
+          Apple: Apple Pay
+          Atm: ATM
+          Card: Credit Card
+          Cash: Cash on Delivery
+          Jkos: Jkos Pay
+          Line: LINE Pay
+          Others: Others
+          PayPal: PayPal
+          WeChat: WeChat Pay
+
+        question_type:
+          Incorrect Amount: Order/Transaction total is incorrect
+          No Postback: Order/Transaction was not captured
+          Other: Other inquries
+          Unconfirmed: Order/Transaction has not confirmed yet
+
+        status:
+          Approved: Approved
+          Completed: Completed
+          Confirming: Confirming
+          Pending: Pending
+          Rejected: Rejected
+
+        status_reason:
+          Amount Adjusted: |
+            Your order amount has been adjusted, please check on our system.
+          Coupon Invalid: |
+            This order used coupon/reward code that was not provided by Affiliates.One, so you can't get this order's commission. (Please check offer disclaimer)
+          Not Due: |
+            This order does not exceed the confirmed time. Advertiser will confirm this order before the confirmed time expires. (Please check offer's confirmed time)
+          Order Added: |
+            This order has been added into your account, please check on our system.
+          Order Confirmed: |
+            Your order has been confirmed, please check it on our system.
+          Order Expired: |
+            This order is beyond cookie time, so you can't get this order's commission. (Please check this offer's cookie length)
+          Source Invalid: |
+            The source for this order is not from you, so you can't get this order's commission.
+          Without Commission: |
+            The item you bought in this order has no commission, so you can't get this order's commission. (Please check offer disclaimer)
+          Without Some Commission: |
+            Some items you bought in this order have no commission, so the commission amount does not match the actual order. (Please check offer disclaimer)
+
+        status_summary:
+          Amount Adjusted: |
+            Order amount is adjusted
+          Coupon Invalid: |
+            Used coupon/reward code was not provided by Affiliates.One
+          Not Due: |
+            This order does not exceed the confirmed time
+          Order Added: |
+            Order has been added into your account
+          Order Confirmed: |
+            Order has been confirmed
+          Order Expired: |
+            This order is beyond cookie time
+          Others: |
+            Others
+          Source Invalid: |
+            This order's source isn't from Affiliates.One (or this publisher)
+          Without Commission: |
+            The item you bought in this order has no commission
+          Without Some Commission: |
+            Some items you bought in this order have no commission
+
+  will_paginate:
+    models:
+      missing_order:
+        zero: Order/Transaction Inquiries
+        one: Order/Transaction Inquiry
+        few: Order/Transaction Inquiries
+        other: Order/Transaction Inquiries

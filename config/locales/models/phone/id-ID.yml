@@ -1,0 +1,16 @@
+id-ID:
+  activerecord:
+    errors:
+      models:
+        phone:
+          attributes:
+            country_code:
+              blank: "Country code is required."
+            area_code:
+              blank: "Area code is required."
+            prefix:
+              blank: "Prefix number is required."
+            line_number:
+              blank: "Number is required."
+            unit_type:
+              blank: "Unit type is required."

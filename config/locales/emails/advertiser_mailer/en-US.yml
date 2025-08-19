@@ -1,0 +1,77 @@
+en-US:
+  advertiser_mailer:
+    stat_summary_table:
+      average_cpc: "Average CPC*"
+      new_application: "New Affiliate Application"
+      order_total: "Revenue Generated*"
+      pending_conversions: "Pending Order"
+      published_conversions: "Approved Order"
+      rejected_conversions: "Rejected Order"
+      roas: "ROAS Ratio*"
+      total_clicks: "Visitor/Click"
+      total_conversions: "Conversion/Order*"
+      total_true_pay: "Total Ad Cost: %{amount}"
+      true_pay: "Offer Ad Expense"
+    stat_summary:
+      subject: Affiliates.One CPA Performance for %{month}/%{year}
+      text: |
+        Dear %{name},
+
+        Here is the summary of last month’s performance stats and ad expenses for your offer(s). Below is a detailed overview of the key metrics, insights, and commissions of all the valid transactions generated from your affiliate partners.
+
+        Final Performance Stats for %{month}:
+
+        %{table}
+
+        *Estimated as it includes both pending and confirmed transactions
+        **Report time zone is GMT+8
+        
+        What You Can Do Next:
+        - <a href="%{login_url}">Login</a> to your account to see more transaction and performance details.
+        - If there is any fraudulent activity that impacted the performance outcome please contact us asap. *Please note, order/transaction cancellation or adjustment cannot be reversed as it must be done within the confirmation period.
+        - If the above metrics are correct, you do not need to do anything and a digital invoice of the Ad Expense will be sent to the accounting contact listed on your account within 10 days.
+
+        Thank you for the opportunity to help grow your business. If you have any question please contact us.
+
+        Best regards,
+        Affiliates.One Team
+
+      html: |
+        <p>
+          Dear %{name},
+        </p>
+        <p>
+          Here is the summary of last month’s performance stats and ad expenses for your offer(s). Below is a detailed overview of the key metrics, insights, and commissions of all the valid transactions generated from your affiliate partners.
+        </p>
+        <p>
+          <strong>Final Performance Stats for  %{month} %{year}**:</strong>
+        </p>
+        <div>
+          %{table}
+        </div>
+        <p>
+          *Estimated as it includes both pending and confirmed transactions
+        </p>
+        <p>
+          **Report time zone is in GMT+8
+        </p>
+        <p>
+          Note: For offer(s) that did not generate more than 100 clicks or conversion in the given month it will not be listed.
+        </p>
+        <p>
+          <strong>What You Can Do Next:</strong>
+        </p>
+        <ul>
+          <li><a href="%{login_url}">Login</a> to your account to see more transaction and performance details.</li>
+          <li>If there is any fraudulent activity that impacted the performance outcome please contact us asap. *Please note, order/transaction cancellation or adjustment cannot be reversed as it must be done within the confirmation period.</li>
+          <li>If the above metrics are correct, you do not need to do anything and a digital invoice of the Ad Expense will be sent to the accounting contact listed on your account within 10 days.</li>
+        </ul>
+        <p>
+          Thank you for the opportunity to help grow your business. If you have any question please contact us.
+        </p>
+        <p>
+          Best regards,
+        </p>
+        <p>
+          Affiliates.One Team
+        </p>

@@ -1,0 +1,63 @@
+mysql_default: &mysql_default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("MYSQL_DATABASE_POOL") { 5 } %>
+  host: <%= ENV['MYSQL_DATABASE_HOST'] %>
+  username: <%= ENV['MYSQL_DATABASE_USERNAME'] %>
+  password: <%= ENV['MYSQL_DATABASE_PASSWORD'] %>
+  socket: /tmp/mysql.sock
+
+redshift_default: &redshift_default
+  adapter: redshift
+  encoding: utf8
+  host: <%= ENV["REDSHIFT_DATABASE_HOST"] %>
+  username: <%= ENV["REDSHIFT_DATABASE_USERNAME"] %>
+  password: <%= ENV["REDSHIFT_DATABASE_PASSWORD"] %>
+  port: 5439
+  pool: <%= ENV.fetch("REDSHIFT_DATABASE_POOL") { 500 } %>
+  timeout: 5000
+
+development:
+  primary:
+    <<: *mysql_default
+    database: <%= ENV['MYSQL_DATABASE_PRIMARY_NAME'] %>
+
+  secondary:
+    <<: *mysql_default
+    database: <%= ENV['MYSQL_DATABASE_SECONDARY_NAME'] %>
+    migrations_paths: db/secondary_migrate
+
+  redshift:
+    <<: *redshift_default
+    database: <%= ENV['REDSHIFT_DATABASE_NAME'] %>
+    migrations_paths: db/redshift_migrate
+
+test:
+  primary:
+    <<: *mysql_default
+    database: <%= ENV['TEST_MYSQL_DATABASE_NAME'] %>
+
+  secondary:
+    <<: *mysql_default
+    database: <%= ENV['TEST_MYSQL_DATABASE_NAME'] %>
+    migrations_paths: db/secondary_migrate
+
+  redshift:
+    <<: *redshift_default
+    database: <%= ENV['TEST_REDSHIFT_DATABASE_NAME'] %>
+    migrations_paths: db/redshift_migrate
+
+production:
+  primary:
+    <<: *mysql_default
+    database: <%= ENV['MYSQL_DATABASE_PRIMARY_NAME'] %>
+
+  secondary:
+    <<: *mysql_default
+    database: <%= ENV['MYSQL_DATABASE_SECONDARY_NAME'] %>
+    migrations_paths: db/secondary_migrate
+
+  redshift:
+    <<: *redshift_default
+    database: <%= ENV['REDSHIFT_DATABASE_NAME'] %>
+    migrations_paths: db/redshift_migrate
